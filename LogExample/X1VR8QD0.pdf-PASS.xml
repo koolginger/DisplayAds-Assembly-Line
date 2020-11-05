@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hybrid Internal Workspace Job History XML-Log with Faded-In Device Log Files -->
+<!-- ENTRY POINT: anylog2output.xslt (log transformation facility) -->
+<!-- GENERATOR: jobhistorylogProcessor.xslt (mode `xml_internal´) -->
+<Job ID="601191"
+     Name="X1VR8QD0.pdf"
+     AssemblyLineName="DisplayAds POC"
+     CreationDate="2020-11-03T17:52:29.148+02:00"
+     Status="RUNNING"
+     Result="WARNING">
+   <Priority>50</Priority>
+   <Property xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:type="PropertyList">
+        <Name>Creation</Name>
+        <SubProperty xsi:type="PropertyString">
+            <Name>Origin</Name>
+            <Value>InputScanner</Value>
+        </SubProperty>
+        <SubProperty xsi:type="PropertyString">
+            <Name>SourceFile</Name>
+            <Value>file:///D:/Workspace_data/In/DisplayAds-POC/X1VR8QD0.pdf</Value>
+        </SubProperty>
+        <SubProperty xsi:type="PropertyString">
+            <Name>ScanFolder</Name>
+            <Value>file:///D:/Workspace_data/In/DisplayAds-POC/</Value>
+        </SubProperty>
+        <SubProperty xsi:type="PropertyString">
+            <Name>ScanNetResource</Name>
+            <Value>file:///D:/Workspace_data/</Value>
+        </SubProperty>
+        <SubProperty xsi:type="PropertyString">
+            <Name>ScanNetResourceDisplayName</Name>
+            <Value>Workspace_data</Value>
+        </SubProperty>
+        <SubProperty xsi:type="PropertyString">
+            <Name>ScanSubPath</Name>
+            <Value/>
+        </SubProperty>
+        <SubProperty xsi:type="PropertyBoolean">
+            <Name>ReportZeroByteFiles</Name>
+            <Value>false</Value>
+        </SubProperty>
+    </Property>
+<Node DeviceName="FileExport" Name="PASS">
+<Description/>
+   <Settings>&lt;FileExportSettings&gt;
+    &lt;Path&gt;/Out/DisplayAds-POC/&lt;/Path&gt;
+    &lt;netResource&gt;
+        &lt;path&gt;/D:/Workspace_data/&lt;/path&gt;
+        &lt;secure&gt;false&lt;/secure&gt;
+        &lt;type&gt;FILE&lt;/type&gt;
+        &lt;PollingForced&gt;false&lt;/PollingForced&gt;
+        &lt;description&gt;Workspace_data&lt;/description&gt;
+        &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
+        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
+        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
+        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
+        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
+        &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
+    &lt;/netResource&gt;
+    &lt;ReplicateFolderStructure&gt;false&lt;/ReplicateFolderStructure&gt;
+    &lt;PreventOverwritingFiles&gt;false&lt;/PreventOverwritingFiles&gt;
+    &lt;DestinationFilePattern&gt;&lt;/DestinationFilePattern&gt;
+    &lt;MaxRetry&gt;2&lt;/MaxRetry&gt;
+    &lt;RetryDelay&gt;120000&lt;/RetryDelay&gt;
+    &lt;ExportSubPath&gt;&lt;/ExportSubPath&gt;
+    &lt;DeleteExportedFiles&gt;false&lt;/DeleteExportedFiles&gt;
+    &lt;DeletionTime&gt;
+        &lt;RelativeDelay&gt;86400000&lt;/RelativeDelay&gt;
+        &lt;Relative&gt;true&lt;/Relative&gt;
+    &lt;/DeletionTime&gt;
+&lt;/FileExportSettings&gt;</Settings>
+   <Input>
+      <RunList ID="RL1.a005-r1" Type="PRODUCTIVE" Name="Output">
+        <File File="jobs\j00\000\000\000\000\601\191\a005\1_Output\X1VR8QD0.pdf"
+               FileType="LOCAL_FILE"
+               DownloadUri="http://02CPT-DIS07:8080/ws/file/16514917/X1VR8QD0.pdf"
+               State="OK">
+            <Property xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:type="PropertyList">
+                <Name>Creation</Name>
+                <SubProperty xsi:type="PropertyInteger">
+                    <Name>NodeID</Name>
+                    <Value>16514830</Value>
+                </SubProperty>
+                <SubProperty xsi:type="PropertyString">
+                    <Name>NodeName</Name>
+                    <Value>Normalize</Value>
+                </SubProperty>
+                <SubProperty xsi:type="PropertyString">
+                    <Name>DeviceName</Name>
+                    <Value>PDFExport</Value>
+                </SubProperty>
+            </Property>
+        </File>
+      </RunList>
+   </Input>
+   <Output>
+      <RunList ID="RL207.a007-r1" Type="LOG" Name="log">
+        <File File="jobs\j00\000\000\000\000\601\191\a007\1_log\log.xml"
+               FileType="LOCAL_FILE"
+               DownloadUri="http://02CPT-DIS07:8080/ws/file/16514919/log.xml"
+               State="OK">
+            <Property xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:type="PropertyList">
+                <Name>Creation</Name>
+                <SubProperty xsi:type="PropertyInteger">
+                    <Name>NodeID</Name>
+                    <Value>16514832</Value>
+                </SubProperty>
+                <SubProperty xsi:type="PropertyString">
+                    <Name>NodeName</Name>
+                    <Value>PASS</Value>
+                </SubProperty>
+                <SubProperty xsi:type="PropertyString">
+                    <Name>DeviceName</Name>
+                    <Value>FileExport</Value>
+                </SubProperty>
+            </Property>
+        </File>
+      </RunList>
+   </Output>
+   <Output>
+      <RunList ID="RL184.a007-r1" Type="LOG" Name="log">
+        <File File="jobs\j00\000\000\000\000\601\191\a007\1_log\log.xml"
+               FileType="LOCAL_FILE"
+               DownloadUri="http://02CPT-DIS07:8080/ws/file/16514920/log.xml"
+               State="OK">
+            <Property xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:type="PropertyList">
+                <Name>Creation</Name>
+                <SubProperty xsi:type="PropertyInteger">
+                    <Name>NodeID</Name>
+                    <Value>16514832</Value>
+                </SubProperty>
+                <SubProperty xsi:type="PropertyString">
+                    <Name>NodeName</Name>
+                    <Value>PASS</Value>
+                </SubProperty>
+                <SubProperty xsi:type="PropertyString">
+                    <Name>DeviceName</Name>
+                    <Value>FileExport</Value>
+                </SubProperty>
+            </Property>
+        </File>
+      </RunList>
+   </Output>
+<__LogfileFade-in__>
+<DeviceLog xmlns="http://www.onevision.com/2013/Workspace2series/deviceLogVer2">
+      <LogVersion>2</LogVersion>
+      <DeviceName>FileExport</DeviceName>
+      <DeviceVersion>19.1 SR 1</DeviceVersion>
+      <DeviceBuildNumber>w24.047</DeviceBuildNumber>
+      <Group>
+        <RichValue localeKey="ExportRunlist" logLevel="INFO"/>
+        <RichValue localeKey="ExportPath" logLevel="INFO">
+            <Parameter name="Path">
+                <PlainValue dataType="STRING_BASIC">file:///D:/Workspace_data/Out/DisplayAds-POC/</PlainValue>
+            </Parameter>
+        </RichValue>
+        <RichValue localeKey="Statistics" logLevel="INFO">
+            <Parameter name="Size">
+                <PlainValue dataType="NUM_DATASIZE">815259</PlainValue>
+            </Parameter>
+            <Parameter name="ElapsedTime">
+                <PlainValue dataType="STRING_BASIC">5</PlainValue>
+            </Parameter>
+            <Parameter name="Source">
+                <PlainValue dataType="STRING_BASIC">\\02CPT-DIS07\Workspace Storage\jobs\j00\000\000\000\000\601\191\a005\1_Output\X1VR8QD0.pdf</PlainValue>
+            </Parameter>
+            <Parameter name="Destination">
+                <PlainValue dataType="STRING_BASIC">file:///D:/Workspace_data/Out/DisplayAds-POC/X1VR8QD0.pdf</PlainValue>
+            </Parameter>
+        </RichValue>
+        <RichValue localeKey="CopyFile" logLevel="INFO">
+            <Parameter name="Destination">
+                <PlainValue dataType="STRING_BASIC">file:///D:/Workspace_data/Out/DisplayAds-POC/X1VR8QD0.pdf</PlainValue>
+            </Parameter>
+        </RichValue>
+      </Group>
+   </DeviceLog>
+</__LogfileFade-in__>
+<LocaleFile>resources\locales\FileExport\19.1 SR 1\locale_1.xml</LocaleFile>
+   <AuditPool Starttime="2020-11-03T17:52:34.019+02:00"
+              Endtime="2020-11-03T17:52:34.037+02:00"
+              Result="OK"/>
+</Node>
+</Job>

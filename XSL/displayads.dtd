@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT doc (creation, filename, output, result)>
+<!ELEMENT output EMPTY>
+<!ELEMENT result (#PCDATA)>
+<!ELEMENT creation EMPTY>
+<!ELEMENT filename EMPTY>
