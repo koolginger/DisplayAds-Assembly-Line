@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssemblyLineDefinition MinimumWorkspaceVersion="18.2 (Build 23.028)">
+    <Description>Assembly line(s) exported by Workspace. Workspace Version: 19.1 SR 1 (24.047), Host: 02CPT-DIS07, Operating System: Windows Server 2016 Standard 64-bit Version 1607 (build 14393) (64bit mode,virtualized - VMWare), Date/Time: Fri Jan 22 10:55:28 CAT 2021. License information: License code: _9w3pOf5ifvK2c, ovld build number: 30.045
+CMSExpert 19.1 (SR 1) (x38.052.S)
+DeleteFromStorage 19.1 SR 1 (w24.047)
+DeleteInput 19.1 SR 1 (w24.047)
+FileExport 19.1 SR 1 (w24.047)
+FilenameRouter 19.1 SR 1 (w24.047)
+MoveToStorage 19.1 SR 1 (w24.047)
+PDFExport 19.1 (SR 1) (x38.052.S)
+Preflight 19.1 (SR 1) (x38.052.S)
+SendMail 19.1 SR 1 (w24.047)
+TransparencyFlattening 19.1 (SR 1) (x38.052.S)
+XImport 19.1 (SR 1) (x38.052.S)</Description>
+    <AssemblyLine Name="DisplayAds MooiVaalMedia" CreationDate="2021-01-20T08:59:19.854+02:00" ModificationDate="2021-01-22T10:51:16.268+02:00" ModificationUser="jacques.engelbrecht" UserDescription="Display advertisements for MooiVaalMedia DTP team which caters for all advertisements. This assembly line does not create invoice material and uses a different import." Version="51">
+        <Status>INACTIVE</Status>
+        <InputScanner RunListID="RL39">
+            <Path>/SAP_Display/MooiVaalMedia/</Path>
+            <netResource>
+                <path>/D:/Workspace_data/In/</path>
+                <secure>false</secure>
+                <type>FILE</type>
+                <PollingForced>false</PollingForced>
+                <PollingInterval>30000</PollingInterval>
+                <description>IN</description>
+                <PassiveModeForced>false</PassiveModeForced>
+                <SkipTemporaryRenaming>true</SkipTemporaryRenaming>
+                <UTF8EncodingForced>true</UTF8EncodingForced>
+                <UseDirectoryListingForReload>false</UseDirectoryListingForReload>
+                <UseProxy>false</UseProxy>
+                <SkipOperatingSystemDetection>false</SkipOperatingSystemDetection>
+            </netResource>
+            <UISettings>
+                <settings>{"x":168.0,"y":0.0,"originalDbId":20119504}</settings>
+            </UISettings>
+            <FilterActivated>false</FilterActivated>
+            <IgnoreHiddenFiles>true</IgnoreHiddenFiles>
+            <DefaultFilterAction>INLCUDE</DefaultFilterAction>
+            <InitialJobPriority>50</InitialJobPriority>
+            <RemoveEmptySubFolder>false</RemoveEmptySubFolder>
+            <RemoveHiddenSubFolder>true</RemoveHiddenSubFolder>
+            <JobNameSource>FILENAME</JobNameSource>
+            <RecursiveScan>false</RecursiveScan>
+            <SchedulerActivated>false</SchedulerActivated>
+            <RemoveFileExtensionFromJobName>false</RemoveFileExtensionFromJobName>
+            <ReportZeroByteFiles>false</ReportZeroByteFiles>
+        </InputScanner>
+        <Node DeviceName="XImport" Name="Prepare Print Ready Pdfs">
+            <Description></Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ImportConfig SchemaIdentifier="Lkd4ddE3slJ7NNA1dNohXA==" SchemaMinorVersion="12" SchemaMajorVersion="1" CreatorName="XImportController" CreatorDate="2020-11-19T12:39:45.542+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+    &lt;ImageImportConfig&gt;
+        &lt;RecognizeImageMask&gt;false&lt;/RecognizeImageMask&gt;
+        &lt;RecognizeSeparatedImages&gt;true&lt;/RecognizeSeparatedImages&gt;
+        &lt;ResolutionOfImageFiles&gt;0.0&lt;/ResolutionOfImageFiles&gt;
+    &lt;/ImageImportConfig&gt;
+    &lt;PDFImportConfig&gt;
+        &lt;EmbedReferencedOutputIntent&gt;false&lt;/EmbedReferencedOutputIntent&gt;
+        &lt;RejectAIPseudoPDF&gt;false&lt;/RejectAIPseudoPDF&gt;
+        &lt;KeepReusedFormXObject&gt;true&lt;/KeepReusedFormXObject&gt;
+        &lt;CreatePlaceholderFonts&gt;false&lt;/CreatePlaceholderFonts&gt;
+        &lt;UsePDFXOutputIntent&gt;true&lt;/UsePDFXOutputIntent&gt;
+        &lt;FlattenPDFLayers&gt;true&lt;/FlattenPDFLayers&gt;
+        &lt;PDFDefaultNonZeroOverprintingMode&gt;false&lt;/PDFDefaultNonZeroOverprintingMode&gt;
+    &lt;/PDFImportConfig&gt;
+    &lt;PSImportConfig&gt;
+        &lt;RecognizePhotoshopDuotones&gt;false&lt;/RecognizePhotoshopDuotones&gt;
+        &lt;PreserveEPSOPIComments&gt;false&lt;/PreserveEPSOPIComments&gt;
+        &lt;UsePrologue&gt;false&lt;/UsePrologue&gt;
+        &lt;ImportDCSPlates&gt;false&lt;/ImportDCSPlates&gt;
+        &lt;PSDefaultNonZeroOverprintingMode&gt;false&lt;/PSDefaultNonZeroOverprintingMode&gt;
+        &lt;DefaultPageSize&gt;
+            &lt;ns2:Width&gt;595.0&lt;/ns2:Width&gt;
+            &lt;ns2:Height&gt;842.0&lt;/ns2:Height&gt;
+        &lt;/DefaultPageSize&gt;
+        &lt;DeviceScale&gt;32&lt;/DeviceScale&gt;
+    &lt;/PSImportConfig&gt;
+    &lt;PassThroughPSError&gt;true&lt;/PassThroughPSError&gt;
+    &lt;InteractiveElementMode&gt;RemoveAll&lt;/InteractiveElementMode&gt;
+    &lt;UseFontLibrary&gt;true&lt;/UseFontLibrary&gt;
+    &lt;OtherColorSpacesWithOverprintGoeDeviceN&gt;false&lt;/OtherColorSpacesWithOverprintGoeDeviceN&gt;
+    &lt;ValidateCompressedImages&gt;true&lt;/ValidateCompressedImages&gt;
+    &lt;RecognizeTintedGrayscaleImages&gt;false&lt;/RecognizeTintedGrayscaleImages&gt;
+    &lt;PreserveTIFFOPIComments&gt;false&lt;/PreserveTIFFOPIComments&gt;
+    &lt;IgnoreSeparationForSingleBlackPage&gt;true&lt;/IgnoreSeparationForSingleBlackPage&gt;
+    &lt;RemovedClippedOffElements&gt;true&lt;/RemovedClippedOffElements&gt;
+    &lt;RecomposeOverprintingMultitones&gt;true&lt;/RecomposeOverprintingMultitones&gt;
+    &lt;JoinFillToBlocks&gt;true&lt;/JoinFillToBlocks&gt;
+    &lt;JoinStrokes&gt;false&lt;/JoinStrokes&gt;
+    &lt;JoinTextToBlocks&gt;true&lt;/JoinTextToBlocks&gt;
+    &lt;FontSubstitutionTable/&gt;
+    &lt;Fallbackfontname&gt;OVDefault&lt;/Fallbackfontname&gt;
+    &lt;RejectMissingFonts&gt;true&lt;/RejectMissingFonts&gt;
+    &lt;ResolvePDFRotation&gt;false&lt;/ResolvePDFRotation&gt;
+    &lt;MergeFonts&gt;true&lt;/MergeFonts&gt;
+    &lt;WSPDFSaveConfig&gt;
+        &lt;ns2:JPEGForColorImages&gt;false&lt;/ns2:JPEGForColorImages&gt;
+        &lt;ns2:FasterLosslessCompression&gt;true&lt;/ns2:FasterLosslessCompression&gt;
+    &lt;/WSPDFSaveConfig&gt;
+&lt;/ImportConfig&gt;
+</Settings>
+            <SettingsVersion>12</SettingsVersion>
+            <Input RunListID="RL23">
+                <UISettings>
+                    <settings>{"20126105_Material":{}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL28"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1175"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1176"/>
+            <UISettings>
+                <settings>{"x":186.625,"y":375.4375,"originalDbId":20125794}</settings>
+            </UISettings>
+            <PropertyUsageGroup>
+                <Name>PwdProperty</Name>
+                <EditorName>String</EditorName>
+                <PropertyUsage>
+                    <PropertyPath>JobInstruction/pwds</PropertyPath>
+                    <DefaultValue></DefaultValue>
+                    <JobInstructionQuestion>Enter the password for opening protected job files:</JobInstructionQuestion>
+                    <ErrorHandling>USE_DEFAULT</ErrorHandling>
+                    <PropertyKind>JOB_PROPERTY</PropertyKind>
+                </PropertyUsage>
+            </PropertyUsageGroup>
+        </Node>
+        <Node DeviceName="DeleteFromStorage" Name="Clean Up Material Processing">
+            <Description></Description>
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL25">
+                <UISettings>
+                    <settings>{"20126102_log":{"measure_y":"relative","x":0.43559120543197605,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <UISettings>
+                <settings>{"x":19.0,"y":1334.9375,"originalDbId":20125795}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="Preflight" Name="Preflight Material">
+            <Description></Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;PreflightConfig SchemaIdentifier="oejbcQ5BVUMAfw/XIifdgA==" SchemaMinorVersion="42" SchemaMajorVersion="1" CreatorName="PreflightController" CreatorDate="2020-11-19T12:39:45.544+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+    &lt;CMYKICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/CMYKICCProfiles&gt;
+    &lt;RGBICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/RGBICCProfiles&gt;
+    &lt;GrayICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;OV-White&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovg.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/GrayICCProfiles&gt;
+    &lt;PreserveBlack&gt;false&lt;/PreserveBlack&gt;
+    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+    &lt;UseOutputIntent&gt;true&lt;/UseOutputIntent&gt;
+    &lt;CMYKProfileName&gt;ISOnewspaper26v4&lt;/CMYKProfileName&gt;
+    &lt;RGBProfileName&gt;sRGB IEC61966-2.1&lt;/RGBProfileName&gt;
+    &lt;GrayProfileName&gt;OV-White&lt;/GrayProfileName&gt;
+    &lt;BlackPointCompensation&gt;false&lt;/BlackPointCompensation&gt;
+    &lt;WarningOutlet&gt;false&lt;/WarningOutlet&gt;
+    &lt;CreateElementIndex&gt;false&lt;/CreateElementIndex&gt;
+    &lt;AllowCompositeElements&gt;false&lt;/AllowCompositeElements&gt;
+    &lt;RejectMissingFonts&gt;true&lt;/RejectMissingFonts&gt;
+    &lt;InkCoverageCalculation&gt;false&lt;/InkCoverageCalculation&gt;
+    &lt;PreflightRunConfig&gt;
+        &lt;FontEmbeddingNotAllowedPreflightAction&gt;Ignore&lt;/FontEmbeddingNotAllowedPreflightAction&gt;
+        &lt;PreflightFontNameConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;ShadingType7PreflightAction&gt;Ignore&lt;/ShadingType7PreflightAction&gt;
+        &lt;FontSubsetPreflightAction&gt;Ignore&lt;/FontSubsetPreflightAction&gt;
+        &lt;PreflightOptionalContentConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightWhiteOverprintConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;OverprintAllOnly&gt;true&lt;/OverprintAllOnly&gt;
+        &lt;/PreflightWhiteOverprintConfig&gt;
+        &lt;PreflightTextTACConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;CompressedObjectsPreflightAction&gt;Ignore&lt;/CompressedObjectsPreflightAction&gt;
+        &lt;InsideTrimBox&gt;false&lt;/InsideTrimBox&gt;
+        &lt;IgnoreZeroColorants&gt;true&lt;/IgnoreZeroColorants&gt;
+        &lt;PreflightResolutionDeviationConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;Value&gt;0.2&lt;/Value&gt;
+        &lt;/PreflightResolutionDeviationConfig&gt;
+        &lt;PreflightGraphicPointsCountConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightCoordsCountConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;CompareMode&gt;Larger&lt;/CompareMode&gt;
+            &lt;Count&gt;2500&lt;/Count&gt;
+        &lt;/PreflightCoordsCountConfig&gt;
+        &lt;PreflightSingleImageResConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightSeparatedConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;Separated&gt;true&lt;/Separated&gt;
+        &lt;/PreflightSeparatedConfig&gt;
+        &lt;PreflightRichBlackConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightBlackPlateConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightYellowPlateConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightMagentaPlateConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightCyanPlateConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightOutputIntentConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightPDFX3Config xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightPDFVersionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PatternColorPreflightConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;PreflightElementMask&gt;
+                &lt;ns2:Graphic&gt;true&lt;/ns2:Graphic&gt;
+                &lt;ns2:Image&gt;true&lt;/ns2:Image&gt;
+                &lt;ns2:Text&gt;true&lt;/ns2:Text&gt;
+            &lt;/PreflightElementMask&gt;
+        &lt;/PatternColorPreflightConfig&gt;
+        &lt;PreflightTrimSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightPageSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightPageCountConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;CompareMode&gt;Larger&lt;/CompareMode&gt;
+            &lt;Count&gt;50&lt;/Count&gt;
+            &lt;IgnoreEmptyPages&gt;false&lt;/IgnoreEmptyPages&gt;
+        &lt;/PreflightPageCountConfig&gt;
+        &lt;PreflightOverprintConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;BlackConfig&gt;
+                &lt;ns2:FillSize&gt;
+                    &lt;ns2:Width&gt;-1.0&lt;/ns2:Width&gt;
+                    &lt;ns2:Height&gt;-1.0&lt;/ns2:Height&gt;
+                &lt;/ns2:FillSize&gt;
+                &lt;ns2:StrokeSize&gt;-1.0&lt;/ns2:StrokeSize&gt;
+                &lt;ns2:TextSize&gt;-1.0&lt;/ns2:TextSize&gt;
+                &lt;ns2:BlackValue&gt;0.95&lt;/ns2:BlackValue&gt;
+            &lt;/BlackConfig&gt;
+        &lt;/PreflightOverprintConfig&gt;
+        &lt;PreflightColorImageMaxResConfig&gt;
+            &lt;InnerImageResolution&gt;300.0&lt;/InnerImageResolution&gt;
+            &lt;InnerPreflightAction&gt;Ignore&lt;/InnerPreflightAction&gt;
+            &lt;OuterImageResolution&gt;304.0&lt;/OuterImageResolution&gt;
+            &lt;OuterPreflightAction&gt;Warn&lt;/OuterPreflightAction&gt;
+        &lt;/PreflightColorImageMaxResConfig&gt;
+        &lt;PreflightColorImageMinResConfig&gt;
+            &lt;InnerImageResolution&gt;160.0&lt;/InnerImageResolution&gt;
+            &lt;InnerPreflightAction&gt;Ignore&lt;/InnerPreflightAction&gt;
+            &lt;OuterImageResolution&gt;144.0&lt;/OuterImageResolution&gt;
+            &lt;OuterPreflightAction&gt;Warn&lt;/OuterPreflightAction&gt;
+        &lt;/PreflightColorImageMinResConfig&gt;
+        &lt;ColorImageSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightGrayImageMaxResConfig&gt;
+            &lt;InnerImageResolution&gt;300.0&lt;/InnerImageResolution&gt;
+            &lt;InnerPreflightAction&gt;Ignore&lt;/InnerPreflightAction&gt;
+            &lt;OuterImageResolution&gt;304.0&lt;/OuterImageResolution&gt;
+            &lt;OuterPreflightAction&gt;Warn&lt;/OuterPreflightAction&gt;
+        &lt;/PreflightGrayImageMaxResConfig&gt;
+        &lt;PreflightGrayImageMinResConfig&gt;
+            &lt;InnerImageResolution&gt;160.0&lt;/InnerImageResolution&gt;
+            &lt;InnerPreflightAction&gt;Ignore&lt;/InnerPreflightAction&gt;
+            &lt;OuterImageResolution&gt;144.0&lt;/OuterImageResolution&gt;
+            &lt;OuterPreflightAction&gt;Warn&lt;/OuterPreflightAction&gt;
+        &lt;/PreflightGrayImageMinResConfig&gt;
+        &lt;GrayImageSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightBitmapImageMaxResConfig&gt;
+            &lt;InnerImageResolution&gt;800.0&lt;/InnerImageResolution&gt;
+            &lt;InnerPreflightAction&gt;Ignore&lt;/InnerPreflightAction&gt;
+            &lt;OuterImageResolution&gt;800.0&lt;/OuterImageResolution&gt;
+            &lt;OuterPreflightAction&gt;Warn&lt;/OuterPreflightAction&gt;
+        &lt;/PreflightBitmapImageMaxResConfig&gt;
+        &lt;PreflightBitmapImageMinResConfig&gt;
+            &lt;InnerImageResolution&gt;800.0&lt;/InnerImageResolution&gt;
+            &lt;InnerPreflightAction&gt;Ignore&lt;/InnerPreflightAction&gt;
+            &lt;OuterImageResolution&gt;600.0&lt;/OuterImageResolution&gt;
+            &lt;OuterPreflightAction&gt;Warn&lt;/OuterPreflightAction&gt;
+        &lt;/PreflightBitmapImageMinResConfig&gt;
+        &lt;BitmapImageSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightGraphicStrokeSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightImageCountConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightFontStrokeSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightColorFontSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightBlackKnockoutFontSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightWhiteFontSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightEqualPageSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightFontSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightTrimBoxConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightPageOrientationConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightPlateCountConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightSpotCountConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;CompareMode&gt;Larger&lt;/CompareMode&gt;
+            &lt;Count&gt;0&lt;/Count&gt;
+        &lt;/PreflightSpotCountConfig&gt;
+        &lt;PreflightColorConflictConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;IgnoreSeparationAll&gt;false&lt;/IgnoreSeparationAll&gt;
+        &lt;/PreflightColorConflictConfig&gt;
+        &lt;PreflightColorantNameConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;CalCMYKImagePreflightConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;NameListConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;AllowedDeviation&gt;-1.0&lt;/AllowedDeviation&gt;
+        &lt;/CalCMYKImagePreflightConfig&gt;
+        &lt;CalRGBImagePreflightConfig&gt;
+            &lt;PreflightAction&gt;Error&lt;/PreflightAction&gt;
+            &lt;NameListConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;AllowedDeviation&gt;-1.0&lt;/AllowedDeviation&gt;
+        &lt;/CalRGBImagePreflightConfig&gt;
+        &lt;CalWhiteImagePreflightConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;CalCMYKColorPreflightConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;PreflightElementMask&gt;
+                &lt;ns2:Graphic&gt;true&lt;/ns2:Graphic&gt;
+                &lt;ns2:Image&gt;true&lt;/ns2:Image&gt;
+                &lt;ns2:Text&gt;true&lt;/ns2:Text&gt;
+            &lt;/PreflightElementMask&gt;
+            &lt;AllowedDeviation&gt;-1.0&lt;/AllowedDeviation&gt;
+            &lt;NameListConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;/CalCMYKColorPreflightConfig&gt;
+        &lt;CalRGBColorPreflightConfig&gt;
+            &lt;PreflightAction&gt;Error&lt;/PreflightAction&gt;
+            &lt;PreflightElementMask&gt;
+                &lt;ns2:Graphic&gt;true&lt;/ns2:Graphic&gt;
+                &lt;ns2:Image&gt;true&lt;/ns2:Image&gt;
+                &lt;ns2:Text&gt;true&lt;/ns2:Text&gt;
+            &lt;/PreflightElementMask&gt;
+            &lt;AllowedDeviation&gt;-1.0&lt;/AllowedDeviation&gt;
+            &lt;NameListConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;/CalRGBColorPreflightConfig&gt;
+        &lt;CalWhiteColorPreflightConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;PreflightElementMask&gt;
+                &lt;ns2:Graphic&gt;true&lt;/ns2:Graphic&gt;
+                &lt;ns2:Image&gt;true&lt;/ns2:Image&gt;
+                &lt;ns2:Text&gt;true&lt;/ns2:Text&gt;
+            &lt;/PreflightElementMask&gt;
+            &lt;AllowedDeviation&gt;-1.0&lt;/AllowedDeviation&gt;
+            &lt;NameListConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;/CalWhiteColorPreflightConfig&gt;
+        &lt;LabColorPreflightConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;PreflightElementMask&gt;
+                &lt;ns2:Graphic&gt;true&lt;/ns2:Graphic&gt;
+                &lt;ns2:Image&gt;true&lt;/ns2:Image&gt;
+                &lt;ns2:Text&gt;true&lt;/ns2:Text&gt;
+            &lt;/PreflightElementMask&gt;
+        &lt;/LabColorPreflightConfig&gt;
+        &lt;DeviceCMYKColorPreflightConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;DeviceRGBColorPreflightConfig&gt;
+            &lt;PreflightAction&gt;Error&lt;/PreflightAction&gt;
+            &lt;PreflightElementMask&gt;
+                &lt;ns2:Graphic&gt;true&lt;/ns2:Graphic&gt;
+                &lt;ns2:Image&gt;true&lt;/ns2:Image&gt;
+                &lt;ns2:Text&gt;true&lt;/ns2:Text&gt;
+            &lt;/PreflightElementMask&gt;
+        &lt;/DeviceRGBColorPreflightConfig&gt;
+        &lt;DeviceWhiteColorPreflightConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;PreflightElementMask&gt;
+                &lt;ns2:Graphic&gt;true&lt;/ns2:Graphic&gt;
+                &lt;ns2:Image&gt;true&lt;/ns2:Image&gt;
+                &lt;ns2:Text&gt;true&lt;/ns2:Text&gt;
+            &lt;/PreflightElementMask&gt;
+        &lt;/DeviceWhiteColorPreflightConfig&gt;
+        &lt;LabImagePreflightAction&gt;Ignore&lt;/LabImagePreflightAction&gt;
+        &lt;DeviceCMYKImagePreflightAction&gt;Ignore&lt;/DeviceCMYKImagePreflightAction&gt;
+        &lt;DeviceRGBImagePreflightAction&gt;Error&lt;/DeviceRGBImagePreflightAction&gt;
+        &lt;DeviceWhiteImagePreflightAction&gt;Ignore&lt;/DeviceWhiteImagePreflightAction&gt;
+        &lt;PreflightPageTACConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;MaxTACValue&gt;2.6&lt;/MaxTACValue&gt;
+            &lt;PixelSize&gt;4.26&lt;/PixelSize&gt;
+            &lt;ConsiderTrimBox&gt;false&lt;/ConsiderTrimBox&gt;
+        &lt;/PreflightPageTACConfig&gt;
+        &lt;PreflightObjectTACConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightElementsNeedBleedConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightBleedBoxSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightImageMaskConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightBitDepthConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;ReferenceXObjectPreflightAction&gt;Ignore&lt;/ReferenceXObjectPreflightAction&gt;
+        &lt;BlackPointCompensationPreflightAction&gt;Warn&lt;/BlackPointCompensationPreflightAction&gt;
+        &lt;TrimBoxExceedsBleedBoxPreflightAction&gt;Ignore&lt;/TrimBoxExceedsBleedBoxPreflightAction&gt;
+        &lt;EqualCMYKEquivalentsPreflightAction&gt;Ignore&lt;/EqualCMYKEquivalentsPreflightAction&gt;
+        &lt;GrayOverprintElementPreflightAction&gt;Ignore&lt;/GrayOverprintElementPreflightAction&gt;
+        &lt;TruncatedImagePreflightAction&gt;Ignore&lt;/TruncatedImagePreflightAction&gt;
+        &lt;UncompressedImagePreflightAction&gt;Ignore&lt;/UncompressedImagePreflightAction&gt;
+        &lt;NotdefGlyphPreflightAction&gt;Ignore&lt;/NotdefGlyphPreflightAction&gt;
+        &lt;OutsideMediaBoxElementsPreflightAction&gt;Ignore&lt;/OutsideMediaBoxElementsPreflightAction&gt;
+        &lt;InconsistentGlyphWidthsPreflightAction&gt;Ignore&lt;/InconsistentGlyphWidthsPreflightAction&gt;
+        &lt;NonDefaultCropBoxPreflightAction&gt;Ignore&lt;/NonDefaultCropBoxPreflightAction&gt;
+        &lt;NoneColorantPreflightAction&gt;Ignore&lt;/NoneColorantPreflightAction&gt;
+        &lt;OverprintCMYPreflightAction&gt;Warn&lt;/OverprintCMYPreflightAction&gt;
+        &lt;FileCreatorPreflightAction&gt;Ignore&lt;/FileCreatorPreflightAction&gt;
+        &lt;HalftonesPreflightAction&gt;Ignore&lt;/HalftonesPreflightAction&gt;
+        &lt;MissingTrimboxPreflightAction&gt;Ignore&lt;/MissingTrimboxPreflightAction&gt;
+        &lt;PseudoFontPreflightAction&gt;Ignore&lt;/PseudoFontPreflightAction&gt;
+        &lt;UndefinedTrappedKeyPreflightAction&gt;Ignore&lt;/UndefinedTrappedKeyPreflightAction&gt;
+        &lt;CompletelyEmbeddedCIDFontPreflightAction&gt;Ignore&lt;/CompletelyEmbeddedCIDFontPreflightAction&gt;
+        &lt;IndexedImagePreflightAction&gt;Ignore&lt;/IndexedImagePreflightAction&gt;
+        &lt;DeviceNPreflightAction&gt;Ignore&lt;/DeviceNPreflightAction&gt;
+        &lt;NotPrepressDeviceNAltPreflightAction&gt;Ignore&lt;/NotPrepressDeviceNAltPreflightAction&gt;
+        &lt;MissingPageFormatPreflightAction&gt;Ignore&lt;/MissingPageFormatPreflightAction&gt;
+        &lt;LZWPreflightAction&gt;Ignore&lt;/LZWPreflightAction&gt;
+        &lt;JPEGPreflightAction&gt;Ignore&lt;/JPEGPreflightAction&gt;
+        &lt;JBIG2PreflightAction&gt;Ignore&lt;/JBIG2PreflightAction&gt;
+        &lt;JPEG2000PreflightAction&gt;Error&lt;/JPEG2000PreflightAction&gt;
+        &lt;NChannelPreflightAction&gt;Ignore&lt;/NChannelPreflightAction&gt;
+        &lt;UserUnitPreflightAction&gt;Ignore&lt;/UserUnitPreflightAction&gt;
+        &lt;OpenTypeFontPreflightAction&gt;Ignore&lt;/OpenTypeFontPreflightAction&gt;
+        &lt;SeparationWithNonGrayImagePreflightAction&gt;Ignore&lt;/SeparationWithNonGrayImagePreflightAction&gt;
+        &lt;PrintableAnnotationsWithoutXFAContextPreflightAction&gt;Warn&lt;/PrintableAnnotationsWithoutXFAContextPreflightAction&gt;
+        &lt;XFAFormDataPreflightAction&gt;Error&lt;/XFAFormDataPreflightAction&gt;
+        &lt;ActionPreflightAction&gt;Warn&lt;/ActionPreflightAction&gt;
+        &lt;AnnotationsPreflightAction&gt;Warn&lt;/AnnotationsPreflightAction&gt;
+        &lt;PrintableAnnotationsPreflightAction&gt;Error&lt;/PrintableAnnotationsPreflightAction&gt;
+        &lt;TransparencyPreflightAction&gt;Ignore&lt;/TransparencyPreflightAction&gt;
+        &lt;RotatedImagePreflightAction&gt;Warn&lt;/RotatedImagePreflightAction&gt;
+        &lt;PDFX3Or4PreflightAction&gt;Ignore&lt;/PDFX3Or4PreflightAction&gt;
+        &lt;NotPDFX1aPreflightAction&gt;Ignore&lt;/NotPDFX1aPreflightAction&gt;
+        &lt;EmptyPagesPreflightAction&gt;Warn&lt;/EmptyPagesPreflightAction&gt;
+        &lt;DCSPreviewPreflightAction&gt;Ignore&lt;/DCSPreviewPreflightAction&gt;
+        &lt;TransferCurvePreflightAction&gt;Warn&lt;/TransferCurvePreflightAction&gt;
+        &lt;MultiToneImagePreflightAction&gt;Warn&lt;/MultiToneImagePreflightAction&gt;
+        &lt;TrueTypeFontPreflightAction&gt;Ignore&lt;/TrueTypeFontPreflightAction&gt;
+        &lt;Type3FontPreflightAction&gt;Ignore&lt;/Type3FontPreflightAction&gt;
+        &lt;Type1FontPreflightAction&gt;Ignore&lt;/Type1FontPreflightAction&gt;
+        &lt;MMFontPreflightAction&gt;Ignore&lt;/MMFontPreflightAction&gt;
+        &lt;CIDFontPreflightAction&gt;Warn&lt;/CIDFontPreflightAction&gt;
+        &lt;CourierFontPreflightAction&gt;Warn&lt;/CourierFontPreflightAction&gt;
+        &lt;BitmapFontPreflightAction&gt;Warn&lt;/BitmapFontPreflightAction&gt;
+        &lt;AdobeSerifMMFontPreflightAction&gt;Warn&lt;/AdobeSerifMMFontPreflightAction&gt;
+        &lt;AdobeSansMMFontPreflightAction&gt;Warn&lt;/AdobeSansMMFontPreflightAction&gt;
+        &lt;SystemFontPreflightAction&gt;Ignore&lt;/SystemFontPreflightAction&gt;
+        &lt;SeparationAllPreflightAction&gt;Ignore&lt;/SeparationAllPreflightAction&gt;
+        &lt;RGBBlendColorSpacePreflightAction&gt;Warn&lt;/RGBBlendColorSpacePreflightAction&gt;
+        &lt;OPIPreflightAction&gt;Ignore&lt;/OPIPreflightAction&gt;
+        &lt;OutputIntentICCProfilePreflightAction&gt;Ignore&lt;/OutputIntentICCProfilePreflightAction&gt;
+        &lt;PageOutputIntentPreflightAction&gt;Warn&lt;/PageOutputIntentPreflightAction&gt;
+        &lt;OutputIntentPreflightAction&gt;Ignore&lt;/OutputIntentPreflightAction&gt;
+        &lt;WhiteOverprintGraphicPreflightAction&gt;Ignore&lt;/WhiteOverprintGraphicPreflightAction&gt;
+        &lt;WhiteOverprintTextPreflightAction&gt;Ignore&lt;/WhiteOverprintTextPreflightAction&gt;
+        &lt;MarkContentPreflightAction&gt;Ignore&lt;/MarkContentPreflightAction&gt;
+        &lt;RGBOverprintPreflightAction&gt;Ignore&lt;/RGBOverprintPreflightAction&gt;
+    &lt;/PreflightRunConfig&gt;
+    &lt;WarningPDFConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+    &lt;ErrorPDFConfig&gt;
+        &lt;ns2:CurrentDistanceUnitName&gt;pt&lt;/ns2:CurrentDistanceUnitName&gt;
+        &lt;ns2:Language&gt;en&lt;/ns2:Language&gt;
+        &lt;ns2:OptimizeSize&gt;false&lt;/ns2:OptimizeSize&gt;
+        &lt;ns2:LayerConfig&gt;
+            &lt;ns2:AddPlates&gt;false&lt;/ns2:AddPlates&gt;
+            &lt;ns2:AddWarnings&gt;false&lt;/ns2:AddWarnings&gt;
+        &lt;/ns2:LayerConfig&gt;
+    &lt;/ErrorPDFConfig&gt;
+    &lt;LogCountMaximum&gt;20&lt;/LogCountMaximum&gt;
+&lt;/PreflightConfig&gt;
+</Settings>
+            <SettingsVersion>42</SettingsVersion>
+            <Input RunListID="RL28">
+                <UISettings>
+                    <settings>{"20125794_Output":{"measure_y":"relative","x":0.4601524376798134,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="Ok" Type="PRODUCTIVE" RunListID="RL35"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1179"/>
+            <Output Name="Error-PDF" Type="PRODUCTIVE_ERROR" RunListID="RL32"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1180"/>
+            <UISettings>
+                <settings>{"x":222.625,"y":503.5987903225807,"originalDbId":20125796}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="PDFExport" Name="Normalize">
+            <Description></Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;PDFExportConfig SchemaIdentifier="TvMosq+bZH14rz8Gd9Z3mw==" SchemaMinorVersion="47" SchemaMajorVersion="1" CreatorName="PDFExportController" CreatorDate="2020-11-19T12:39:45.546+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+    &lt;DeviceLinkICCProfiles/&gt;
+    &lt;CMYKICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/CMYKICCProfiles&gt;
+    &lt;RGBICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/RGBICCProfiles&gt;
+    &lt;GrayICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4_gr&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4_gr.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4_gr&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4_gr.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/GrayICCProfiles&gt;
+    &lt;PreserveBlack&gt;false&lt;/PreserveBlack&gt;
+    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+    &lt;UseOutputIntent&gt;true&lt;/UseOutputIntent&gt;
+    &lt;CMYKProfileName&gt;ISOnewspaper26v4&lt;/CMYKProfileName&gt;
+    &lt;RGBProfileName&gt;sRGB IEC61966-2.1&lt;/RGBProfileName&gt;
+    &lt;GrayProfileName&gt;ISOnewspaper26v4_gr&lt;/GrayProfileName&gt;
+    &lt;BlackPointCompensation&gt;false&lt;/BlackPointCompensation&gt;
+    &lt;CurrentDistanceUnitName&gt;pt&lt;/CurrentDistanceUnitName&gt;
+    &lt;PageExportConfig&gt;
+        &lt;KeepOrigFilenameForSingelPageDocs&gt;true&lt;/KeepOrigFilenameForSingelPageDocs&gt;
+        &lt;RotateToFit&gt;true&lt;/RotateToFit&gt;
+        &lt;KeepAspectRation&gt;true&lt;/KeepAspectRation&gt;
+        &lt;OnlyScaleDown&gt;true&lt;/OnlyScaleDown&gt;
+        &lt;PaperScaleFactorHeight&gt;1.0&lt;/PaperScaleFactorHeight&gt;
+        &lt;PaperScaleFactorWidth&gt;1.0&lt;/PaperScaleFactorWidth&gt;
+        &lt;ReversePageOrdering&gt;false&lt;/ReversePageOrdering&gt;
+        &lt;PageSelection&gt;All&lt;/PageSelection&gt;
+        &lt;PageRange xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;NumCopies&gt;0&lt;/NumCopies&gt;
+        &lt;ForcedPaperSize&gt;
+            &lt;ns2:Width&gt;0.0&lt;/ns2:Width&gt;
+            &lt;ns2:Height&gt;0.0&lt;/ns2:Height&gt;
+        &lt;/ForcedPaperSize&gt;
+        &lt;PageChunkNamingStyle&gt;AppendPageEnumeration&lt;/PageChunkNamingStyle&gt;
+        &lt;PagesPerStream&gt;0&lt;/PagesPerStream&gt;
+    &lt;/PageExportConfig&gt;
+    &lt;PDFExportConfig&gt;
+        &lt;ResolveType3Fonts&gt;false&lt;/ResolveType3Fonts&gt;
+        &lt;FontEmbeddingMode&gt;All&lt;/FontEmbeddingMode&gt;
+        &lt;ExportConfig&gt;
+            &lt;DiscardPageOutputIntent&gt;true&lt;/DiscardPageOutputIntent&gt;
+            &lt;DiscardOutputIntent&gt;false&lt;/DiscardOutputIntent&gt;
+            &lt;DiscardPageBlendColorSpaceRGB&gt;false&lt;/DiscardPageBlendColorSpaceRGB&gt;
+            &lt;DiscardPageBlendColorSpaceGray&gt;true&lt;/DiscardPageBlendColorSpaceGray&gt;
+            &lt;DiscardPageKnockout&gt;true&lt;/DiscardPageKnockout&gt;
+            &lt;ResolveOverprintAll&gt;true&lt;/ResolveOverprintAll&gt;
+            &lt;RemoveOverprintMode&gt;Off&lt;/RemoveOverprintMode&gt;
+            &lt;KeepPDX3AndPDFX4ICCProfiles&gt;false&lt;/KeepPDX3AndPDFX4ICCProfiles&gt;
+            &lt;PrintMarksConfig&gt;
+                &lt;ns2:PrintSignsAffectPaperFormat&gt;true&lt;/ns2:PrintSignsAffectPaperFormat&gt;
+                &lt;ns2:EndlessPaperWidth&gt;1.0&lt;/ns2:EndlessPaperWidth&gt;
+                &lt;ns2:OutputRotation&gt;None&lt;/ns2:OutputRotation&gt;
+                &lt;ns2:MirroredOutput&gt;false&lt;/ns2:MirroredOutput&gt;
+                &lt;ns2:BleedRight&gt;0.0&lt;/ns2:BleedRight&gt;
+                &lt;ns2:BleedLeft&gt;0.0&lt;/ns2:BleedLeft&gt;
+                &lt;ns2:BleedBottom&gt;0.0&lt;/ns2:BleedBottom&gt;
+                &lt;ns2:BleedTop&gt;0.0&lt;/ns2:BleedTop&gt;
+                &lt;ns2:WhiteBorder&gt;0.0&lt;/ns2:WhiteBorder&gt;
+                &lt;ns2:SheetInfoConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                &lt;ns2:RegistrationMarksConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                &lt;ns2:CutMarksConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;/PrintMarksConfig&gt;
+            &lt;MetadataConfig&gt;
+                &lt;AdditionalKeywords/&gt;
+                &lt;RemoveOtherMetadata&gt;KeepOther&lt;/RemoveOtherMetadata&gt;
+                &lt;DefaultCreationDate&gt;false&lt;/DefaultCreationDate&gt;
+                &lt;RemoveCreationDate&gt;false&lt;/RemoveCreationDate&gt;
+                &lt;DefaultProducer&gt;true&lt;/DefaultProducer&gt;
+                &lt;RemoveProducer&gt;true&lt;/RemoveProducer&gt;
+                &lt;DefaultCreator&gt;false&lt;/DefaultCreator&gt;
+                &lt;RemoveCreator&gt;false&lt;/RemoveCreator&gt;
+                &lt;RemoveKeywords&gt;false&lt;/RemoveKeywords&gt;
+                &lt;RemoveSubject&gt;false&lt;/RemoveSubject&gt;
+                &lt;DefaultAuthor&gt;false&lt;/DefaultAuthor&gt;
+                &lt;RemoveAuthor&gt;false&lt;/RemoveAuthor&gt;
+                &lt;DefaultTitle&gt;false&lt;/DefaultTitle&gt;
+                &lt;RemoveTitle&gt;false&lt;/RemoveTitle&gt;
+            &lt;/MetadataConfig&gt;
+            &lt;ImageElementColorSpaceReplaceConfig&gt;
+                &lt;CmykColorSpaceReplaceConfig&gt;
+                    &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+                    &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
+                    &lt;DefaultRenderIntent&gt;Perceptual&lt;/DefaultRenderIntent&gt;
+                    &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;true&lt;/RemoveICCProfile&gt;
+                &lt;/CmykColorSpaceReplaceConfig&gt;
+                &lt;RgbColorSpaceReplaceConfig&gt;
+                    &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+                    &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
+                    &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+                    &lt;DefaultColorSpaceName&gt;sRGB IEC61966-2.1&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
+                &lt;/RgbColorSpaceReplaceConfig&gt;
+                &lt;GrayColorSpaceReplaceConfig&gt;
+                    &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+                    &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
+                    &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4_gr&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
+                &lt;/GrayColorSpaceReplaceConfig&gt;
+            &lt;/ImageElementColorSpaceReplaceConfig&gt;
+            &lt;GraphicElementColorSpaceReplaceConfig&gt;
+                &lt;CmykColorSpaceReplaceConfig&gt;
+                    &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+                    &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
+                    &lt;DefaultRenderIntent&gt;Perceptual&lt;/DefaultRenderIntent&gt;
+                    &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;true&lt;/RemoveICCProfile&gt;
+                &lt;/CmykColorSpaceReplaceConfig&gt;
+                &lt;RgbColorSpaceReplaceConfig&gt;
+                    &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+                    &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
+                    &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+                    &lt;DefaultColorSpaceName&gt;sRGB IEC61966-2.1&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
+                &lt;/RgbColorSpaceReplaceConfig&gt;
+                &lt;GrayColorSpaceReplaceConfig&gt;
+                    &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+                    &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
+                    &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4_gr&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
+                &lt;/GrayColorSpaceReplaceConfig&gt;
+            &lt;/GraphicElementColorSpaceReplaceConfig&gt;
+            &lt;TextElementColorSpaceReplaceConfig&gt;
+                &lt;CmykColorSpaceReplaceConfig&gt;
+                    &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+                    &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
+                    &lt;DefaultRenderIntent&gt;Perceptual&lt;/DefaultRenderIntent&gt;
+                    &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;true&lt;/RemoveICCProfile&gt;
+                &lt;/CmykColorSpaceReplaceConfig&gt;
+                &lt;RgbColorSpaceReplaceConfig&gt;
+                    &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+                    &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
+                    &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+                    &lt;DefaultColorSpaceName&gt;sRGB IEC61966-2.1&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
+                &lt;/RgbColorSpaceReplaceConfig&gt;
+                &lt;GrayColorSpaceReplaceConfig&gt;
+                    &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+                    &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
+                    &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4_gr&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
+                &lt;/GrayColorSpaceReplaceConfig&gt;
+            &lt;/TextElementColorSpaceReplaceConfig&gt;
+            &lt;TileLargeImages&gt;false&lt;/TileLargeImages&gt;
+            &lt;SplitPathToObjects&gt;false&lt;/SplitPathToObjects&gt;
+            &lt;ColorantHalftoneConfigs xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;DotGainValueConfigs xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;ColorConversionConfig&gt;
+                &lt;CMYKColorConversion&gt;
+                    &lt;PlateToProcessMode&gt;PlateToProcess&lt;/PlateToProcessMode&gt;
+                    &lt;ICCProfileName&gt;ISOnewspaper26v4&lt;/ICCProfileName&gt;
+                    &lt;DeviceLinkProfileConfig/&gt;
+                    &lt;KeepBlack&gt;false&lt;/KeepBlack&gt;
+                &lt;/CMYKColorConversion&gt;
+            &lt;/ColorConversionConfig&gt;
+            &lt;InkReductionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;RemoveElementHalftones&gt;true&lt;/RemoveElementHalftones&gt;
+            &lt;ResolveInteractiveElements&gt;false&lt;/ResolveInteractiveElements&gt;
+            &lt;ResolveOptionalContent&gt;true&lt;/ResolveOptionalContent&gt;
+            &lt;UnsharpMaskConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;ColorImageCompression&gt;JPEG HighQuality&lt;/ColorImageCompression&gt;
+            &lt;GrayscaleImageCompression&gt;JPEG HighQuality&lt;/GrayscaleImageCompression&gt;
+            &lt;MonochromeImageCompression&gt;CCITT G4&lt;/MonochromeImageCompression&gt;
+            &lt;MinimalTextLineWidthConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;MinimalGraphicLineWidthConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;EraseBackground&gt;false&lt;/EraseBackground&gt;
+            &lt;ResharpenDownsampledImages&gt;true&lt;/ResharpenDownsampledImages&gt;
+            &lt;MakeFontNamesIndesignCompatible&gt;false&lt;/MakeFontNamesIndesignCompatible&gt;
+            &lt;NormalizeSampledFunctionDecode&gt;true&lt;/NormalizeSampledFunctionDecode&gt;
+            &lt;Force8bit&gt;false&lt;/Force8bit&gt;
+            &lt;ResolveSeparationAll&gt;false&lt;/ResolveSeparationAll&gt;
+            &lt;SuppressEmptyPlates&gt;false&lt;/SuppressEmptyPlates&gt;
+            &lt;NormalizeGrayMode&gt;PrintGrayTextColorOnBlackPlate&lt;/NormalizeGrayMode&gt;
+            &lt;NormalizeDeviceNAlternatives&gt;false&lt;/NormalizeDeviceNAlternatives&gt;
+            &lt;CropImage&gt;true&lt;/CropImage&gt;
+            &lt;PreserveCompressions&gt;false&lt;/PreserveCompressions&gt;
+            &lt;ResolveDeviceN&gt;false&lt;/ResolveDeviceN&gt;
+            &lt;ShadingResolution&gt;0.0&lt;/ShadingResolution&gt;
+            &lt;CreateOverprintConfig&gt;
+                &lt;ns2:FillSize&gt;
+                    &lt;ns2:Width&gt;-1.0&lt;/ns2:Width&gt;
+                    &lt;ns2:Height&gt;-1.0&lt;/ns2:Height&gt;
+                &lt;/ns2:FillSize&gt;
+                &lt;ns2:StrokeSize&gt;2.0&lt;/ns2:StrokeSize&gt;
+                &lt;ns2:TextSize&gt;24.0&lt;/ns2:TextSize&gt;
+                &lt;ns2:BlackValue&gt;0.95&lt;/ns2:BlackValue&gt;
+            &lt;/CreateOverprintConfig&gt;
+            &lt;CreateRichBlackConfig&gt;
+                &lt;ns2:FillSize&gt;
+                    &lt;ns2:Width&gt;-1.0&lt;/ns2:Width&gt;
+                    &lt;ns2:Height&gt;-1.0&lt;/ns2:Height&gt;
+                &lt;/ns2:FillSize&gt;
+                &lt;ns2:StrokeSize&gt;-1.0&lt;/ns2:StrokeSize&gt;
+                &lt;ns2:TextSize&gt;-1.0&lt;/ns2:TextSize&gt;
+                &lt;ns2:BlackValue&gt;0.0&lt;/ns2:BlackValue&gt;
+            &lt;/CreateRichBlackConfig&gt;
+            &lt;RichBlackReplaceValue xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;FindRichBlackConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;RemoveRichBlackConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;TransparencyFlatteningConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;MonochromeImageMinResolutionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;MonochromeImageMaxResolutionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;GrayImageMinResolutionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;GrayImageMaxResolutionConfig&gt;
+                &lt;IgnoreResolution&gt;300.0&lt;/IgnoreResolution&gt;
+                &lt;Resolution&gt;300.0&lt;/Resolution&gt;
+            &lt;/GrayImageMaxResolutionConfig&gt;
+            &lt;ColorImageMinResolutionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;ColorImageMaxResolutionConfig&gt;
+                &lt;IgnoreResolution&gt;300.0&lt;/IgnoreResolution&gt;
+                &lt;Resolution&gt;300.0&lt;/Resolution&gt;
+            &lt;/ColorImageMaxResolutionConfig&gt;
+        &lt;/ExportConfig&gt;
+        &lt;MergeFormXObject&gt;false&lt;/MergeFormXObject&gt;
+        &lt;ProhibitInlineImage&gt;false&lt;/ProhibitInlineImage&gt;
+        &lt;ReencodeTrueTypeBaseFonts&gt;false&lt;/ReencodeTrueTypeBaseFonts&gt;
+        &lt;ConvertTrueType2Type1&gt;false&lt;/ConvertTrueType2Type1&gt;
+        &lt;ResolveCIDFontsMask&gt;
+            &lt;ns2:TrueType&gt;false&lt;/ns2:TrueType&gt;
+            &lt;ns2:Type1&gt;false&lt;/ns2:Type1&gt;
+            &lt;ns2:Type3&gt;true&lt;/ns2:Type3&gt;
+        &lt;/ResolveCIDFontsMask&gt;
+        &lt;UseIndexedColorSpace&gt;true&lt;/UseIndexedColorSpace&gt;
+        &lt;EmbedAllFonts&gt;true&lt;/EmbedAllFonts&gt;
+        &lt;WriteType1CFF&gt;true&lt;/WriteType1CFF&gt;
+        &lt;RoundType2Numbers&gt;false&lt;/RoundType2Numbers&gt;
+        &lt;SuppressBlankGlyphs&gt;true&lt;/SuppressBlankGlyphs&gt;
+        &lt;UseShfill&gt;false&lt;/UseShfill&gt;
+        &lt;SubsetFonts&gt;false&lt;/SubsetFonts&gt;
+        &lt;BaseFontToCIDFontMask&gt;
+            &lt;ns2:TrueType&gt;true&lt;/ns2:TrueType&gt;
+            &lt;ns2:Type1&gt;true&lt;/ns2:Type1&gt;
+            &lt;ns2:Type3&gt;false&lt;/ns2:Type3&gt;
+        &lt;/BaseFontToCIDFontMask&gt;
+        &lt;PdfLanguageLevel&gt;PDF1.4&lt;/PdfLanguageLevel&gt;
+        &lt;TrappedState&gt;False&lt;/TrappedState&gt;
+        &lt;PDFX&gt;No&lt;/PDFX&gt;
+        &lt;LeanPDF&gt;false&lt;/LeanPDF&gt;
+        &lt;LzwCompressionLevel&gt;-1&lt;/LzwCompressionLevel&gt;
+        &lt;LzwCompressPaintStreams&gt;true&lt;/LzwCompressPaintStreams&gt;
+        &lt;SevenBit&gt;false&lt;/SevenBit&gt;
+        &lt;EncryptConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;InitialViewConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;OutputConditionConfig/&gt;
+    &lt;/PDFExportConfig&gt;
+&lt;/PDFExportConfig&gt;
+</Settings>
+            <SettingsVersion>47</SettingsVersion>
+            <Input RunListID="RL30">
+                <UISettings>
+                    <settings>{"20126103_Output":{"measure_y":"relative","x":0.43755761235107177,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL36"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1174"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
+            <UISettings>
+                <settings>{"x":63.625,"y":898.9321298371367,"originalDbId":20125797}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="DeleteInput" Name="Delete Source Files">
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL32">
+                <UISettings>
+                    <settings>{"20125796_Error-PDF":{"measure_y":"relative","x":0.4525569530916266,"y":0.6053299492385786,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="log" Type="LOG" RunListID="RL34"/>
+            <UISettings>
+                <settings>{"x":288.7287546418029,"y":639.5084288767976,"originalDbId":20125798}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL33">
+                <UISettings>
+                    <settings>{"20125800_log":{"measure_y":"relative","x":0.43579393867192523,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <UISettings>
+                <settings>{"x":303.1369577668029,"y":1004.5084288767976,"originalDbId":20125799}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="SendMail" Name="Send Error Emails">
+            <Description>Error emails will be send to Tanya Smith and all DTP Bellville team members. Methode content team is also included.</Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;SendMailSettings&gt;
+    &lt;SenderEmailAddress&gt;noreply@media24.com&lt;/SenderEmailAddress&gt;
+    &lt;EmailSubject&gt;Faulty Advertisement: &amp;lt;JOB_NAME&amp;gt;&lt;/EmailSubject&gt;
+    &lt;recipients&gt;tsmith@dieburger.com&lt;/recipients&gt;
+    &lt;recipients&gt;DTP.Electronic@dieburger.com&lt;/recipients&gt;
+    &lt;recipients&gt;Eidos.Content@Media24.com&lt;/recipients&gt;
+    &lt;addRunlistFilesAsAttachments&gt;true&lt;/addRunlistFilesAsAttachments&gt;
+    &lt;MessageText&gt;Check the following Advert &amp;lt;JOB_NAME&amp;gt; - It has failed on the &amp;lt;ASSEMBLY_LINE_NAME&amp;gt;. Please check the attached log for the error.&amp;#13;
+&amp;#13;
+&amp;lt;JOB_NO&amp;gt;&lt;/MessageText&gt;
+    &lt;SmtpNetResource&gt;
+        &lt;host&gt;152.111.1.10&lt;/host&gt;
+        &lt;port&gt;25&lt;/port&gt;
+        &lt;username&gt;eidos@media24.com&lt;/username&gt;
+        &lt;secure&gt;false&lt;/secure&gt;
+        &lt;type&gt;SMTP&lt;/type&gt;
+        &lt;description&gt;NoReplyAsura@media24.com&lt;/description&gt;
+        &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
+        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
+        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
+        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
+        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
+        &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
+    &lt;/SmtpNetResource&gt;
+&lt;/SendMailSettings&gt;
+</Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL34">
+                <UISettings>
+                    <settings>{"20125801_Error":{"measure_y":"relative","x":0.4798400058835078,"y":0.2758442557278175,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"20125798_log":{"measure_y":"relative","x":0.42523446369965284,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"20125797_Error":{"measure_y":"relative","x":0.46087301204576264,"y":0.4482796256858804,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"},"20126103_Error":{"measure_y":"relative","x":0.47850064338725706,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="log" Type="LOG" RunListID="RL33"/>
+            <UISettings>
+                <settings>{"x":308.9721628449279,"y":900.7584288767976,"originalDbId":20125800}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="CMSExpert" Name="Color Management">
+            <Description></Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;CMSExpertConfig SchemaIdentifier="yFqkWi1fcBl8xA4uWXVeHQ==" SchemaMinorVersion="13" SchemaMajorVersion="1" CreatorName="CMSExpertController" CreatorDate="2020-11-19T12:39:45.550+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+    &lt;CMYKICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/CMYKICCProfiles&gt;
+    &lt;RGBICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/RGBICCProfiles&gt;
+    &lt;GrayICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4_gr&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4_gr.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/GrayICCProfiles&gt;
+    &lt;SupposeOutputIntentConfig&gt;
+        &lt;ProfileList/&gt;
+    &lt;/SupposeOutputIntentConfig&gt;
+    &lt;AllowedOutputIntentDeviation&gt;-1.0&lt;/AllowedOutputIntentDeviation&gt;
+    &lt;NormalizeDeviceNAlternatives&gt;false&lt;/NormalizeDeviceNAlternatives&gt;
+    &lt;ResolveSeparationAll&gt;false&lt;/ResolveSeparationAll&gt;
+    &lt;NormalizeGrayMode&gt;PrintGrayTextColorOnBlackPlate&lt;/NormalizeGrayMode&gt;
+    &lt;DefaultOutputIntentName&gt;ISOnewspaper26v4&lt;/DefaultOutputIntentName&gt;
+    &lt;DiscardPageOutputIntent&gt;false&lt;/DiscardPageOutputIntent&gt;
+    &lt;DiscardOutputIntent&gt;false&lt;/DiscardOutputIntent&gt;
+    &lt;DiscardPageBlendColorSpaceRGB&gt;false&lt;/DiscardPageBlendColorSpaceRGB&gt;
+    &lt;DiscardPageBlendColorSpaceGray&gt;true&lt;/DiscardPageBlendColorSpaceGray&gt;
+    &lt;DiscardPageKnockout&gt;true&lt;/DiscardPageKnockout&gt;
+    &lt;ResolveOverprintAll&gt;true&lt;/ResolveOverprintAll&gt;
+    &lt;RemoveOverprintMode&gt;Off&lt;/RemoveOverprintMode&gt;
+    &lt;KeepPDX3AndPDFX4ICCProfiles&gt;false&lt;/KeepPDX3AndPDFX4ICCProfiles&gt;
+    &lt;ElementColorSpaceReplaceIgnoreMask&gt;
+        &lt;Graphic&gt;true&lt;/Graphic&gt;
+        &lt;Image&gt;false&lt;/Image&gt;
+        &lt;Text&gt;true&lt;/Text&gt;
+    &lt;/ElementColorSpaceReplaceIgnoreMask&gt;
+    &lt;ElementColorSpaceReplaceConfig&gt;
+        &lt;CmykColorSpaceReplaceConfig&gt;
+            &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+            &lt;RemoveBlackPointCompensation&gt;true&lt;/RemoveBlackPointCompensation&gt;
+            &lt;DefaultRenderIntent&gt;Perceptual&lt;/DefaultRenderIntent&gt;
+            &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+            &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4&lt;/DefaultColorSpaceName&gt;
+            &lt;RemoveICCProfile&gt;true&lt;/RemoveICCProfile&gt;
+        &lt;/CmykColorSpaceReplaceConfig&gt;
+        &lt;RgbColorSpaceReplaceConfig&gt;
+            &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+            &lt;RemoveBlackPointCompensation&gt;true&lt;/RemoveBlackPointCompensation&gt;
+            &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
+            &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+            &lt;DefaultColorSpaceName&gt;sRGB IEC61966-2.1&lt;/DefaultColorSpaceName&gt;
+            &lt;RemoveICCProfile&gt;true&lt;/RemoveICCProfile&gt;
+        &lt;/RgbColorSpaceReplaceConfig&gt;
+        &lt;GrayColorSpaceReplaceConfig&gt;
+            &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
+            &lt;RemoveBlackPointCompensation&gt;true&lt;/RemoveBlackPointCompensation&gt;
+            &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
+            &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
+            &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4_gr&lt;/DefaultColorSpaceName&gt;
+            &lt;RemoveICCProfile&gt;true&lt;/RemoveICCProfile&gt;
+        &lt;/GrayColorSpaceReplaceConfig&gt;
+    &lt;/ElementColorSpaceReplaceConfig&gt;
+&lt;/CMSExpertConfig&gt;
+</Settings>
+            <SettingsVersion>13</SettingsVersion>
+            <Input RunListID="RL35">
+                <UISettings>
+                    <settings>{"20125796_Ok":{"measure_y":"relative","x":0.4679830660435246,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL37"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1178"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
+            <UISettings>
+                <settings>{"x":58.625,"y":632.4321298371367,"originalDbId":20125801}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="FileExport" Name="PASS">
+            <Description>Methode Import Servlet destination on staging environment.</Description>
+            <Settings>&lt;FileExportSettings&gt;
+    &lt;Path&gt;/Mooivaal/PDF/&lt;/Path&gt;
+    &lt;netResource&gt;
+        &lt;host&gt;152.111.90.116&lt;/host&gt;
+        &lt;port&gt;21&lt;/port&gt;
+        &lt;path&gt;/methode/methprod/mnt/tomcat/methode_share/SAP/&lt;/path&gt;
+        &lt;username&gt;methprod&lt;/username&gt;
+        &lt;password&gt;ba8062eace6301ab539f45002fae99e6&lt;/password&gt;
+        &lt;secure&gt;false&lt;/secure&gt;
+        &lt;type&gt;FTP&lt;/type&gt;
+        &lt;PollingForced&gt;true&lt;/PollingForced&gt;
+        &lt;PollingInterval&gt;120000&lt;/PollingInterval&gt;
+        &lt;description&gt;SAP Uploads Johannesburg&lt;/description&gt;
+        &lt;PassiveModeForced&gt;true&lt;/PassiveModeForced&gt;
+        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
+        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
+        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
+        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
+        &lt;SkipOperatingSystemDetection&gt;true&lt;/SkipOperatingSystemDetection&gt;
+        &lt;OperatingSystem&gt;UNIX&lt;/OperatingSystem&gt;
+    &lt;/netResource&gt;
+    &lt;ReplicateFolderStructure&gt;false&lt;/ReplicateFolderStructure&gt;
+    &lt;PreventOverwritingFiles&gt;false&lt;/PreventOverwritingFiles&gt;
+    &lt;DestinationFilePattern&gt;&lt;/DestinationFilePattern&gt;
+    &lt;MaxRetry&gt;2&lt;/MaxRetry&gt;
+    &lt;RetryDelay&gt;120000&lt;/RetryDelay&gt;
+    &lt;ExportSubPath&gt;&lt;/ExportSubPath&gt;
+    &lt;DeleteExportedFiles&gt;false&lt;/DeleteExportedFiles&gt;
+    &lt;DeletionTime&gt;
+        &lt;RelativeDelay&gt;86400000&lt;/RelativeDelay&gt;
+        &lt;Relative&gt;true&lt;/Relative&gt;
+    &lt;/DeletionTime&gt;
+&lt;/FileExportSettings&gt;</Settings>
+            <SettingsVersion>4</SettingsVersion>
+            <Input RunListID="RL36">
+                <UISettings>
+                    <settings>{"20125797_Output":{"measure_y":"relative","x":0.44202778212862964,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="log" Type="LOG" RunListID="RL25"/>
+            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1173"/>
+            <UISettings>
+                <settings>{"x":67.625,"y":1119.5987903225807,"originalDbId":20126102}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="TransparencyFlattening" Name="Flatten Transparencies">
+            <Description></Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;TransparencyFlatteningConfig SchemaIdentifier="XsH5FgHsiXmEJnWfZUX1mw==" SchemaMinorVersion="13" SchemaMajorVersion="1" CreatorName="TransparencyFlatteningController" CreatorDate="2020-11-19T12:39:45.553+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+    &lt;DeviceLinkICCProfiles/&gt;
+    &lt;CMYKICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/CMYKICCProfiles&gt;
+    &lt;RGBICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/RGBICCProfiles&gt;
+    &lt;GrayICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;OV-White&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovg.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/GrayICCProfiles&gt;
+    &lt;PreserveBlack&gt;false&lt;/PreserveBlack&gt;
+    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+    &lt;UseOutputIntent&gt;true&lt;/UseOutputIntent&gt;
+    &lt;CMYKProfileName&gt;ISOnewspaper26v4&lt;/CMYKProfileName&gt;
+    &lt;RGBProfileName&gt;sRGB IEC61966-2.1&lt;/RGBProfileName&gt;
+    &lt;GrayProfileName&gt;OV-White&lt;/GrayProfileName&gt;
+    &lt;BlackPointCompensation&gt;false&lt;/BlackPointCompensation&gt;
+    &lt;ForPrint&gt;true&lt;/ForPrint&gt;
+    &lt;FlattenOverprintPreserveColorants xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+    &lt;WSPDFSaveConfig&gt;
+        &lt;ns2:JPEGForColorImages&gt;false&lt;/ns2:JPEGForColorImages&gt;
+        &lt;ns2:FasterLosslessCompression&gt;false&lt;/ns2:FasterLosslessCompression&gt;
+    &lt;/WSPDFSaveConfig&gt;
+    &lt;RenderResolution&gt;200.0&lt;/RenderResolution&gt;
+    &lt;AddSmoothedColorsBelowHardMasks&gt;false&lt;/AddSmoothedColorsBelowHardMasks&gt;
+    &lt;ResolveShadings&gt;false&lt;/ResolveShadings&gt;
+    &lt;FlattenHardMasks&gt;false&lt;/FlattenHardMasks&gt;
+    &lt;RenderPage&gt;false&lt;/RenderPage&gt;
+    &lt;FlattenUnconditionally&gt;false&lt;/FlattenUnconditionally&gt;
+    &lt;Downsample&gt;true&lt;/Downsample&gt;
+&lt;/TransparencyFlatteningConfig&gt;
+</Settings>
+            <SettingsVersion>13</SettingsVersion>
+            <Input RunListID="RL37">
+                <UISettings>
+                    <settings>{"20125801_Output":{"measure_y":"relative","x":0.4543184119700036,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL30"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1177"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
+            <UISettings>
+                <settings>{"x":58.625,"y":759.9321298371367,"originalDbId":20126103}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="MoveToStorage" Name="Move Source Files">
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL39">
+                <UISettings>
+                    <settings>{"20119504_":{}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="out" Type="PRODUCTIVE" RunListID="RL781"/>
+            <Output Name="log" Type="LOG" RunListID="RL1172"/>
+            <UISettings>
+                <settings>{"x":216.0,"y":76.0,"originalDbId":20126104}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="FilenameRouter" Name="Route by File Names">
+            <Description></Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;FilenameRouterSettings&gt;
+    &lt;Line&gt;
+        &lt;Pattern&gt;X[0-9a-zA-Z]{7}.pdf&lt;/Pattern&gt;
+        &lt;Name&gt;Material&lt;/Name&gt;
+        &lt;simple&gt;false&lt;/simple&gt;
+        &lt;CaseSensitive&gt;false&lt;/CaseSensitive&gt;
+    &lt;/Line&gt;
+&lt;/FilenameRouterSettings&gt;
+</Settings>
+            <SettingsVersion>1</SettingsVersion>
+            <Input RunListID="RL781">
+                <UISettings>
+                    <settings>{"20126104_out":{}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="Material" Type="PRODUCTIVE" RunListID="RL23"/>
+            <Output Name="DEFAULT" Type="PRODUCTIVE" RunListID="RL782"/>
+            <Output Name="log" Type="LOG" RunListID="RL1171"/>
+            <UISettings>
+                <settings>{"x":212.52197265625,"y":188.5625,"originalDbId":20126105}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="DeleteInput" Name="Delete Source Files">
+            <Description></Description>
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL782">
+                <UISettings>
+                    <settings>{"20126105_DEFAULT":{"measure_y":"relative","x":0.4835309935764442,"y":0.5271002710027101,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="log" Type="LOG" RunListID="RL783"/>
+            <UISettings>
+                <settings>{"x":469.482177734375,"y":371.5625,"originalDbId":20126106}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="SendMail" Name="Send Error Emails">
+            <Description>Error emails will be send to Tanya Smith and all DTP Bellville team members. Methode content team is also included.</Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;SendMailSettings&gt;
+    &lt;SenderEmailAddress&gt;noreply@media24.com&lt;/SenderEmailAddress&gt;
+    &lt;EmailSubject&gt;Faulty Advertisement: &amp;lt;JOB_NAME&amp;gt;&lt;/EmailSubject&gt;
+    &lt;recipients&gt;tsmith@dieburger.com&lt;/recipients&gt;
+    &lt;recipients&gt;DTP.Electronic@dieburger.com&lt;/recipients&gt;
+    &lt;recipients&gt;Eidos.Content@Media24.com&lt;/recipients&gt;
+    &lt;addRunlistFilesAsAttachments&gt;true&lt;/addRunlistFilesAsAttachments&gt;
+    &lt;MessageText&gt;Check the following Advert &amp;lt;JOB_NAME&amp;gt; - It has failed on the &amp;lt;ASSEMBLY_LINE_NAME&amp;gt;. Please check the naming convention of the material and re-upload the file.&amp;#13;
+&amp;#13;
+&amp;lt;JOB_NO&amp;gt;&lt;/MessageText&gt;
+    &lt;SmtpNetResource&gt;
+        &lt;host&gt;152.111.1.10&lt;/host&gt;
+        &lt;port&gt;25&lt;/port&gt;
+        &lt;username&gt;eidos@media24.com&lt;/username&gt;
+        &lt;secure&gt;false&lt;/secure&gt;
+        &lt;type&gt;SMTP&lt;/type&gt;
+        &lt;description&gt;NoReplyAsura@media24.com&lt;/description&gt;
+        &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
+        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
+        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
+        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
+        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
+        &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
+    &lt;/SmtpNetResource&gt;
+&lt;/SendMailSettings&gt;
+</Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL783">
+                <UISettings>
+                    <settings>{"20126106_log":{"measure_y":"relative","x":0.4008179612473304,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="log" Type="LOG" RunListID="RL784"/>
+            <UISettings>
+                <settings>{"x":472.4375,"y":500.0,"originalDbId":20126107}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL784">
+                <UISettings>
+                    <settings>{"20126107_log":{"measure_y":"relative","x":0.4004989627211202,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <UISettings>
+                <settings>{"x":466.477294921875,"y":639.6875,"originalDbId":20126108}</settings>
+            </UISettings>
+        </Node>
+        <UISettings>
+            <settings>{"editorversion":2.0}</settings>
+        </UISettings>
+        <Restriction/>
+    </AssemblyLine>
+</AssemblyLineDefinition>

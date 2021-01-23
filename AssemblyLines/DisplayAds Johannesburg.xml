@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssemblyLineDefinition MinimumWorkspaceVersion="18.2 (Build 23.028)">
-    <Description>Assembly line(s) exported by Workspace. Workspace Version: 19.1 SR 1 (24.047), Host: 02CPT-DIS07, Operating System: Windows Server 2016 Standard 64-bit Version 1607 (build 14393) (64bit mode,virtualized - VMWare), Date/Time: Thu Nov 05 10:31:27 CAT 2020. License information: License code: _9w3pOf5ifvK2c, ovld build number: 30.045
+    <Description>Assembly line(s) exported by Workspace. Workspace Version: 19.1 SR 1 (24.047), Host: 02CPT-DIS07, Operating System: Windows Server 2016 Standard 64-bit Version 1607 (build 14393) (64bit mode,virtualized - VMWare), Date/Time: Fri Jan 22 10:55:26 CAT 2021. License information: License code: _9w3pOf5ifvK2c, ovld build number: 30.045
 CMSExpert 19.1 (SR 1) (x38.052.S)
 DeleteFromStorage 19.1 SR 1 (w24.047)
 DeleteInput 19.1 SR 1 (w24.047)
 FileExport 19.1 SR 1 (w24.047)
+FilenameRouter 19.1 SR 1 (w24.047)
 ImageExport 19.1 (SR 1) (x38.052.S)
-JobHistory 19.1 SR 1 (w24.047)
 MoveToStorage 19.1 SR 1 (w24.047)
 PDFExport 19.1 (SR 1) (x38.052.S)
 Preflight 19.1 (SR 1) (x38.052.S)
-Rename 19.1 SR 1 (w24.047)
 SendMail 19.1 SR 1 (w24.047)
 TransparencyFlattening 19.1 (SR 1) (x38.052.S)
 XImport 19.1 (SR 1) (x38.052.S)</Description>
-    <AssemblyLine Name="DisplayAds POC" CreationDate="2020-11-02T08:56:37.355+02:00" ModificationDate="2020-11-04T13:04:44.313+02:00" ModificationUser="jacques.engelbrecht" UserDescription="Alternative assembly line for checking and importing of display advertisements for Methode." Version="20">
-        <Status>ACTIVE</Status>
-        <InputScanner RunListID="RL3">
-            <Path>/In/DisplayAds-POC/</Path>
+    <AssemblyLine Name="DisplayAds Johannesburg" CreationDate="2020-12-09T16:41:17.355+02:00" ModificationDate="2021-01-22T10:51:50.940+02:00" ModificationUser="jacques.engelbrecht" UserDescription="Display advertisements for national DTP team which caters for advertisements of the northern titles." Version="46">
+        <Status>INACTIVE</Status>
+        <InputScanner RunListID="RL39">
+            <Path>/SAP_Display/Johannesburg/</Path>
             <netResource>
-                <path>/D:/Workspace_data/</path>
+                <path>/D:/Workspace_data/In/</path>
                 <secure>false</secure>
                 <type>FILE</type>
                 <PollingForced>false</PollingForced>
-                <description>Workspace_data</description>
+                <PollingInterval>30000</PollingInterval>
+                <description>IN</description>
                 <PassiveModeForced>false</PassiveModeForced>
                 <SkipTemporaryRenaming>true</SkipTemporaryRenaming>
                 <UTF8EncodingForced>true</UTF8EncodingForced>
@@ -32,7 +32,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
                 <SkipOperatingSystemDetection>false</SkipOperatingSystemDetection>
             </netResource>
             <UISettings>
-                <settings>{"x":101.0,"y":0.0,"originalDbId":15981408}</settings>
+                <settings>{"x":168.0,"y":0.0,"originalDbId":18742504}</settings>
             </UISettings>
             <FilterActivated>false</FilterActivated>
             <IgnoreHiddenFiles>true</IgnoreHiddenFiles>
@@ -40,70 +40,196 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <InitialJobPriority>50</InitialJobPriority>
             <RemoveEmptySubFolder>false</RemoveEmptySubFolder>
             <RemoveHiddenSubFolder>true</RemoveHiddenSubFolder>
-            <RecursiveScan>true</RecursiveScan>
+            <JobNameSource>FILENAME</JobNameSource>
+            <RecursiveScan>false</RecursiveScan>
             <SchedulerActivated>false</SchedulerActivated>
             <RemoveFileExtensionFromJobName>false</RemoveFileExtensionFromJobName>
             <ReportZeroByteFiles>false</ReportZeroByteFiles>
         </InputScanner>
-        <Node DeviceName="FileExport" Name="PASS">
-            <Description></Description>
-            <Settings>&lt;FileExportSettings&gt;
-    &lt;Path&gt;/Out/DisplayAds-POC/&lt;/Path&gt;
-    &lt;netResource&gt;
-        &lt;path&gt;/D:/Workspace_data/&lt;/path&gt;
-        &lt;secure&gt;false&lt;/secure&gt;
-        &lt;type&gt;FILE&lt;/type&gt;
-        &lt;PollingForced&gt;false&lt;/PollingForced&gt;
-        &lt;description&gt;Workspace_data&lt;/description&gt;
-        &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
-        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
-        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
-        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
-        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
-        &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
-    &lt;/netResource&gt;
-    &lt;ReplicateFolderStructure&gt;false&lt;/ReplicateFolderStructure&gt;
-    &lt;PreventOverwritingFiles&gt;false&lt;/PreventOverwritingFiles&gt;
-    &lt;DestinationFilePattern&gt;&lt;/DestinationFilePattern&gt;
-    &lt;MaxRetry&gt;2&lt;/MaxRetry&gt;
-    &lt;RetryDelay&gt;120000&lt;/RetryDelay&gt;
-    &lt;ExportSubPath&gt;&lt;/ExportSubPath&gt;
-    &lt;DeleteExportedFiles&gt;false&lt;/DeleteExportedFiles&gt;
-    &lt;DeletionTime&gt;
-        &lt;RelativeDelay&gt;86400000&lt;/RelativeDelay&gt;
-        &lt;Relative&gt;true&lt;/Relative&gt;
-    &lt;/DeletionTime&gt;
-&lt;/FileExportSettings&gt;</Settings>
-            <SettingsVersion>4</SettingsVersion>
-            <Input RunListID="RL1">
+        <Node DeviceName="ImageExport" Name="Convert to JPEG">
+            <Description>Convert the pdf to a JPEG image for attachment to the customer invoice.</Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ImageExportConfig SchemaIdentifier="oz0vQknhYD9W1XBgZP4qtg==" SchemaMinorVersion="18" SchemaMajorVersion="1" CreatorName="ImageExportController" CreatorDate="2020-11-19T12:39:45.541+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+    &lt;DeviceLinkICCProfiles/&gt;
+    &lt;CMYKICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/CMYKICCProfiles&gt;
+    &lt;RGBICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/RGBICCProfiles&gt;
+    &lt;GrayICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;OV-White&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovg.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/GrayICCProfiles&gt;
+    &lt;PreserveBlack&gt;true&lt;/PreserveBlack&gt;
+    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+    &lt;UseOutputIntent&gt;true&lt;/UseOutputIntent&gt;
+    &lt;BlackPointCompensation&gt;false&lt;/BlackPointCompensation&gt;
+    &lt;ImageSize&gt;
+        &lt;ns2:Width&gt;0.0&lt;/ns2:Width&gt;
+        &lt;ns2:Height&gt;0.0&lt;/ns2:Height&gt;
+    &lt;/ImageSize&gt;
+    &lt;KeepOrigFilenameForSingelPageDocs&gt;true&lt;/KeepOrigFilenameForSingelPageDocs&gt;
+    &lt;AppendPageLabel&gt;false&lt;/AppendPageLabel&gt;
+    &lt;MetadataConfig&gt;
+        &lt;AdditionalKeywords/&gt;
+        &lt;RemoveOtherMetadata&gt;KeepOther&lt;/RemoveOtherMetadata&gt;
+        &lt;DefaultCreationDate&gt;false&lt;/DefaultCreationDate&gt;
+        &lt;RemoveCreationDate&gt;false&lt;/RemoveCreationDate&gt;
+        &lt;DefaultProducer&gt;true&lt;/DefaultProducer&gt;
+        &lt;RemoveProducer&gt;true&lt;/RemoveProducer&gt;
+        &lt;DefaultCreator&gt;false&lt;/DefaultCreator&gt;
+        &lt;RemoveCreator&gt;false&lt;/RemoveCreator&gt;
+        &lt;RemoveKeywords&gt;false&lt;/RemoveKeywords&gt;
+        &lt;RemoveSubject&gt;false&lt;/RemoveSubject&gt;
+        &lt;DefaultAuthor&gt;false&lt;/DefaultAuthor&gt;
+        &lt;RemoveAuthor&gt;false&lt;/RemoveAuthor&gt;
+        &lt;DefaultTitle&gt;false&lt;/DefaultTitle&gt;
+        &lt;RemoveTitle&gt;false&lt;/RemoveTitle&gt;
+    &lt;/MetadataConfig&gt;
+    &lt;ImageRenderConfig&gt;
+        &lt;JPEGImageRender&gt;
+            &lt;TargetICCProfileName&gt;sRGB IEC61966-2.1&lt;/TargetICCProfileName&gt;
+            &lt;BaseImageRenderConfig&gt;
+                &lt;OverprintICCProfileName&gt;ISOnewspaper26v4&lt;/OverprintICCProfileName&gt;
+                &lt;Alpha&gt;false&lt;/Alpha&gt;
+                &lt;Antialias&gt;true&lt;/Antialias&gt;
+                &lt;AttachICCProfile&gt;true&lt;/AttachICCProfile&gt;
+                &lt;MaxHeight&gt;0&lt;/MaxHeight&gt;
+                &lt;MaxWidth&gt;0&lt;/MaxWidth&gt;
+                &lt;VResolution&gt;0.0&lt;/VResolution&gt;
+                &lt;Resolution&gt;96.0&lt;/Resolution&gt;
+            &lt;/BaseImageRenderConfig&gt;
+            &lt;Compression&gt;HighQuality&lt;/Compression&gt;
+            &lt;ImageExportColorModel&gt;RGB&lt;/ImageExportColorModel&gt;
+        &lt;/JPEGImageRender&gt;
+    &lt;/ImageRenderConfig&gt;
+&lt;/ImageExportConfig&gt;
+</Settings>
+            <SettingsVersion>18</SettingsVersion>
+            <Input RunListID="RL22">
                 <UISettings>
-                    <settings>{"16419550_Output":{"measure_y":"relative","x":0.44068267063145344,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743323_Output":{"measure_y":"relative","x":0.4833707065563084,"y":0.6596649316745266,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="log" Type="LOG" RunListID="RL184;RL207"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL501"/>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL993"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1143"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL996"/>
             <UISettings>
-                <settings>{"x":0.0,"y":838.1612903225807,"originalDbId":16339091}</settings>
+                <settings>{"x":262.2849069855531,"y":1119.0084288767976,"originalDbId":18743319}</settings>
             </UISettings>
         </Node>
-        <Node DeviceName="MoveToStorage" Name="Move Source Files">
-            <Settings></Settings>
-            <SettingsVersion>0</SettingsVersion>
-            <Input RunListID="RL3">
+        <Node DeviceName="XImport" Name="Prepare Print Ready Pdfs">
+            <Description></Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;ImportConfig SchemaIdentifier="Lkd4ddE3slJ7NNA1dNohXA==" SchemaMinorVersion="12" SchemaMajorVersion="1" CreatorName="XImportController" CreatorDate="2020-11-19T12:39:45.542+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+    &lt;ImageImportConfig&gt;
+        &lt;RecognizeImageMask&gt;false&lt;/RecognizeImageMask&gt;
+        &lt;RecognizeSeparatedImages&gt;true&lt;/RecognizeSeparatedImages&gt;
+        &lt;ResolutionOfImageFiles&gt;0.0&lt;/ResolutionOfImageFiles&gt;
+    &lt;/ImageImportConfig&gt;
+    &lt;PDFImportConfig&gt;
+        &lt;EmbedReferencedOutputIntent&gt;false&lt;/EmbedReferencedOutputIntent&gt;
+        &lt;RejectAIPseudoPDF&gt;false&lt;/RejectAIPseudoPDF&gt;
+        &lt;KeepReusedFormXObject&gt;true&lt;/KeepReusedFormXObject&gt;
+        &lt;CreatePlaceholderFonts&gt;false&lt;/CreatePlaceholderFonts&gt;
+        &lt;UsePDFXOutputIntent&gt;true&lt;/UsePDFXOutputIntent&gt;
+        &lt;FlattenPDFLayers&gt;true&lt;/FlattenPDFLayers&gt;
+        &lt;PDFDefaultNonZeroOverprintingMode&gt;false&lt;/PDFDefaultNonZeroOverprintingMode&gt;
+    &lt;/PDFImportConfig&gt;
+    &lt;PSImportConfig&gt;
+        &lt;RecognizePhotoshopDuotones&gt;false&lt;/RecognizePhotoshopDuotones&gt;
+        &lt;PreserveEPSOPIComments&gt;false&lt;/PreserveEPSOPIComments&gt;
+        &lt;UsePrologue&gt;false&lt;/UsePrologue&gt;
+        &lt;ImportDCSPlates&gt;false&lt;/ImportDCSPlates&gt;
+        &lt;PSDefaultNonZeroOverprintingMode&gt;false&lt;/PSDefaultNonZeroOverprintingMode&gt;
+        &lt;DefaultPageSize&gt;
+            &lt;ns2:Width&gt;595.0&lt;/ns2:Width&gt;
+            &lt;ns2:Height&gt;842.0&lt;/ns2:Height&gt;
+        &lt;/DefaultPageSize&gt;
+        &lt;DeviceScale&gt;32&lt;/DeviceScale&gt;
+    &lt;/PSImportConfig&gt;
+    &lt;PassThroughPSError&gt;true&lt;/PassThroughPSError&gt;
+    &lt;InteractiveElementMode&gt;RemoveAll&lt;/InteractiveElementMode&gt;
+    &lt;UseFontLibrary&gt;true&lt;/UseFontLibrary&gt;
+    &lt;OtherColorSpacesWithOverprintGoeDeviceN&gt;false&lt;/OtherColorSpacesWithOverprintGoeDeviceN&gt;
+    &lt;ValidateCompressedImages&gt;true&lt;/ValidateCompressedImages&gt;
+    &lt;RecognizeTintedGrayscaleImages&gt;false&lt;/RecognizeTintedGrayscaleImages&gt;
+    &lt;PreserveTIFFOPIComments&gt;false&lt;/PreserveTIFFOPIComments&gt;
+    &lt;IgnoreSeparationForSingleBlackPage&gt;true&lt;/IgnoreSeparationForSingleBlackPage&gt;
+    &lt;RemovedClippedOffElements&gt;true&lt;/RemovedClippedOffElements&gt;
+    &lt;RecomposeOverprintingMultitones&gt;true&lt;/RecomposeOverprintingMultitones&gt;
+    &lt;JoinFillToBlocks&gt;true&lt;/JoinFillToBlocks&gt;
+    &lt;JoinStrokes&gt;false&lt;/JoinStrokes&gt;
+    &lt;JoinTextToBlocks&gt;true&lt;/JoinTextToBlocks&gt;
+    &lt;FontSubstitutionTable/&gt;
+    &lt;Fallbackfontname&gt;OVDefault&lt;/Fallbackfontname&gt;
+    &lt;RejectMissingFonts&gt;true&lt;/RejectMissingFonts&gt;
+    &lt;ResolvePDFRotation&gt;false&lt;/ResolvePDFRotation&gt;
+    &lt;MergeFonts&gt;true&lt;/MergeFonts&gt;
+    &lt;WSPDFSaveConfig&gt;
+        &lt;ns2:JPEGForColorImages&gt;false&lt;/ns2:JPEGForColorImages&gt;
+        &lt;ns2:FasterLosslessCompression&gt;true&lt;/ns2:FasterLosslessCompression&gt;
+    &lt;/WSPDFSaveConfig&gt;
+&lt;/ImportConfig&gt;
+</Settings>
+            <SettingsVersion>12</SettingsVersion>
+            <Input RunListID="RL23">
                 <UISettings>
-                    <settings>{"15981408_":{"measure_y":"relative","x":0.48699163030823106,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743331_Material":{}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="out" Type="PRODUCTIVE" RunListID="RL93"/>
-            <Output Name="log" Type="LOG" RunListID="RL500"/>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL28"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1148"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1149"/>
             <UISettings>
-                <settings>{"x":148.0,"y":81.0,"originalDbId":16339093}</settings>
+                <settings>{"x":186.625,"y":375.4375,"originalDbId":18743320}</settings>
+            </UISettings>
+            <PropertyUsageGroup>
+                <Name>PwdProperty</Name>
+                <EditorName>String</EditorName>
+                <PropertyUsage>
+                    <PropertyPath>JobInstruction/pwds</PropertyPath>
+                    <DefaultValue></DefaultValue>
+                    <JobInstructionQuestion>Enter the password for opening protected job files:</JobInstructionQuestion>
+                    <ErrorHandling>USE_DEFAULT</ErrorHandling>
+                    <PropertyKind>JOB_PROPERTY</PropertyKind>
+                </PropertyUsage>
+            </PropertyUsageGroup>
+        </Node>
+        <Node DeviceName="DeleteFromStorage" Name="Clean Up Material Processing">
+            <Description></Description>
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL25">
+                <UISettings>
+                    <settings>{"18743328_log":{"measure_y":"relative","x":0.43559120543197605,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <UISettings>
+                <settings>{"x":19.0,"y":1334.9375,"originalDbId":18743321}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="Preflight" Name="Preflight Material">
             <Description></Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;PreflightConfig SchemaIdentifier="oejbcQ5BVUMAfw/XIifdgA==" SchemaMinorVersion="42" SchemaMajorVersion="1" CreatorName="PreflightController" CreatorDate="2020-11-04T09:52:42.593+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+&lt;PreflightConfig SchemaIdentifier="oejbcQ5BVUMAfw/XIifdgA==" SchemaMinorVersion="42" SchemaMajorVersion="1" CreatorName="PreflightController" CreatorDate="2020-11-19T12:39:45.544+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
     &lt;CMYKICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
             &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
@@ -113,7 +239,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
     &lt;RGBICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
             &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/InputGamut.icc&lt;/ns2:DictionaryValue&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
         &lt;/ns2:DictionaryElement&gt;
     &lt;/RGBICCProfiles&gt;
     &lt;GrayICCProfiles&gt;
@@ -331,7 +457,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;DeviceWhiteImagePreflightAction&gt;Ignore&lt;/DeviceWhiteImagePreflightAction&gt;
         &lt;PreflightPageTACConfig&gt;
             &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
-            &lt;MaxTACValue&gt;3.0&lt;/MaxTACValue&gt;
+            &lt;MaxTACValue&gt;2.6&lt;/MaxTACValue&gt;
             &lt;PixelSize&gt;4.26&lt;/PixelSize&gt;
             &lt;ConsiderTrimBox&gt;false&lt;/ConsiderTrimBox&gt;
         &lt;/PreflightPageTACConfig&gt;
@@ -419,23 +545,23 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
 &lt;/PreflightConfig&gt;
 </Settings>
             <SettingsVersion>42</SettingsVersion>
-            <Input RunListID="RL17">
+            <Input RunListID="RL28">
                 <UISettings>
-                    <settings>{"16423050_Output":{"measure_y":"relative","x":0.48946172992574416,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743320_Output":{"measure_y":"relative","x":0.4601524376798134,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="Ok" Type="PRODUCTIVE" RunListID="RL19"/>
-            <Output Name="Log" Type="LOG" RunListID="RL493"/>
-            <Output Name="Error-PDF" Type="PRODUCTIVE_ERROR" RunListID="RL22"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL159"/>
+            <Output Name="Ok" Type="PRODUCTIVE" RunListID="RL35"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1151"/>
+            <Output Name="Error-PDF" Type="PRODUCTIVE_ERROR" RunListID="RL32"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1152"/>
             <UISettings>
-                <settings>{"x":164.0,"y":310.16129032258067,"originalDbId":16419549}</settings>
+                <settings>{"x":222.625,"y":503.5987903225807,"originalDbId":18743322}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="PDFExport" Name="Normalize">
             <Description></Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;PDFExportConfig SchemaIdentifier="TvMosq+bZH14rz8Gd9Z3mw==" SchemaMinorVersion="47" SchemaMajorVersion="1" CreatorName="PDFExportController" CreatorDate="2020-11-02T17:26:24.800+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+&lt;PDFExportConfig SchemaIdentifier="TvMosq+bZH14rz8Gd9Z3mw==" SchemaMinorVersion="47" SchemaMajorVersion="1" CreatorName="PDFExportController" CreatorDate="2020-11-19T12:39:45.546+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
     &lt;DeviceLinkICCProfiles/&gt;
     &lt;CMYKICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
@@ -454,11 +580,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
     &lt;RGBICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
             &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/InputGamut.icc&lt;/ns2:DictionaryValue&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
         &lt;/ns2:DictionaryElement&gt;
         &lt;ns2:DictionaryElement&gt;
             &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/InputGamut.icc&lt;/ns2:DictionaryValue&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
         &lt;/ns2:DictionaryElement&gt;
     &lt;/RGBICCProfiles&gt;
     &lt;GrayICCProfiles&gt;
@@ -722,22 +848,88 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
 &lt;/PDFExportConfig&gt;
 </Settings>
             <SettingsVersion>47</SettingsVersion>
-            <Input RunListID="RL18">
+            <Input RunListID="RL30">
                 <UISettings>
-                    <settings>{"16419552_Output":{"measure_y":"relative","x":0.433398879358097,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743329_Output":{"measure_y":"relative","x":0.43755761235107177,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL52;RL1"/>
-            <Output Name="Log" Type="LOG" RunListID="RL499"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL159;RL46"/>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL22;RL36"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1145"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
             <UISettings>
-                <settings>{"x":0.0,"y":692.4946298371367,"originalDbId":16419550}</settings>
+                <settings>{"x":63.625,"y":898.9321298371367,"originalDbId":18743323}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="DeleteInput" Name="Delete Source Files">
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL32">
+                <UISettings>
+                    <settings>{"18743322_Error-PDF":{"measure_y":"relative","x":0.4525569530916266,"y":0.6053299492385786,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="log" Type="LOG" RunListID="RL34"/>
+            <UISettings>
+                <settings>{"x":288.7287546418029,"y":639.5084288767976,"originalDbId":18743324}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL33">
+                <UISettings>
+                    <settings>{"18743326_log":{"measure_y":"relative","x":0.43579393867192523,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <UISettings>
+                <settings>{"x":303.1369577668029,"y":1004.5084288767976,"originalDbId":18743325}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="SendMail" Name="Send Error Emails">
+            <Description>Error emails will be send to Tanya Smith and all DTP Bellville team members. Methode content team is also included.</Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;SendMailSettings&gt;
+    &lt;SenderEmailAddress&gt;noreply@media24.com&lt;/SenderEmailAddress&gt;
+    &lt;EmailSubject&gt;Faulty Advertisement: &amp;lt;JOB_NAME&amp;gt;&lt;/EmailSubject&gt;
+    &lt;recipients&gt;Cheryl.Moig@media24.com&lt;/recipients&gt;
+    &lt;recipients&gt;tsmith@dieburger.com&lt;/recipients&gt;
+    &lt;recipients&gt;DTP.Electronic@dieburger.com&lt;/recipients&gt;
+    &lt;recipients&gt;Eidos.Content@Media24.com&lt;/recipients&gt;
+    &lt;addRunlistFilesAsAttachments&gt;true&lt;/addRunlistFilesAsAttachments&gt;
+    &lt;MessageText&gt;Check the following Advert &amp;lt;JOB_NAME&amp;gt; - It has failed on the &amp;lt;ASSEMBLY_LINE_NAME&amp;gt;. Please check the attached log for the error.&amp;#13;
+&amp;#13;
+&amp;lt;JOB_NO&amp;gt;&lt;/MessageText&gt;
+    &lt;SmtpNetResource&gt;
+        &lt;host&gt;152.111.1.10&lt;/host&gt;
+        &lt;port&gt;25&lt;/port&gt;
+        &lt;username&gt;eidos@media24.com&lt;/username&gt;
+        &lt;secure&gt;false&lt;/secure&gt;
+        &lt;type&gt;SMTP&lt;/type&gt;
+        &lt;description&gt;NoReplyAsura@media24.com&lt;/description&gt;
+        &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
+        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
+        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
+        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
+        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
+        &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
+    &lt;/SmtpNetResource&gt;
+&lt;/SendMailSettings&gt;
+</Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL34">
+                <UISettings>
+                    <settings>{"18743323_Error":{"measure_y":"relative","x":0.46087301204576264,"y":0.4482796256858804,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"},"18743324_log":{"measure_y":"relative","x":0.42523446369965284,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"18743327_Error":{"measure_y":"relative","x":0.4798400058835078,"y":0.2758442557278175,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"18743329_Error":{"measure_y":"relative","x":0.47850064338725706,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="log" Type="LOG" RunListID="RL33"/>
+            <UISettings>
+                <settings>{"x":308.9721628449279,"y":900.7584288767976,"originalDbId":18743326}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="CMSExpert" Name="Color Management">
             <Description></Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;CMSExpertConfig SchemaIdentifier="yFqkWi1fcBl8xA4uWXVeHQ==" SchemaMinorVersion="13" SchemaMajorVersion="1" CreatorName="CMSExpertController" CreatorDate="2020-11-02T17:25:55.347+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+&lt;CMSExpertConfig SchemaIdentifier="yFqkWi1fcBl8xA4uWXVeHQ==" SchemaMinorVersion="13" SchemaMajorVersion="1" CreatorName="CMSExpertController" CreatorDate="2020-11-19T12:39:45.550+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
     &lt;CMYKICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
             &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
@@ -751,7 +943,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
     &lt;RGBICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
             &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/InputGamut.icc&lt;/ns2:DictionaryValue&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
         &lt;/ns2:DictionaryElement&gt;
     &lt;/RGBICCProfiles&gt;
     &lt;GrayICCProfiles&gt;
@@ -810,22 +1002,69 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
 &lt;/CMSExpertConfig&gt;
 </Settings>
             <SettingsVersion>13</SettingsVersion>
-            <Input RunListID="RL19">
+            <Input RunListID="RL35">
                 <UISettings>
-                    <settings>{"16419549_Ok":{"measure_y":"relative","x":0.4669368652338232,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743322_Ok":{"measure_y":"relative","x":0.4679830660435246,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL20"/>
-            <Output Name="Log" Type="LOG" RunListID="RL505"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL159;RL46"/>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL37"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1150"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
             <UISettings>
-                <settings>{"x":0.0,"y":438.9946298371367,"originalDbId":16419551}</settings>
+                <settings>{"x":58.625,"y":632.4321298371367,"originalDbId":18743327}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="FileExport" Name="PASS">
+            <Description>Methode Import Servlet destination on staging environment.</Description>
+            <Settings>&lt;FileExportSettings&gt;
+    &lt;Path&gt;/Display/Pass/&lt;/Path&gt;
+    &lt;netResource&gt;
+        &lt;host&gt;152.111.90.116&lt;/host&gt;
+        &lt;port&gt;21&lt;/port&gt;
+        &lt;path&gt;/methode/methprod/mnt/tomcat/methode_share/SAP/&lt;/path&gt;
+        &lt;username&gt;methprod&lt;/username&gt;
+        &lt;password&gt;ba8062eace6301ab539f45002fae99e6&lt;/password&gt;
+        &lt;secure&gt;false&lt;/secure&gt;
+        &lt;type&gt;FTP&lt;/type&gt;
+        &lt;PollingForced&gt;true&lt;/PollingForced&gt;
+        &lt;PollingInterval&gt;120000&lt;/PollingInterval&gt;
+        &lt;description&gt;SAP Uploads Johannesburg&lt;/description&gt;
+        &lt;PassiveModeForced&gt;true&lt;/PassiveModeForced&gt;
+        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
+        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
+        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
+        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
+        &lt;SkipOperatingSystemDetection&gt;true&lt;/SkipOperatingSystemDetection&gt;
+        &lt;OperatingSystem&gt;UNIX&lt;/OperatingSystem&gt;
+    &lt;/netResource&gt;
+    &lt;ReplicateFolderStructure&gt;false&lt;/ReplicateFolderStructure&gt;
+    &lt;PreventOverwritingFiles&gt;false&lt;/PreventOverwritingFiles&gt;
+    &lt;DestinationFilePattern&gt;&lt;/DestinationFilePattern&gt;
+    &lt;MaxRetry&gt;2&lt;/MaxRetry&gt;
+    &lt;RetryDelay&gt;120000&lt;/RetryDelay&gt;
+    &lt;ExportSubPath&gt;&lt;/ExportSubPath&gt;
+    &lt;DeleteExportedFiles&gt;false&lt;/DeleteExportedFiles&gt;
+    &lt;DeletionTime&gt;
+        &lt;RelativeDelay&gt;86400000&lt;/RelativeDelay&gt;
+        &lt;Relative&gt;true&lt;/Relative&gt;
+    &lt;/DeletionTime&gt;
+&lt;/FileExportSettings&gt;</Settings>
+            <SettingsVersion>4</SettingsVersion>
+            <Input RunListID="RL36">
+                <UISettings>
+                    <settings>{"18743323_Output":{"measure_y":"relative","x":0.44202778212862964,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="log" Type="LOG" RunListID="RL25"/>
+            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1142"/>
+            <UISettings>
+                <settings>{"x":67.625,"y":1119.5987903225807,"originalDbId":18743328}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="TransparencyFlattening" Name="Flatten Transparencies">
             <Description></Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;TransparencyFlatteningConfig SchemaIdentifier="XsH5FgHsiXmEJnWfZUX1mw==" SchemaMinorVersion="13" SchemaMajorVersion="1" CreatorName="TransparencyFlatteningController" CreatorDate="2020-11-02T14:44:27.703+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+&lt;TransparencyFlatteningConfig SchemaIdentifier="XsH5FgHsiXmEJnWfZUX1mw==" SchemaMinorVersion="13" SchemaMajorVersion="1" CreatorName="TransparencyFlatteningController" CreatorDate="2020-11-19T12:39:45.553+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
     &lt;DeviceLinkICCProfiles/&gt;
     &lt;CMYKICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
@@ -836,7 +1075,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
     &lt;RGBICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
             &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/InputGamut.icc&lt;/ns2:DictionaryValue&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
         &lt;/ns2:DictionaryElement&gt;
     &lt;/RGBICCProfiles&gt;
     &lt;GrayICCProfiles&gt;
@@ -868,53 +1107,83 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
 &lt;/TransparencyFlatteningConfig&gt;
 </Settings>
             <SettingsVersion>13</SettingsVersion>
-            <Input RunListID="RL20">
+            <Input RunListID="RL37">
                 <UISettings>
-                    <settings>{"16419551_Output":{"measure_y":"relative","x":0.4543184119700036,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743327_Output":{"measure_y":"relative","x":0.4543184119700036,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL18"/>
-            <Output Name="Log" Type="LOG" RunListID="RL485"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL159;RL46"/>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL30"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1146"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
             <UISettings>
-                <settings>{"x":0.0,"y":566.4946298371367,"originalDbId":16419552}</settings>
+                <settings>{"x":58.625,"y":759.9321298371367,"originalDbId":18743329}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="MoveToStorage" Name="Move Source Files">
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL39">
+                <UISettings>
+                    <settings>{"18742504_":{}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="out" Type="PRODUCTIVE" RunListID="RL781"/>
+            <Output Name="log" Type="LOG" RunListID="RL1144"/>
+            <UISettings>
+                <settings>{"x":216.0,"y":76.0,"originalDbId":18743330}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="FilenameRouter" Name="Route by File Names">
+            <Description></Description>
+            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;FilenameRouterSettings&gt;
+    &lt;Line&gt;
+        &lt;Pattern&gt;X[0-9a-zA-Z]{7}.pdf&lt;/Pattern&gt;
+        &lt;Name&gt;Material&lt;/Name&gt;
+        &lt;simple&gt;false&lt;/simple&gt;
+        &lt;CaseSensitive&gt;false&lt;/CaseSensitive&gt;
+    &lt;/Line&gt;
+&lt;/FilenameRouterSettings&gt;
+</Settings>
+            <SettingsVersion>1</SettingsVersion>
+            <Input RunListID="RL781">
+                <UISettings>
+                    <settings>{"18743330_out":{}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="Material" Type="PRODUCTIVE" RunListID="RL23"/>
+            <Output Name="DEFAULT" Type="PRODUCTIVE" RunListID="RL782"/>
+            <Output Name="log" Type="LOG" RunListID="RL1147"/>
+            <UISettings>
+                <settings>{"x":212.52197265625,"y":188.5625,"originalDbId":18743331}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="DeleteInput" Name="Delete Source Files">
+            <Description></Description>
             <Settings></Settings>
             <SettingsVersion>0</SettingsVersion>
-            <Input RunListID="RL22">
+            <Input RunListID="RL782">
                 <UISettings>
-                    <settings>{"16419549_Error-PDF":{"measure_y":"relative","x":0.48744025211265407,"y":0.6053299492385786,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743331_DEFAULT":{"measure_y":"relative","x":0.4835309935764442,"y":0.5271002710027101,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="log" Type="LOG" RunListID="RL46"/>
+            <Output Name="log" Type="LOG" RunListID="RL783"/>
             <UISettings>
-                <settings>{"x":499.1037546418029,"y":446.07092887679755,"originalDbId":16419554}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
-            <Settings></Settings>
-            <SettingsVersion>0</SettingsVersion>
-            <Input RunListID="RL23">
-                <UISettings>
-                    <settings>{"16422343_log":{"measure_y":"relative","x":0.4022018900630817,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <UISettings>
-                <settings>{"x":496.5119577668029,"y":683.0709288767976,"originalDbId":16419555}</settings>
+                <settings>{"x":469.482177734375,"y":371.5625,"originalDbId":18743332}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="SendMail" Name="Send Error Emails">
-            <Description>Error emails will be send to Tanya Smith and all Methode Application Specialists.</Description>
+            <Description>Error emails will be send to Tanya Smith and all DTP Bellville team members. Methode content team is also included.</Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
 &lt;SendMailSettings&gt;
     &lt;SenderEmailAddress&gt;noreply@media24.com&lt;/SenderEmailAddress&gt;
     &lt;EmailSubject&gt;Faulty Advertisement: &amp;lt;JOB_NAME&amp;gt;&lt;/EmailSubject&gt;
+    &lt;recipients&gt;Cheryl.Moig@media24.com&lt;/recipients&gt;
     &lt;recipients&gt;tsmith@dieburger.com&lt;/recipients&gt;
+    &lt;recipients&gt;DTP.Electronic@dieburger.com&lt;/recipients&gt;
     &lt;recipients&gt;Eidos.Content@Media24.com&lt;/recipients&gt;
     &lt;addRunlistFilesAsAttachments&gt;true&lt;/addRunlistFilesAsAttachments&gt;
-    &lt;MessageText&gt;Check the following Advert &amp;lt;JOB_NAME&amp;gt; - It has failed on the &amp;lt;ASSEMBLY_LINE_NAME&amp;gt;. Please check the attached log for the error.&amp;#13;
+    &lt;MessageText&gt;Check the following Advert &amp;lt;JOB_NAME&amp;gt; - It has failed on the &amp;lt;ASSEMBLY_LINE_NAME&amp;gt;. Please check the naming convention of the material and re-upload the file.&amp;#13;
 &amp;#13;
 &amp;lt;JOB_NO&amp;gt;&lt;/MessageText&gt;
     &lt;SmtpNetResource&gt;
@@ -934,196 +1203,47 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
 &lt;/SendMailSettings&gt;
 </Settings>
             <SettingsVersion>0</SettingsVersion>
-            <Input RunListID="RL46">
+            <Input RunListID="RL783">
                 <UISettings>
-                    <settings>{"16419552_Error":{"measure_y":"relative","x":0.4711081131768382,"y":0.4347885919503698,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"},"16419554_log":{"measure_y":"relative","x":0.40024791899039985,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"16419550_Error":{"measure_y":"relative","x":0.5,"y":0.47169924005201863,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"},"16419551_Error":{"measure_y":"relative","x":0.4899802800970176,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743332_log":{"measure_y":"relative","x":0.4008179612473304,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="log" Type="LOG" RunListID="RL23"/>
+            <Output Name="log" Type="LOG" RunListID="RL784"/>
             <UISettings>
-                <settings>{"x":502.3471628449279,"y":588.3209288767976,"originalDbId":16422343}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="Rename" Name="Rename Files">
-            <Description></Description>
-            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;RenameSettings&gt;
-    &lt;SearchPattern&gt;*.xml&lt;/SearchPattern&gt;
-    &lt;UseShellPatternStyle&gt;true&lt;/UseShellPatternStyle&gt;
-    &lt;IgnoreCase&gt;true&lt;/IgnoreCase&gt;
-    &lt;RenamePattern&gt;&amp;lt;1&amp;gt;-PASS.xml&lt;/RenamePattern&gt;
-&lt;/RenameSettings&gt;
-</Settings>
-            <SettingsVersion>0</SettingsVersion>
-            <Input RunListID="RL49">
-                <UISettings>
-                    <settings>{"16514340_out":{"measure_y":"relative","x":0.42254731591278255,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="out" Type="PRODUCTIVE" RunListID="RL50"/>
-            <Output Name="nomatch" Type="PRODUCTIVE" RunListID="RL486"/>
-            <Output Name="log" Type="LOG" RunListID="RL487"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL488"/>
-            <UISettings>
-                <settings>{"x":187.0,"y":1082.661290322581,"originalDbId":16422345}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="FileExport" Name="Approved Material Logs">
-            <Description></Description>
-            <Settings>&lt;FileExportSettings&gt;
-    &lt;Path&gt;/Out/DisplayAds-POC-Logs/&lt;/Path&gt;
-    &lt;netResource&gt;
-        &lt;path&gt;/D:/Workspace_data/&lt;/path&gt;
-        &lt;secure&gt;false&lt;/secure&gt;
-        &lt;type&gt;FILE&lt;/type&gt;
-        &lt;PollingForced&gt;false&lt;/PollingForced&gt;
-        &lt;description&gt;Workspace_data&lt;/description&gt;
-        &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
-        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
-        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
-        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
-        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
-        &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
-    &lt;/netResource&gt;
-    &lt;ReplicateFolderStructure&gt;false&lt;/ReplicateFolderStructure&gt;
-    &lt;PreventOverwritingFiles&gt;false&lt;/PreventOverwritingFiles&gt;
-    &lt;DestinationFilePattern&gt;&lt;/DestinationFilePattern&gt;
-    &lt;MaxRetry&gt;2&lt;/MaxRetry&gt;
-    &lt;RetryDelay&gt;120000&lt;/RetryDelay&gt;
-    &lt;ExportSubPath&gt;&lt;/ExportSubPath&gt;
-    &lt;DeleteExportedFiles&gt;false&lt;/DeleteExportedFiles&gt;
-    &lt;DeletionTime&gt;
-        &lt;RelativeDelay&gt;86400000&lt;/RelativeDelay&gt;
-        &lt;Relative&gt;true&lt;/Relative&gt;
-    &lt;/DeletionTime&gt;
-&lt;/FileExportSettings&gt;</Settings>
-            <SettingsVersion>4</SettingsVersion>
-            <Input RunListID="RL50">
-                <UISettings>
-                    <settings>{"16422345_out":{"measure_y":"relative","x":0.44251623397127776,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="log" Type="LOG" RunListID="RL51"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL503"/>
-            <UISettings>
-                <settings>{"x":153.0,"y":1201.411290322581,"originalDbId":16422346}</settings>
+                <settings>{"x":472.4375,"y":500.0,"originalDbId":18743333}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
             <Settings></Settings>
             <SettingsVersion>0</SettingsVersion>
-            <Input RunListID="RL51">
+            <Input RunListID="RL784">
                 <UISettings>
-                    <settings>{"16422346_log":{"measure_y":"relative","x":0.4734805714108129,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"16431551_log":{"measure_y":"relative","x":0.4619202508338598,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743333_log":{"measure_y":"relative","x":0.4004989627211202,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":257.0,"y":1335.661290322581,"originalDbId":16422347}</settings>
+                <settings>{"x":466.477294921875,"y":639.6875,"originalDbId":18743334}</settings>
             </UISettings>
         </Node>
-        <Node DeviceName="ImageExport" Name="Convert to JPEG">
-            <Description>Convert the pdf to a JPEG image for attachment to the customer invoice.</Description>
-            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;ImageExportConfig SchemaIdentifier="oz0vQknhYD9W1XBgZP4qtg==" SchemaMinorVersion="18" SchemaMajorVersion="1" CreatorName="ImageExportController" CreatorDate="2020-11-04T13:00:34.756+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
-    &lt;DeviceLinkICCProfiles/&gt;
-    &lt;CMYKICCProfiles&gt;
-        &lt;ns2:DictionaryElement&gt;
-            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
-        &lt;/ns2:DictionaryElement&gt;
-        &lt;ns2:DictionaryElement&gt;
-            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
-        &lt;/ns2:DictionaryElement&gt;
-    &lt;/CMYKICCProfiles&gt;
-    &lt;RGBICCProfiles&gt;
-        &lt;ns2:DictionaryElement&gt;
-            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/InputGamut.icc&lt;/ns2:DictionaryValue&gt;
-        &lt;/ns2:DictionaryElement&gt;
-        &lt;ns2:DictionaryElement&gt;
-            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/InputGamut.icc&lt;/ns2:DictionaryValue&gt;
-        &lt;/ns2:DictionaryElement&gt;
-    &lt;/RGBICCProfiles&gt;
-    &lt;GrayICCProfiles&gt;
-        &lt;ns2:DictionaryElement&gt;
-            &lt;ns2:DictionaryKey&gt;OV-White&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovg.ICM&lt;/ns2:DictionaryValue&gt;
-        &lt;/ns2:DictionaryElement&gt;
-    &lt;/GrayICCProfiles&gt;
-    &lt;PreserveBlack&gt;true&lt;/PreserveBlack&gt;
-    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-    &lt;UseOutputIntent&gt;true&lt;/UseOutputIntent&gt;
-    &lt;BlackPointCompensation&gt;false&lt;/BlackPointCompensation&gt;
-    &lt;ImageSize&gt;
-        &lt;ns2:Width&gt;0.0&lt;/ns2:Width&gt;
-        &lt;ns2:Height&gt;0.0&lt;/ns2:Height&gt;
-    &lt;/ImageSize&gt;
-    &lt;KeepOrigFilenameForSingelPageDocs&gt;true&lt;/KeepOrigFilenameForSingelPageDocs&gt;
-    &lt;AppendPageLabel&gt;false&lt;/AppendPageLabel&gt;
-    &lt;MetadataConfig&gt;
-        &lt;AdditionalKeywords/&gt;
-        &lt;RemoveOtherMetadata&gt;KeepOther&lt;/RemoveOtherMetadata&gt;
-        &lt;DefaultCreationDate&gt;false&lt;/DefaultCreationDate&gt;
-        &lt;RemoveCreationDate&gt;false&lt;/RemoveCreationDate&gt;
-        &lt;DefaultProducer&gt;true&lt;/DefaultProducer&gt;
-        &lt;RemoveProducer&gt;true&lt;/RemoveProducer&gt;
-        &lt;DefaultCreator&gt;false&lt;/DefaultCreator&gt;
-        &lt;RemoveCreator&gt;false&lt;/RemoveCreator&gt;
-        &lt;RemoveKeywords&gt;false&lt;/RemoveKeywords&gt;
-        &lt;RemoveSubject&gt;false&lt;/RemoveSubject&gt;
-        &lt;DefaultAuthor&gt;false&lt;/DefaultAuthor&gt;
-        &lt;RemoveAuthor&gt;false&lt;/RemoveAuthor&gt;
-        &lt;DefaultTitle&gt;false&lt;/DefaultTitle&gt;
-        &lt;RemoveTitle&gt;false&lt;/RemoveTitle&gt;
-    &lt;/MetadataConfig&gt;
-    &lt;ImageRenderConfig&gt;
-        &lt;JPEGImageRender&gt;
-            &lt;TargetICCProfileName&gt;sRGB IEC61966-2.1&lt;/TargetICCProfileName&gt;
-            &lt;BaseImageRenderConfig&gt;
-                &lt;OverprintICCProfileName&gt;ISOnewspaper26v4&lt;/OverprintICCProfileName&gt;
-                &lt;Alpha&gt;false&lt;/Alpha&gt;
-                &lt;Antialias&gt;true&lt;/Antialias&gt;
-                &lt;AttachICCProfile&gt;true&lt;/AttachICCProfile&gt;
-                &lt;MaxHeight&gt;0&lt;/MaxHeight&gt;
-                &lt;MaxWidth&gt;0&lt;/MaxWidth&gt;
-                &lt;VResolution&gt;0.0&lt;/VResolution&gt;
-                &lt;Resolution&gt;96.0&lt;/Resolution&gt;
-            &lt;/BaseImageRenderConfig&gt;
-            &lt;Compression&gt;HighQuality&lt;/Compression&gt;
-            &lt;ImageExportColorModel&gt;RGB&lt;/ImageExportColorModel&gt;
-        &lt;/JPEGImageRender&gt;
-    &lt;/ImageRenderConfig&gt;
-&lt;/ImageExportConfig&gt;
-</Settings>
-            <SettingsVersion>18</SettingsVersion>
-            <Input RunListID="RL52">
-                <UISettings>
-                    <settings>{"16419550_Output":{"measure_y":"relative","x":0.4929246040276694,"y":0.6596649316745267,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL53;RL112"/>
-            <Output Name="Log" Type="LOG" RunListID="RL494"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL495"/>
-            <UISettings>
-                <settings>{"x":697.6599069855531,"y":824.5709288767976,"originalDbId":16422348}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="FileExport" Name="Proof Images For Invoices">
-            <Description></Description>
+        <Node DeviceName="FileExport" Name="Export Files to MaterialCutouts">
+            <Description>JPG files will be hosted in the folder for importing purposes by SAP. The folder will be cleaned up after 30 days automatically.</Description>
             <Settings>&lt;FileExportSettings&gt;
-    &lt;Path&gt;/Out/DisplayAds-POC-Logs/&lt;/Path&gt;
+    &lt;Path&gt;&lt;/Path&gt;
     &lt;netResource&gt;
-        &lt;path&gt;/D:/Workspace_data/&lt;/path&gt;
+        &lt;host&gt;saperpprd01&lt;/host&gt;
+        &lt;port&gt;21&lt;/port&gt;
+        &lt;path&gt;/sapinterface/ERP/Interfaces/material_cutouts/&lt;/path&gt;
+        &lt;username&gt;eidosftp&lt;/username&gt;
+        &lt;password&gt;3261e922ee0b33d150b44710fa7199be&lt;/password&gt;
         &lt;secure&gt;false&lt;/secure&gt;
-        &lt;type&gt;FILE&lt;/type&gt;
-        &lt;PollingForced&gt;false&lt;/PollingForced&gt;
-        &lt;description&gt;Workspace_data&lt;/description&gt;
-        &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
+        &lt;type&gt;FTP&lt;/type&gt;
+        &lt;PollingForced&gt;true&lt;/PollingForced&gt;
+        &lt;PollingInterval&gt;120000&lt;/PollingInterval&gt;
+        &lt;description&gt;SAP Invoice Material&lt;/description&gt;
+        &lt;PassiveModeForced&gt;true&lt;/PassiveModeForced&gt;
         &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
         &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
-        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
+        &lt;UseDirectoryListingForReload&gt;true&lt;/UseDirectoryListingForReload&gt;
         &lt;UseProxy&gt;false&lt;/UseProxy&gt;
         &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
     &lt;/netResource&gt;
@@ -1135,321 +1255,83 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
     &lt;ExportSubPath&gt;&lt;/ExportSubPath&gt;
     &lt;DeleteExportedFiles&gt;false&lt;/DeleteExportedFiles&gt;
     &lt;DeletionTime&gt;
-        &lt;RelativeDelay&gt;86400000&lt;/RelativeDelay&gt;
+        &lt;RelativeDelay&gt;2592000000&lt;/RelativeDelay&gt;
         &lt;Relative&gt;true&lt;/Relative&gt;
     &lt;/DeletionTime&gt;
 &lt;/FileExportSettings&gt;</Settings>
             <SettingsVersion>4</SettingsVersion>
-            <Input RunListID="RL53">
+            <Input RunListID="RL993">
                 <UISettings>
-                    <settings>{"16422348_Output":{"measure_y":"relative","x":0.4403878284054326,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743319_Output":{"measure_y":"relative","x":0.4582005859209681,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="log" Type="LOG" RunListID="RL54"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL491"/>
+            <Output Name="log" Type="LOG" RunListID="RL994"/>
+            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1141"/>
             <UISettings>
-                <settings>{"x":708.3471628449281,"y":969.3209288767978,"originalDbId":16422349}</settings>
+                <settings>{"x":251.4638671875,"y":1335.0,"originalDbId":18743335}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
+            <Description></Description>
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL994">
+                <UISettings>
+                    <settings>{"18743335_log":{}}</settings>
+                </UISettings>
+            </Input>
+            <UISettings>
+                <settings>{"x":272.577880859375,"y":1451.0,"originalDbId":18743336}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
             <Settings></Settings>
             <SettingsVersion>0</SettingsVersion>
-            <Input RunListID="RL54">
+            <Input RunListID="RL995">
                 <UISettings>
-                    <settings>{"16422349_log":{"measure_y":"relative","x":0.4772996693045086,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"16423471_log":{"measure_y":"relative","x":0.04959856306246329,"y":0.0,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743338_log":{"measure_y":"relative","x":0.4002508340842121,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":823.5971628449283,"y":1081.570928876798,"originalDbId":16422350}</settings>
+                <settings>{"x":491.0,"y":1335.75,"originalDbId":18743337}</settings>
             </UISettings>
         </Node>
-        <Node DeviceName="XImport" Name="Prepare Print Ready Pdfs">
-            <Description></Description>
+        <Node DeviceName="SendMail" Name="Send Error Emails">
+            <Description>Error emails will be send to Tanya Smith and all DTP Bellville team members. Methode content team is also included.</Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;ImportConfig SchemaIdentifier="Lkd4ddE3slJ7NNA1dNohXA==" SchemaMinorVersion="12" SchemaMajorVersion="1" CreatorName="XImportController" CreatorDate="2020-11-02T17:31:47.504+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
-    &lt;ImageImportConfig&gt;
-        &lt;RecognizeImageMask&gt;false&lt;/RecognizeImageMask&gt;
-        &lt;RecognizeSeparatedImages&gt;true&lt;/RecognizeSeparatedImages&gt;
-        &lt;ResolutionOfImageFiles&gt;0.0&lt;/ResolutionOfImageFiles&gt;
-    &lt;/ImageImportConfig&gt;
-    &lt;PDFImportConfig&gt;
-        &lt;EmbedReferencedOutputIntent&gt;false&lt;/EmbedReferencedOutputIntent&gt;
-        &lt;RejectAIPseudoPDF&gt;false&lt;/RejectAIPseudoPDF&gt;
-        &lt;KeepReusedFormXObject&gt;true&lt;/KeepReusedFormXObject&gt;
-        &lt;CreatePlaceholderFonts&gt;false&lt;/CreatePlaceholderFonts&gt;
-        &lt;UsePDFXOutputIntent&gt;true&lt;/UsePDFXOutputIntent&gt;
-        &lt;FlattenPDFLayers&gt;true&lt;/FlattenPDFLayers&gt;
-        &lt;PDFDefaultNonZeroOverprintingMode&gt;false&lt;/PDFDefaultNonZeroOverprintingMode&gt;
-    &lt;/PDFImportConfig&gt;
-    &lt;PSImportConfig&gt;
-        &lt;RecognizePhotoshopDuotones&gt;false&lt;/RecognizePhotoshopDuotones&gt;
-        &lt;PreserveEPSOPIComments&gt;false&lt;/PreserveEPSOPIComments&gt;
-        &lt;UsePrologue&gt;false&lt;/UsePrologue&gt;
-        &lt;ImportDCSPlates&gt;false&lt;/ImportDCSPlates&gt;
-        &lt;PSDefaultNonZeroOverprintingMode&gt;false&lt;/PSDefaultNonZeroOverprintingMode&gt;
-        &lt;DefaultPageSize&gt;
-            &lt;ns2:Width&gt;595.0&lt;/ns2:Width&gt;
-            &lt;ns2:Height&gt;842.0&lt;/ns2:Height&gt;
-        &lt;/DefaultPageSize&gt;
-        &lt;DeviceScale&gt;32&lt;/DeviceScale&gt;
-    &lt;/PSImportConfig&gt;
-    &lt;PassThroughPSError&gt;true&lt;/PassThroughPSError&gt;
-    &lt;InteractiveElementMode&gt;RemoveAll&lt;/InteractiveElementMode&gt;
-    &lt;UseFontLibrary&gt;true&lt;/UseFontLibrary&gt;
-    &lt;OtherColorSpacesWithOverprintGoeDeviceN&gt;false&lt;/OtherColorSpacesWithOverprintGoeDeviceN&gt;
-    &lt;ValidateCompressedImages&gt;true&lt;/ValidateCompressedImages&gt;
-    &lt;RecognizeTintedGrayscaleImages&gt;false&lt;/RecognizeTintedGrayscaleImages&gt;
-    &lt;PreserveTIFFOPIComments&gt;false&lt;/PreserveTIFFOPIComments&gt;
-    &lt;IgnoreSeparationForSingleBlackPage&gt;true&lt;/IgnoreSeparationForSingleBlackPage&gt;
-    &lt;RemovedClippedOffElements&gt;true&lt;/RemovedClippedOffElements&gt;
-    &lt;RecomposeOverprintingMultitones&gt;true&lt;/RecomposeOverprintingMultitones&gt;
-    &lt;JoinFillToBlocks&gt;true&lt;/JoinFillToBlocks&gt;
-    &lt;JoinStrokes&gt;false&lt;/JoinStrokes&gt;
-    &lt;JoinTextToBlocks&gt;true&lt;/JoinTextToBlocks&gt;
-    &lt;FontSubstitutionTable/&gt;
-    &lt;Fallbackfontname&gt;OVDefault&lt;/Fallbackfontname&gt;
-    &lt;RejectMissingFonts&gt;true&lt;/RejectMissingFonts&gt;
-    &lt;ResolvePDFRotation&gt;false&lt;/ResolvePDFRotation&gt;
-    &lt;MergeFonts&gt;true&lt;/MergeFonts&gt;
-    &lt;WSPDFSaveConfig&gt;
-        &lt;ns2:JPEGForColorImages&gt;false&lt;/ns2:JPEGForColorImages&gt;
-        &lt;ns2:FasterLosslessCompression&gt;true&lt;/ns2:FasterLosslessCompression&gt;
-    &lt;/WSPDFSaveConfig&gt;
-&lt;/ImportConfig&gt;
-</Settings>
-            <SettingsVersion>12</SettingsVersion>
-            <Input RunListID="RL93">
-                <UISettings>
-                    <settings>{"16339093_out":{"measure_y":"relative","x":0.447305111893015,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL17"/>
-            <Output Name="Log" Type="LOG" RunListID="RL489"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL490"/>
-            <UISettings>
-                <settings>{"x":128.0,"y":182.0,"originalDbId":16423050}</settings>
-            </UISettings>
-            <PropertyUsageGroup>
-                <Name>PwdProperty</Name>
-                <EditorName>String</EditorName>
-                <PropertyUsage>
-                    <PropertyPath>JobInstruction/pwds</PropertyPath>
-                    <DefaultValue></DefaultValue>
-                    <JobInstructionQuestion>Enter the password for opening protected job files:</JobInstructionQuestion>
-                    <ErrorHandling>USE_DEFAULT</ErrorHandling>
-                    <PropertyKind>JOB_PROPERTY</PropertyKind>
-                </PropertyUsage>
-            </PropertyUsageGroup>
-        </Node>
-        <Node DeviceName="FileExport" Name="Preview">
-            <Description>Preview of the material for IRP system.</Description>
-            <Settings>&lt;FileExportSettings&gt;
-    &lt;Path&gt;/Out/DisplayAds-POC-Preview/&lt;/Path&gt;
-    &lt;netResource&gt;
-        &lt;path&gt;/D:/Workspace_data/&lt;/path&gt;
+&lt;SendMailSettings&gt;
+    &lt;SenderEmailAddress&gt;noreply@media24.com&lt;/SenderEmailAddress&gt;
+    &lt;EmailSubject&gt;Faulty Advertisement: &amp;lt;JOB_NAME&amp;gt;&lt;/EmailSubject&gt;
+    &lt;recipients&gt;Eidos.Content@Media24.com&lt;/recipients&gt;
+    &lt;addRunlistFilesAsAttachments&gt;true&lt;/addRunlistFilesAsAttachments&gt;
+    &lt;MessageText&gt;Check the following Advert &amp;lt;JOB_NAME&amp;gt; - It has failed on the &amp;lt;ASSEMBLY_LINE_NAME&amp;gt; on the JPG conversion. Please check the attached log for the error and re-upload the material for processing.&amp;#13;
+&amp;#13;
+&amp;lt;JOB_NO&amp;gt;&lt;/MessageText&gt;
+    &lt;SmtpNetResource&gt;
+        &lt;host&gt;152.111.1.10&lt;/host&gt;
+        &lt;port&gt;25&lt;/port&gt;
+        &lt;username&gt;eidos@media24.com&lt;/username&gt;
         &lt;secure&gt;false&lt;/secure&gt;
-        &lt;type&gt;FILE&lt;/type&gt;
-        &lt;PollingForced&gt;false&lt;/PollingForced&gt;
-        &lt;description&gt;Workspace_data&lt;/description&gt;
+        &lt;type&gt;SMTP&lt;/type&gt;
+        &lt;description&gt;NoReplyAsura@media24.com&lt;/description&gt;
         &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
         &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
         &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
         &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
         &lt;UseProxy&gt;false&lt;/UseProxy&gt;
         &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
-    &lt;/netResource&gt;
-    &lt;ReplicateFolderStructure&gt;false&lt;/ReplicateFolderStructure&gt;
-    &lt;PreventOverwritingFiles&gt;false&lt;/PreventOverwritingFiles&gt;
-    &lt;DestinationFilePattern&gt;&lt;/DestinationFilePattern&gt;
-    &lt;MaxRetry&gt;2&lt;/MaxRetry&gt;
-    &lt;RetryDelay&gt;120000&lt;/RetryDelay&gt;
-    &lt;ExportSubPath&gt;&lt;/ExportSubPath&gt;
-    &lt;DeleteExportedFiles&gt;false&lt;/DeleteExportedFiles&gt;
-    &lt;DeletionTime&gt;
-        &lt;RelativeDelay&gt;86400000&lt;/RelativeDelay&gt;
-        &lt;Relative&gt;true&lt;/Relative&gt;
-    &lt;/DeletionTime&gt;
-&lt;/FileExportSettings&gt;</Settings>
-            <SettingsVersion>4</SettingsVersion>
-            <Input RunListID="RL112">
-                <UISettings>
-                    <settings>{"16422348_Output":{"measure_y":"relative","x":0.477627467808739,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="log" Type="LOG" RunListID="RL54"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL483"/>
-            <UISettings>
-                <settings>{"x":925.4036144578317,"y":970.1596385542168,"originalDbId":16423471}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="Rename" Name="Rename Files">
-            <Description></Description>
-            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;RenameSettings&gt;
-    &lt;SearchPattern&gt;*.xml&lt;/SearchPattern&gt;
-    &lt;UseShellPatternStyle&gt;true&lt;/UseShellPatternStyle&gt;
-    &lt;IgnoreCase&gt;true&lt;/IgnoreCase&gt;
-    &lt;RenamePattern&gt;&amp;lt;1&amp;gt;-FAIL.xml&lt;/RenamePattern&gt;
-&lt;/RenameSettings&gt;
+    &lt;/SmtpNetResource&gt;
+&lt;/SendMailSettings&gt;
 </Settings>
             <SettingsVersion>0</SettingsVersion>
-            <Input RunListID="RL131">
+            <Input RunListID="RL996">
                 <UISettings>
-                    <settings>{"16558868_out":{"measure_y":"relative","x":0.44397636872187063,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743319_Error":{"measure_y":"relative","x":0.4792874188610897,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="out" Type="PRODUCTIVE" RunListID="RL134"/>
-            <Output Name="nomatch" Type="PRODUCTIVE" RunListID="RL496"/>
-            <Output Name="log" Type="LOG" RunListID="RL497"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL498"/>
+            <Output Name="log" Type="LOG" RunListID="RL995"/>
             <UISettings>
-                <settings>{"x":363.01807228915663,"y":1080.292168674699,"originalDbId":16431548}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="FileExport" Name="Failed Material Logs">
-            <Description></Description>
-            <Settings>&lt;FileExportSettings&gt;
-    &lt;Path&gt;/Out/DisplayAds-POC-Logs/&lt;/Path&gt;
-    &lt;netResource&gt;
-        &lt;path&gt;/D:/Workspace_data/&lt;/path&gt;
-        &lt;secure&gt;false&lt;/secure&gt;
-        &lt;type&gt;FILE&lt;/type&gt;
-        &lt;PollingForced&gt;false&lt;/PollingForced&gt;
-        &lt;description&gt;Workspace_data&lt;/description&gt;
-        &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
-        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
-        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
-        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
-        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
-        &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
-    &lt;/netResource&gt;
-    &lt;ReplicateFolderStructure&gt;false&lt;/ReplicateFolderStructure&gt;
-    &lt;PreventOverwritingFiles&gt;false&lt;/PreventOverwritingFiles&gt;
-    &lt;DestinationFilePattern&gt;&lt;/DestinationFilePattern&gt;
-    &lt;MaxRetry&gt;2&lt;/MaxRetry&gt;
-    &lt;RetryDelay&gt;120000&lt;/RetryDelay&gt;
-    &lt;ExportSubPath&gt;&lt;/ExportSubPath&gt;
-    &lt;DeleteExportedFiles&gt;false&lt;/DeleteExportedFiles&gt;
-    &lt;DeletionTime&gt;
-        &lt;RelativeDelay&gt;86400000&lt;/RelativeDelay&gt;
-        &lt;Relative&gt;true&lt;/Relative&gt;
-    &lt;/DeletionTime&gt;
-&lt;/FileExportSettings&gt;</Settings>
-            <SettingsVersion>4</SettingsVersion>
-            <Input RunListID="RL134">
-                <UISettings>
-                    <settings>{"16431548_out":{"measure_y":"relative","x":0.46310652064314467,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="log" Type="LOG" RunListID="RL51"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL492"/>
-            <UISettings>
-                <settings>{"x":352.1265060240964,"y":1199.1837349397592,"originalDbId":16431551}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="FileExport" Name="FAIL">
-            <Description></Description>
-            <Settings>&lt;FileExportSettings&gt;
-    &lt;Path&gt;/Out/DisplayAds-POC-Logs/&lt;/Path&gt;
-    &lt;netResource&gt;
-        &lt;path&gt;/D:/Workspace_data/&lt;/path&gt;
-        &lt;secure&gt;false&lt;/secure&gt;
-        &lt;type&gt;FILE&lt;/type&gt;
-        &lt;PollingForced&gt;false&lt;/PollingForced&gt;
-        &lt;description&gt;Workspace_data&lt;/description&gt;
-        &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
-        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
-        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
-        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
-        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
-        &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
-    &lt;/netResource&gt;
-    &lt;ReplicateFolderStructure&gt;false&lt;/ReplicateFolderStructure&gt;
-    &lt;PreventOverwritingFiles&gt;false&lt;/PreventOverwritingFiles&gt;
-    &lt;DestinationFilePattern&gt;&lt;/DestinationFilePattern&gt;
-    &lt;MaxRetry&gt;2&lt;/MaxRetry&gt;
-    &lt;RetryDelay&gt;120000&lt;/RetryDelay&gt;
-    &lt;ExportSubPath&gt;&lt;/ExportSubPath&gt;
-    &lt;DeleteExportedFiles&gt;false&lt;/DeleteExportedFiles&gt;
-    &lt;DeletionTime&gt;
-        &lt;RelativeDelay&gt;86400000&lt;/RelativeDelay&gt;
-        &lt;Relative&gt;true&lt;/Relative&gt;
-    &lt;/DeletionTime&gt;
-&lt;/FileExportSettings&gt;</Settings>
-            <SettingsVersion>4</SettingsVersion>
-            <Input RunListID="RL159">
-                <UISettings>
-                    <settings>{"16419552_Error":{},"16419549_Error":{},"16419550_Error":{},"16419551_Error":{}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="log" Type="LOG" RunListID="RL310"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL484"/>
-            <UISettings>
-                <settings>{"x":268.0,"y":841.0,"originalDbId":16513903}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
-            <Settings></Settings>
-            <SettingsVersion>0</SettingsVersion>
-            <Input RunListID="RL184">
-                <UISettings>
-                    <settings>{"16339091_log":{"measure_y":"relative","x":0.4518467749330487,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <UISettings>
-                <settings>{"x":0.0,"y":964.0,"originalDbId":16513947}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="JobHistory" Name="Job History Pass">
-            <Description></Description>
-            <Settings>&lt;JobHistorySettings&gt;
-    &lt;LogFormat&gt;USER_DEFINED&lt;/LogFormat&gt;
-    &lt;UseUserDefinedFileExtension&gt;true&lt;/UseUserDefinedFileExtension&gt;
-    &lt;UserDefinedFileExtension&gt;xml&lt;/UserDefinedFileExtension&gt;
-    &lt;LogLanguage&gt;en&lt;/LogLanguage&gt;
-    &lt;UserTransformation&gt;displayAds.xslt&lt;/UserTransformation&gt;
-    &lt;LengthUnit&gt;mm&lt;/LengthUnit&gt;
-    &lt;LengthFontLineUnit&gt;postscript_pt&lt;/LengthFontLineUnit&gt;
-    &lt;ResolutionUnit&gt;dpi&lt;/ResolutionUnit&gt;
-    &lt;FilteredByDevices&gt;true&lt;/FilteredByDevices&gt;
-    &lt;FilteredDeviceName&gt;FileExport&lt;/FilteredDeviceName&gt;
-&lt;/JobHistorySettings&gt;</Settings>
-            <SettingsVersion>2</SettingsVersion>
-            <Input RunListID="RL207">
-                <UISettings>
-                    <settings>{"16339091_log":{"measure_y":"relative","x":0.4822064056939502,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="out" Type="PRODUCTIVE" RunListID="RL49"/>
-            <Output Name="log" Type="LOG" RunListID="RL504"/>
-            <UISettings>
-                <settings>{"x":199.991943359375,"y":965.0,"originalDbId":16514340}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="JobHistory" Name="Job History Fail">
-            <Description></Description>
-            <Settings>&lt;JobHistorySettings&gt;
-    &lt;LogFormat&gt;USER_DEFINED&lt;/LogFormat&gt;
-    &lt;UseUserDefinedFileExtension&gt;true&lt;/UseUserDefinedFileExtension&gt;
-    &lt;UserDefinedFileExtension&gt;xml&lt;/UserDefinedFileExtension&gt;
-    &lt;LogLanguage&gt;en&lt;/LogLanguage&gt;
-    &lt;UserTransformation&gt;displayAds.xslt&lt;/UserTransformation&gt;
-    &lt;LengthUnit&gt;mm&lt;/LengthUnit&gt;
-    &lt;LengthFontLineUnit&gt;postscript_pt&lt;/LengthFontLineUnit&gt;
-    &lt;ResolutionUnit&gt;dpi&lt;/ResolutionUnit&gt;
-    &lt;FilteredByDevices&gt;true&lt;/FilteredByDevices&gt;
-    &lt;FilteredDeviceName&gt;FileExport&lt;/FilteredDeviceName&gt;
-&lt;/JobHistorySettings&gt;</Settings>
-            <SettingsVersion>2</SettingsVersion>
-            <Input RunListID="RL310">
-                <UISettings>
-                    <settings>{"16513903_log":{}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="out" Type="PRODUCTIVE" RunListID="RL131"/>
-            <Output Name="log" Type="LOG" RunListID="RL502"/>
-            <UISettings>
-                <settings>{"x":353.0,"y":964.0,"originalDbId":16558868}</settings>
+                <settings>{"x":496.835205078125,"y":1249.0,"originalDbId":18743338}</settings>
             </UISettings>
         </Node>
         <UISettings>
