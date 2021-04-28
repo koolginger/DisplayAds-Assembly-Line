@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssemblyLineDefinition MinimumWorkspaceVersion="18.2 (Build 23.028)">
-    <Description>Assembly line(s) exported by Workspace. Workspace Version: 19.1 SR 1 (24.047), Host: 02CPT-DIS07, Operating System: Windows Server 2016 Standard 64-bit Version 1607 (build 14393) (64bit mode,virtualized - VMWare), Date/Time: Wed Apr 28 08:58:30 CAT 2021. License information: License code: ClTZfNML_9_kEj, ovld build number: 30.045, Expiring date: Monday, May 10, 2021
+    <Description>Assembly line(s) exported by Workspace. Workspace Version: 19.1 SR 1 (24.047), Host: 02CPT-DIS07, Operating System: Windows Server 2016 Standard 64-bit Version 1607 (build 14393) (64bit mode,virtualized - VMWare), Date/Time: Wed Apr 28 08:58:23 CAT 2021. License information: License code: ClTZfNML_9_kEj, ovld build number: 30.045, Expiring date: Monday, May 10, 2021
 AmendoScale 19.1 (p21.020.R)
 CMSExpert 19.1 (SR 1) (x38.052.S)
 DeleteFromStorage 19.1 SR 1 (w24.047)
@@ -15,10 +15,10 @@ Preflight 19.1 (SR 1) (x38.052.S)
 SendMail 19.1 SR 1 (w24.047)
 TransparencyFlattening 19.1 (SR 1) (x38.052.S)
 XImport 19.1 (SR 1) (x38.052.S)</Description>
-    <AssemblyLine Name="DisplayAds Johannesburg" CreationDate="2020-12-09T16:41:17.355+02:00" ModificationDate="2021-04-28T05:52:46.396+02:00" ModificationUser="jacques.engelbrecht" UserDescription="Display advertisements for national DTP team which caters for advertisements of the northern titles." Version="63">
+    <AssemblyLine Name="DisplayAds CapeTown" CreationDate="2020-12-09T16:47:48.507+02:00" ModificationDate="2021-04-28T05:50:05.129+02:00" ModificationUser="jacques.engelbrecht" UserDescription="Display advertisements for national DTP team which caters for advertisements of the southern titles." Version="80">
         <Status>ACTIVE</Status>
         <InputScanner RunListID="RL39">
-            <Path>/SAP_Display/Johannesburg/</Path>
+            <Path>/SAP_Display/CapeTown/</Path>
             <netResource>
                 <path>/D:/Workspace_data/In/</path>
                 <secure>false</secure>
@@ -34,7 +34,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
                 <SkipOperatingSystemDetection>false</SkipOperatingSystemDetection>
             </netResource>
             <UISettings>
-                <settings>{"x":168.0,"y":0.0,"originalDbId":18742504}</settings>
+                <settings>{"x":168.0,"y":0.0,"originalDbId":18742505}</settings>
             </UISettings>
             <FilterActivated>false</FilterActivated>
             <IgnoreHiddenFiles>true</IgnoreHiddenFiles>
@@ -43,7 +43,38 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <RemoveEmptySubFolder>false</RemoveEmptySubFolder>
             <RemoveHiddenSubFolder>true</RemoveHiddenSubFolder>
             <JobNameSource>FILENAME</JobNameSource>
-            <RecursiveScan>false</RecursiveScan>
+            <RecursiveScan>true</RecursiveScan>
+            <SchedulerActivated>false</SchedulerActivated>
+            <RemoveFileExtensionFromJobName>false</RemoveFileExtensionFromJobName>
+            <ReportZeroByteFiles>false</ReportZeroByteFiles>
+        </InputScanner>
+        <InputScanner RunListID="RL1298">
+            <Path>/MaterialCutouts/</Path>
+            <netResource>
+                <path>/D:/Workspace_data/In/</path>
+                <secure>false</secure>
+                <type>FILE</type>
+                <PollingForced>false</PollingForced>
+                <PollingInterval>30000</PollingInterval>
+                <description>IN</description>
+                <PassiveModeForced>false</PassiveModeForced>
+                <SkipTemporaryRenaming>true</SkipTemporaryRenaming>
+                <UTF8EncodingForced>true</UTF8EncodingForced>
+                <UseDirectoryListingForReload>false</UseDirectoryListingForReload>
+                <UseProxy>false</UseProxy>
+                <SkipOperatingSystemDetection>false</SkipOperatingSystemDetection>
+            </netResource>
+            <UISettings>
+                <settings>{"x":869.955810546875,"y":1114.0,"originalDbId":21538532}</settings>
+            </UISettings>
+            <FilterActivated>false</FilterActivated>
+            <IgnoreHiddenFiles>true</IgnoreHiddenFiles>
+            <DefaultFilterAction>INLCUDE</DefaultFilterAction>
+            <InitialJobPriority>50</InitialJobPriority>
+            <RemoveEmptySubFolder>false</RemoveEmptySubFolder>
+            <RemoveHiddenSubFolder>true</RemoveHiddenSubFolder>
+            <JobNameSource>FILENAME</JobNameSource>
+            <RecursiveScan>true</RecursiveScan>
             <SchedulerActivated>false</SchedulerActivated>
             <RemoveFileExtensionFromJobName>false</RemoveFileExtensionFromJobName>
             <ReportZeroByteFiles>false</ReportZeroByteFiles>
@@ -127,14 +158,14 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>18</SettingsVersion>
             <Input RunListID="RL22">
                 <UISettings>
-                    <settings>{"18743323_Output":{"measure_y":"relative","x":0.484127701474893,"y":0.6596649316745266,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743824_Output":{"measure_y":"relative","x":0.48371411026920635,"y":0.6596649316745266,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"24545703_out":{"measure_y":"relative","x":0.5,"y":0.4476393576816425,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL1269"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1278"/>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL1341"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1359"/>
             <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL996"/>
             <UISettings>
-                <settings>{"x":262.2849069855531,"y":1119.0084288767976,"originalDbId":18743319}</settings>
+                <settings>{"x":262.2849069855531,"y":1119.0084288767976,"originalDbId":18743820}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="XImport" Name="Prepare Print Ready PDF">
@@ -194,14 +225,14 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>12</SettingsVersion>
             <Input RunListID="RL23">
                 <UISettings>
-                    <settings>{"18743331_PDF":{},"18743331_EPS":{"measure_y":"relative","x":0.4018124896622647,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743832_PDF":{},"18743832_EPS":{"measure_y":"relative","x":0.4021086316956764,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="Output" Type="PRODUCTIVE" RunListID="RL28"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1274"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1275"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1370"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1371"/>
             <UISettings>
-                <settings>{"x":180.625,"y":375.4375,"originalDbId":18743320}</settings>
+                <settings>{"x":182.625,"y":375.4375,"originalDbId":18743821}</settings>
             </UISettings>
             <PresetName>Prepare Print Ready PDF</PresetName>
             <PropertyUsageGroup>
@@ -222,11 +253,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL25">
                 <UISettings>
-                    <settings>{"18743328_log":{"measure_y":"relative","x":0.43559120543197605,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743829_log":{"measure_y":"relative","x":0.43559120543197605,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":19.0,"y":1334.9375,"originalDbId":18743321}</settings>
+                <settings>{"x":19.0,"y":1334.9375,"originalDbId":18743822}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="Preflight" Name="Preflight Newsprint">
@@ -537,15 +568,15 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>42</SettingsVersion>
             <Input RunListID="RL28">
                 <UISettings>
-                    <settings>{"18743320_Output":{"measure_y":"relative","x":0.46197087900252787,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743821_Output":{"measure_y":"relative","x":0.4585880297567653,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="Ok" Type="PRODUCTIVE" RunListID="RL35"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1189"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1215"/>
             <Output Name="Error-PDF" Type="PRODUCTIVE_ERROR" RunListID="RL34"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1271"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1362"/>
             <UISettings>
-                <settings>{"x":222.625,"y":503.5987903225807,"originalDbId":18743322}</settings>
+                <settings>{"x":205.625,"y":508.5987903225807,"originalDbId":18743823}</settings>
             </UISettings>
             <PresetName>Preflight Newsprint</PresetName>
         </Node>
@@ -801,14 +832,14 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>47</SettingsVersion>
             <Input RunListID="RL30">
                 <UISettings>
-                    <settings>{"18743329_Output":{"measure_y":"relative","x":0.43279009704086085,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743830_Output":{"measure_y":"relative","x":0.439315821443916,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="Output" Type="PRODUCTIVE" RunListID="RL36;RL22"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1273"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1365"/>
             <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
             <UISettings>
-                <settings>{"x":40.625,"y":898.9321298371367,"originalDbId":18743323}</settings>
+                <settings>{"x":42.625,"y":898.9321298371367,"originalDbId":18743824}</settings>
             </UISettings>
             <PresetName>Normalize Newsprint</PresetName>
         </Node>
@@ -817,11 +848,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL33">
                 <UISettings>
-                    <settings>{"22685009_log":{},"18743326_log":{"measure_y":"relative","x":0.43579393867192523,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"22684621_log":{"measure_y":"relative","x":0.4010852508080716,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"18743827_log":{"measure_y":"relative","x":0.4740763759583703,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":303.1369577668029,"y":1004.5084288767976,"originalDbId":18743325}</settings>
+                <settings>{"x":446.1369577668029,"y":1016.5084288767976,"originalDbId":18743826}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="SendMail" Name="Send Error Emails">
@@ -830,7 +861,6 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
 &lt;SendMailSettings&gt;
     &lt;SenderEmailAddress&gt;noreply@media24.com&lt;/SenderEmailAddress&gt;
     &lt;EmailSubject&gt;Faulty Advertisement: &amp;lt;JOB_NAME&amp;gt;&lt;/EmailSubject&gt;
-    &lt;recipients&gt;Cheryl.Moig@media24.com&lt;/recipients&gt;
     &lt;recipients&gt;tsmith@dieburger.com&lt;/recipients&gt;
     &lt;recipients&gt;DTP.Electronic@dieburger.com&lt;/recipients&gt;
     &lt;recipients&gt;Eidos.Content@Media24.com&lt;/recipients&gt;
@@ -857,12 +887,12 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL34">
                 <UISettings>
-                    <settings>{"18743323_Error":{"measure_y":"relative","x":0.4608730120457627,"y":0.4482796256858804,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"},"18743322_Error-PDF":{"measure_y":"relative","x":0.45910530710802033,"y":0.3520040799365346,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"18743327_Error":{"measure_y":"relative","x":0.47591729979147784,"y":0.2758442557278175,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"18743329_Error":{"measure_y":"relative","x":0.47564125986157724,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743828_Error":{"measure_y":"relative","x":0.47723318698933237,"y":0.26472599182738477,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"18743823_Error-PDF":{"measure_y":"relative","x":0.46238980670265456,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"18743830_Error":{"measure_y":"relative","x":0.475033097573304,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"18743824_Error":{"measure_y":"relative","x":0.4608730120457627,"y":0.4488091476944211,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL33"/>
             <UISettings>
-                <settings>{"x":308.9721628449279,"y":900.7584288767976,"originalDbId":18743326}</settings>
+                <settings>{"x":312.9721628449279,"y":899.7584288767976,"originalDbId":18743827}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="CMSExpert" Name="Colour Management Newsprint">
@@ -936,14 +966,14 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>13</SettingsVersion>
             <Input RunListID="RL35">
                 <UISettings>
-                    <settings>{"18743322_Ok":{"measure_y":"relative","x":0.4633299716156433,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743823_Ok":{"measure_y":"relative","x":0.4607384732768086,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="Output" Type="PRODUCTIVE" RunListID="RL37"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1283"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1368"/>
             <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
             <UISettings>
-                <settings>{"x":50.625,"y":632.4321298371367,"originalDbId":18743327}</settings>
+                <settings>{"x":41.625,"y":632.4321298371367,"originalDbId":18743828}</settings>
             </UISettings>
             <PresetName>Colour Management Newsprint</PresetName>
         </Node>
@@ -985,13 +1015,13 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>4</SettingsVersion>
             <Input RunListID="RL36">
                 <UISettings>
-                    <settings>{"18743323_Output":{"measure_y":"relative","x":0.4502923881983256,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743824_Output":{"measure_y":"relative","x":0.44599744753560616,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL25"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1279"/>
+            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1363"/>
             <UISettings>
-                <settings>{"x":67.625,"y":1119.5987903225807,"originalDbId":18743328}</settings>
+                <settings>{"x":67.625,"y":1119.5987903225807,"originalDbId":18743829}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="TransparencyFlattening" Name="Flatten Transparencies Newsprint">
@@ -1021,14 +1051,14 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>13</SettingsVersion>
             <Input RunListID="RL37">
                 <UISettings>
-                    <settings>{"18743327_Output":{"measure_y":"relative","x":0.4544434335592625,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743828_Output":{"measure_y":"relative","x":0.4578960352785173,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="Output" Type="PRODUCTIVE" RunListID="RL30"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1281"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1360"/>
             <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
             <UISettings>
-                <settings>{"x":42.625,"y":759.9321298371367,"originalDbId":18743329}</settings>
+                <settings>{"x":43.625,"y":759.9321298371367,"originalDbId":18743830}</settings>
             </UISettings>
             <PresetName>Flatten Transparencies Newsprint</PresetName>
         </Node>
@@ -1037,13 +1067,13 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL39">
                 <UISettings>
-                    <settings>{"18742504_":{}}</settings>
+                    <settings>{"18742505_":{"measure_y":"relative","x":0.4003066738061627,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="out" Type="PRODUCTIVE" RunListID="RL781"/>
-            <Output Name="log" Type="LOG" RunListID="RL1282"/>
+            <Output Name="log" Type="LOG" RunListID="RL1367"/>
             <UISettings>
-                <settings>{"x":216.0,"y":76.0,"originalDbId":18743330}</settings>
+                <settings>{"x":192.0,"y":74.0,"originalDbId":18743831}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="FilenameRouter" Name="Advertisement Filter">
@@ -1067,15 +1097,15 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>1</SettingsVersion>
             <Input RunListID="RL781">
                 <UISettings>
-                    <settings>{"18743330_out":{}}</settings>
+                    <settings>{"18743831_out":{"measure_y":"relative","x":0.45588997046049534,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="PDF" Type="PRODUCTIVE" RunListID="RL23"/>
             <Output Name="EPS" Type="PRODUCTIVE" RunListID="RL23"/>
             <Output Name="DEFAULT" Type="PRODUCTIVE" RunListID="RL782"/>
-            <Output Name="log" Type="LOG" RunListID="RL1277"/>
+            <Output Name="log" Type="LOG" RunListID="RL1369"/>
             <UISettings>
-                <settings>{"x":212.52197265625,"y":188.5625,"originalDbId":18743331}</settings>
+                <settings>{"x":212.52197265625,"y":188.5625,"originalDbId":18743832}</settings>
             </UISettings>
             <PresetName>Advertisement Filter</PresetName>
         </Node>
@@ -1085,12 +1115,12 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL782">
                 <UISettings>
-                    <settings>{"18743331_DEFAULT":{"measure_y":"relative","x":0.4835309935764442,"y":0.5271002710027101,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743832_DEFAULT":{"measure_y":"relative","x":0.4835309935764442,"y":0.5271002710027101,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL783"/>
             <UISettings>
-                <settings>{"x":469.482177734375,"y":371.5625,"originalDbId":18743332}</settings>
+                <settings>{"x":469.482177734375,"y":371.5625,"originalDbId":18743833}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="SendMail" Name="Send Error Emails">
@@ -1099,12 +1129,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
 &lt;SendMailSettings&gt;
     &lt;SenderEmailAddress&gt;noreply@media24.com&lt;/SenderEmailAddress&gt;
     &lt;EmailSubject&gt;Faulty Advertisement: &amp;lt;JOB_NAME&amp;gt;&lt;/EmailSubject&gt;
-    &lt;recipients&gt;Cheryl.Moig@media24.com&lt;/recipients&gt;
     &lt;recipients&gt;tsmith@dieburger.com&lt;/recipients&gt;
     &lt;recipients&gt;DTP.Electronic@dieburger.com&lt;/recipients&gt;
     &lt;recipients&gt;Eidos.Content@Media24.com&lt;/recipients&gt;
     &lt;addRunlistFilesAsAttachments&gt;true&lt;/addRunlistFilesAsAttachments&gt;
-    &lt;MessageText&gt;Check the following Advert &amp;lt;JOB_NAME&amp;gt; - It has failed on the &amp;lt;ASSEMBLY_LINE_NAME&amp;gt;. Please check the naming convention and format of the material and re-upload the file&amp;#13;
+    &lt;MessageText&gt;Check the following Advert &amp;lt;JOB_NAME&amp;gt; - It has failed on the &amp;lt;ASSEMBLY_LINE_NAME&amp;gt;. Please check the naming convention and format of the material and re-upload the file.&amp;#13;
 &amp;#13;
 &amp;lt;JOB_NO&amp;gt;&lt;/MessageText&gt;
     &lt;SmtpNetResource&gt;
@@ -1126,12 +1155,12 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL783">
                 <UISettings>
-                    <settings>{"18743332_log":{"measure_y":"relative","x":0.4008179612473304,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743833_log":{"measure_y":"relative","x":0.4008179612473304,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL784"/>
             <UISettings>
-                <settings>{"x":472.4375,"y":500.0,"originalDbId":18743333}</settings>
+                <settings>{"x":472.4375,"y":467.0,"originalDbId":18743834}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
@@ -1139,11 +1168,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL784">
                 <UISettings>
-                    <settings>{"18743333_log":{"measure_y":"relative","x":0.4004989627211202,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743834_log":{"measure_y":"relative","x":0.4004989627211202,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":466.477294921875,"y":639.6875,"originalDbId":18743334}</settings>
+                <settings>{"x":466.477294921875,"y":566.6875,"originalDbId":18743835}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="FileExport" Name="Export Files to MaterialCutouts">
@@ -1183,13 +1212,13 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>4</SettingsVersion>
             <Input RunListID="RL993">
                 <UISettings>
-                    <settings>{"26282547_OK":{"measure_y":"relative","x":0.44964598934075095,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"26282544_OK":{"measure_y":"relative","x":0.4458270326986408,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL994"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1276"/>
+            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1358"/>
             <UISettings>
-                <settings>{"x":244.4638671875,"y":1471.0,"originalDbId":18743335}</settings>
+                <settings>{"x":243.4638671875,"y":1489.0,"originalDbId":18743836}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
@@ -1198,11 +1227,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL994">
                 <UISettings>
-                    <settings>{"18743335_log":{"measure_y":"relative","x":0.44954670871107605,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743836_log":{"measure_y":"relative","x":0.4490324122003663,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":273.577880859375,"y":1601.0,"originalDbId":18743336}</settings>
+                <settings>{"x":268.577880859375,"y":1607.0,"originalDbId":18743837}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
@@ -1210,11 +1239,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL995">
                 <UISettings>
-                    <settings>{"18743338_log":{"measure_y":"relative","x":0.4002508340842121,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743839_log":{"measure_y":"relative","x":0.40407808643276333,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":491.0,"y":1471.75,"originalDbId":18743337}</settings>
+                <settings>{"x":487.0,"y":1488.75,"originalDbId":18743838}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="SendMail" Name="Send Error Emails">
@@ -1247,12 +1276,12 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL996">
                 <UISettings>
-                    <settings>{"26282547_Error":{"measure_y":"relative","x":0.5,"y":0.44871794871794873,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"},"18743319_Error":{"measure_y":"relative","x":0.4792874188610897,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743820_Error":{"measure_y":"relative","x":0.4789384272332136,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"26282544_Error":{"measure_y":"relative","x":0.5,"y":0.44871794871794873,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL995"/>
             <UISettings>
-                <settings>{"x":496.835205078125,"y":1338.0,"originalDbId":18743338}</settings>
+                <settings>{"x":492.835205078125,"y":1341.0,"originalDbId":18743839}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="LogTransformer" Name="Transform XML">
@@ -1269,15 +1298,15 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
 &lt;/LogTransformerSettings&gt;
 </Settings>
             <SettingsVersion>1</SettingsVersion>
-            <Input RunListID="RL1189">
+            <Input RunListID="RL1215">
                 <UISettings>
-                    <settings>{"18743322_Log":{"measure_y":"relative","x":0.48564217107479357,"y":0.8019993759085479,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"18743823_Log":{"measure_y":"relative","x":0.48529621609105866,"y":0.7832544186214625,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="out" Type="PRODUCTIVE" RunListID="RL1190"/>
-            <Output Name="log" Type="LOG" RunListID="RL1272"/>
+            <Output Name="out" Type="PRODUCTIVE" RunListID="RL1216"/>
+            <Output Name="log" Type="LOG" RunListID="RL1361"/>
             <UISettings>
-                <settings>{"x":507.0,"y":767.0,"originalDbId":22685008}</settings>
+                <settings>{"x":488.0,"y":781.0,"originalDbId":22684620}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="FileExport" Name="ErrorLogs">
@@ -1310,15 +1339,29 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
     &lt;/DeletionTime&gt;
 &lt;/FileExportSettings&gt;</Settings>
             <SettingsVersion>4</SettingsVersion>
-            <Input RunListID="RL1190">
+            <Input RunListID="RL1216">
                 <UISettings>
-                    <settings>{"22685008_out":{"measure_y":"relative","x":0.4360680276143666,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"22684620_out":{"measure_y":"relative","x":0.4390955631653059,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL33"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1270"/>
+            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1357"/>
             <UISettings>
-                <settings>{"x":520.655517578125,"y":889.0,"originalDbId":22685009}</settings>
+                <settings>{"x":496.655517578125,"y":899.0,"originalDbId":22684621}</settings>
+            </UISettings>
+        </Node>
+        <Node DeviceName="MoveToStorage" Name="Move Source Files">
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL1298">
+                <UISettings>
+                    <settings>{"21538532_":{"measure_y":"relative","x":0.5,"y":0.4481865284974093,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="out" Type="PRODUCTIVE" RunListID="RL22"/>
+            <Output Name="log" Type="LOG" RunListID="RL1364"/>
+            <UISettings>
+                <settings>{"x":627.0,"y":1117.0,"originalDbId":24545703}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="AmendoScale" Name="Material Resize">
@@ -1369,14 +1412,16 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
 &lt;/Configuration&gt;
 </Settings>
             <SettingsVersion>26</SettingsVersion>
-            <Input RunListID="RL1269">
-                <UISettings/>
+            <Input RunListID="RL1341">
+                <UISettings>
+                    <settings>{"18743820_Output":{"measure_y":"relative","x":0.4559817928904957,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
             </Input>
             <Output Name="OK" Type="PRODUCTIVE" RunListID="RL993"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1280"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1366"/>
             <Output Name="Error" Type="PRODUCTIVE_ERROR" RunListID="RL996"/>
             <UISettings>
-                <settings>{"x":276.728515625,"y":1337.0,"originalDbId":26282547}</settings>
+                <settings>{"x":282.728515625,"y":1340.0,"originalDbId":26282544}</settings>
             </UISettings>
             <PresetName>Material Resize</PresetName>
         </Node>

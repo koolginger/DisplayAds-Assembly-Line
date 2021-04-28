@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssemblyLineDefinition MinimumWorkspaceVersion="18.2 (Build 23.028)">
-    <Description>Assembly line(s) exported by Workspace. Workspace Version: 19.1 SR 1 (24.047), Host: 02CPT-DIS07, Operating System: Windows Server 2016 Standard 64-bit Version 1607 (build 14393) (64bit mode,virtualized - VMWare), Date/Time: Wed Apr 28 08:58:30 CAT 2021. License information: License code: ClTZfNML_9_kEj, ovld build number: 30.045, Expiring date: Monday, May 10, 2021
+    <Description>Assembly line(s) exported by Workspace. Workspace Version: 19.1 SR 1 (24.047), Host: 02AUC-APP10, Operating System: Windows Server 2012 Standard 64-bit (build 9200) (64bit mode), Date/Time: Wed Apr 28 08:59:18 CAT 2021. License information: License code: ClApAn9mDaUc5a, ovld build number: 30.043, Expiring date: Monday, May 10, 2021
 AmendoScale 19.1 (p21.020.R)
 CMSExpert 19.1 (SR 1) (x38.052.S)
 DeleteFromStorage 19.1 SR 1 (w24.047)
@@ -8,19 +8,51 @@ DeleteInput 19.1 SR 1 (w24.047)
 FileExport 19.1 SR 1 (w24.047)
 FilenameRouter 19.1 SR 1 (w24.047)
 ImageExport 19.1 (SR 1) (x38.052.S)
-LogTransformer 19.1 SR 1 (w24.047)
 MoveToStorage 19.1 SR 1 (w24.047)
 PDFExport 19.1 (SR 1) (x38.052.S)
 Preflight 19.1 (SR 1) (x38.052.S)
 SendMail 19.1 SR 1 (w24.047)
 TransparencyFlattening 19.1 (SR 1) (x38.052.S)
 XImport 19.1 (SR 1) (x38.052.S)</Description>
-    <AssemblyLine Name="DisplayAds Johannesburg" CreationDate="2020-12-09T16:41:17.355+02:00" ModificationDate="2021-04-28T05:52:46.396+02:00" ModificationUser="jacques.engelbrecht" UserDescription="Display advertisements for national DTP team which caters for advertisements of the northern titles." Version="63">
-        <Status>ACTIVE</Status>
+    <AssemblyLine Name="DisplayAds Johannesburg SOS" CreationDate="2020-12-09T16:41:17.355+02:00" ModificationDate="2021-04-28T05:59:28.019+02:00" ModificationUser="jacques.engelbrecht" UserDescription="Display advertisements for national DTP team which caters for advertisements of the northern titles." Version="60">
+        <Status>INACTIVE</Status>
         <InputScanner RunListID="RL39">
             <Path>/SAP_Display/Johannesburg/</Path>
             <netResource>
-                <path>/D:/Workspace_data/In/</path>
+                <host>02cpt-dis07.m24.media24.com</host>
+                <path>/D/Workspace_data/In/</path>
+                <username>M24\sa-m24-newspapers-pr</username>
+                <password>ac13a268678a3bd2c2fe50397b452bbbef731b4b66b61c964490dfdfa2cb83bf</password>
+                <secure>false</secure>
+                <type>UNC</type>
+                <PollingForced>true</PollingForced>
+                <PollingInterval>30000</PollingInterval>
+                <description>Workspace One IN</description>
+                <PassiveModeForced>false</PassiveModeForced>
+                <SkipTemporaryRenaming>true</SkipTemporaryRenaming>
+                <UTF8EncodingForced>true</UTF8EncodingForced>
+                <UseDirectoryListingForReload>false</UseDirectoryListingForReload>
+                <UseProxy>false</UseProxy>
+                <SkipOperatingSystemDetection>false</SkipOperatingSystemDetection>
+            </netResource>
+            <UISettings>
+                <settings>{"x":168.0,"y":0.0,"originalDbId":1801203}</settings>
+            </UISettings>
+            <FilterActivated>false</FilterActivated>
+            <IgnoreHiddenFiles>true</IgnoreHiddenFiles>
+            <DefaultFilterAction>INLCUDE</DefaultFilterAction>
+            <InitialJobPriority>50</InitialJobPriority>
+            <RemoveEmptySubFolder>false</RemoveEmptySubFolder>
+            <RemoveHiddenSubFolder>true</RemoveHiddenSubFolder>
+            <RecursiveScan>false</RecursiveScan>
+            <SchedulerActivated>false</SchedulerActivated>
+            <RemoveFileExtensionFromJobName>false</RemoveFileExtensionFromJobName>
+            <ReportZeroByteFiles>false</ReportZeroByteFiles>
+        </InputScanner>
+        <InputScanner RunListID="RL39">
+            <Path>/SAP_Display/Johannesburg/</Path>
+            <netResource>
+                <path>/E:/Workspace_data/In/</path>
                 <secure>false</secure>
                 <type>FILE</type>
                 <PollingForced>false</PollingForced>
@@ -34,7 +66,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
                 <SkipOperatingSystemDetection>false</SkipOperatingSystemDetection>
             </netResource>
             <UISettings>
-                <settings>{"x":168.0,"y":0.0,"originalDbId":18742504}</settings>
+                <settings>{"x":567.955810546875,"y":2.0,"originalDbId":3516206}</settings>
             </UISettings>
             <FilterActivated>false</FilterActivated>
             <IgnoreHiddenFiles>true</IgnoreHiddenFiles>
@@ -43,7 +75,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <RemoveEmptySubFolder>false</RemoveEmptySubFolder>
             <RemoveHiddenSubFolder>true</RemoveHiddenSubFolder>
             <JobNameSource>FILENAME</JobNameSource>
-            <RecursiveScan>false</RecursiveScan>
+            <RecursiveScan>true</RecursiveScan>
             <SchedulerActivated>false</SchedulerActivated>
             <RemoveFileExtensionFromJobName>false</RemoveFileExtensionFromJobName>
             <ReportZeroByteFiles>false</ReportZeroByteFiles>
@@ -51,7 +83,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         <Node DeviceName="ImageExport" Name="Convert to JPEG">
             <Description>Convert the pdf to a JPEG image for attachment to the customer invoice.</Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;ImageExportConfig SchemaIdentifier="oz0vQknhYD9W1XBgZP4qtg==" SchemaMinorVersion="18" SchemaMajorVersion="1" CreatorName="ImageExportController" CreatorDate="2020-11-19T12:39:45.541+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+&lt;ImageExportConfig SchemaIdentifier="oz0vQknhYD9W1XBgZP4qtg==" SchemaMinorVersion="18" SchemaMajorVersion="1" CreatorName="ImageExportController" CreatorDate="2021-01-22T11:41:27.766+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
     &lt;DeviceLinkICCProfiles/&gt;
     &lt;CMYKICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
@@ -127,20 +159,20 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>18</SettingsVersion>
             <Input RunListID="RL22">
                 <UISettings>
-                    <settings>{"18743323_Output":{"measure_y":"relative","x":0.484127701474893,"y":0.6596649316745266,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801313_Output":{"measure_y":"relative","x":0.4833707065563084,"y":0.6596649316745266,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL1269"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1278"/>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL1201"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1212"/>
             <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL996"/>
             <UISettings>
-                <settings>{"x":262.2849069855531,"y":1119.0084288767976,"originalDbId":18743319}</settings>
+                <settings>{"x":262.2849069855531,"y":1119.0084288767976,"originalDbId":1801309}</settings>
             </UISettings>
         </Node>
-        <Node DeviceName="XImport" Name="Prepare Print Ready PDF">
+        <Node DeviceName="XImport" Name="Prepare Print Ready Pdfs">
             <Description></Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;ImportConfig SchemaIdentifier="Lkd4ddE3slJ7NNA1dNohXA==" SchemaMinorVersion="12" SchemaMajorVersion="1" CreatorName="XImportController" CreatorDate="2021-02-22T11:36:57.216+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+&lt;ImportConfig SchemaIdentifier="Lkd4ddE3slJ7NNA1dNohXA==" SchemaMinorVersion="12" SchemaMajorVersion="1" CreatorName="XImportController" CreatorDate="2021-01-22T11:41:27.768+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
     &lt;ImageImportConfig&gt;
         &lt;RecognizeImageMask&gt;false&lt;/RecognizeImageMask&gt;
         &lt;RecognizeSeparatedImages&gt;true&lt;/RecognizeSeparatedImages&gt;
@@ -194,16 +226,15 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>12</SettingsVersion>
             <Input RunListID="RL23">
                 <UISettings>
-                    <settings>{"18743331_PDF":{},"18743331_EPS":{"measure_y":"relative","x":0.4018124896622647,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801321_PDF":{"measure_y":"relative","x":0.4448220119220018,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"1801321_EPS":{"measure_y":"relative","x":0.4036867562235615,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="Output" Type="PRODUCTIVE" RunListID="RL28"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1274"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1275"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1208"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1209"/>
             <UISettings>
-                <settings>{"x":180.625,"y":375.4375,"originalDbId":18743320}</settings>
+                <settings>{"x":180.625,"y":375.4375,"originalDbId":1801310}</settings>
             </UISettings>
-            <PresetName>Prepare Print Ready PDF</PresetName>
             <PropertyUsageGroup>
                 <Name>PwdProperty</Name>
                 <EditorName>String</EditorName>
@@ -222,20 +253,41 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL25">
                 <UISettings>
-                    <settings>{"18743328_log":{"measure_y":"relative","x":0.43559120543197605,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801318_log":{"measure_y":"relative","x":0.43559120543197605,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":19.0,"y":1334.9375,"originalDbId":18743321}</settings>
+                <settings>{"x":19.0,"y":1334.9375,"originalDbId":1801311}</settings>
             </UISettings>
         </Node>
-        <Node DeviceName="Preflight" Name="Preflight Newsprint">
-            <Description>Preflight options and checks for PDF/X-A material required for commercial newspaper printing.</Description>
+        <Node DeviceName="Preflight" Name="Preflight Material">
+            <Description></Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;PreflightConfig SchemaIdentifier="oejbcQ5BVUMAfw/XIifdgA==" SchemaMinorVersion="42" SchemaMajorVersion="1" CreatorName="PreflightController" CreatorDate="2021-04-15T05:44:33.635+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+&lt;PreflightConfig SchemaIdentifier="oejbcQ5BVUMAfw/XIifdgA==" SchemaMinorVersion="42" SchemaMajorVersion="1" CreatorName="PreflightController" CreatorDate="2021-01-22T11:41:27.770+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+    &lt;CMYKICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/CMYKICCProfiles&gt;
+    &lt;RGBICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/RGBICCProfiles&gt;
+    &lt;GrayICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;OV-White&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovg.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/GrayICCProfiles&gt;
     &lt;PreserveBlack&gt;false&lt;/PreserveBlack&gt;
     &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
     &lt;UseOutputIntent&gt;true&lt;/UseOutputIntent&gt;
+    &lt;CMYKProfileName&gt;ISOnewspaper26v4&lt;/CMYKProfileName&gt;
+    &lt;RGBProfileName&gt;sRGB IEC61966-2.1&lt;/RGBProfileName&gt;
+    &lt;GrayProfileName&gt;OV-White&lt;/GrayProfileName&gt;
     &lt;BlackPointCompensation&gt;false&lt;/BlackPointCompensation&gt;
     &lt;WarningOutlet&gt;false&lt;/WarningOutlet&gt;
     &lt;CreateElementIndex&gt;false&lt;/CreateElementIndex&gt;
@@ -252,15 +304,14 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
             &lt;OverprintAllOnly&gt;true&lt;/OverprintAllOnly&gt;
         &lt;/PreflightWhiteOverprintConfig&gt;
-        &lt;PreflightTextTACConfig&gt;
-            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
-            &lt;MaxTACValue&gt;2.4&lt;/MaxTACValue&gt;
-            &lt;MaxBlackValue&gt;0.85&lt;/MaxBlackValue&gt;
-        &lt;/PreflightTextTACConfig&gt;
+        &lt;PreflightTextTACConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;CompressedObjectsPreflightAction&gt;Ignore&lt;/CompressedObjectsPreflightAction&gt;
         &lt;InsideTrimBox&gt;false&lt;/InsideTrimBox&gt;
         &lt;IgnoreZeroColorants&gt;true&lt;/IgnoreZeroColorants&gt;
-        &lt;PreflightResolutionDeviationConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;PreflightResolutionDeviationConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;Value&gt;0.2&lt;/Value&gt;
+        &lt;/PreflightResolutionDeviationConfig&gt;
         &lt;PreflightGraphicPointsCountConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightCoordsCountConfig&gt;
             &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
@@ -291,9 +342,9 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;PreflightTrimSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightPageSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightPageCountConfig&gt;
-            &lt;PreflightAction&gt;Error&lt;/PreflightAction&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
             &lt;CompareMode&gt;Larger&lt;/CompareMode&gt;
-            &lt;Count&gt;1&lt;/Count&gt;
+            &lt;Count&gt;50&lt;/Count&gt;
             &lt;IgnoreEmptyPages&gt;false&lt;/IgnoreEmptyPages&gt;
         &lt;/PreflightPageCountConfig&gt;
         &lt;PreflightOverprintConfig&gt;
@@ -315,15 +366,12 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             &lt;OuterPreflightAction&gt;Warn&lt;/OuterPreflightAction&gt;
         &lt;/PreflightColorImageMaxResConfig&gt;
         &lt;PreflightColorImageMinResConfig&gt;
-            &lt;InnerImageResolution&gt;200.0&lt;/InnerImageResolution&gt;
+            &lt;InnerImageResolution&gt;160.0&lt;/InnerImageResolution&gt;
             &lt;InnerPreflightAction&gt;Ignore&lt;/InnerPreflightAction&gt;
-            &lt;OuterImageResolution&gt;150.0&lt;/OuterImageResolution&gt;
+            &lt;OuterImageResolution&gt;144.0&lt;/OuterImageResolution&gt;
             &lt;OuterPreflightAction&gt;Warn&lt;/OuterPreflightAction&gt;
         &lt;/PreflightColorImageMinResConfig&gt;
-        &lt;ColorImageSizeConfig&gt;
-            &lt;ns2:SecondSideLength&gt;4.22&lt;/ns2:SecondSideLength&gt;
-            &lt;ns2:FirstSideLength&gt;4.22&lt;/ns2:FirstSideLength&gt;
-        &lt;/ColorImageSizeConfig&gt;
+        &lt;ColorImageSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightGrayImageMaxResConfig&gt;
             &lt;InnerImageResolution&gt;300.0&lt;/InnerImageResolution&gt;
             &lt;InnerPreflightAction&gt;Ignore&lt;/InnerPreflightAction&gt;
@@ -333,13 +381,10 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;PreflightGrayImageMinResConfig&gt;
             &lt;InnerImageResolution&gt;160.0&lt;/InnerImageResolution&gt;
             &lt;InnerPreflightAction&gt;Ignore&lt;/InnerPreflightAction&gt;
-            &lt;OuterImageResolution&gt;150.0&lt;/OuterImageResolution&gt;
+            &lt;OuterImageResolution&gt;144.0&lt;/OuterImageResolution&gt;
             &lt;OuterPreflightAction&gt;Warn&lt;/OuterPreflightAction&gt;
         &lt;/PreflightGrayImageMinResConfig&gt;
-        &lt;GrayImageSizeConfig&gt;
-            &lt;ns2:SecondSideLength&gt;4.22&lt;/ns2:SecondSideLength&gt;
-            &lt;ns2:FirstSideLength&gt;4.22&lt;/ns2:FirstSideLength&gt;
-        &lt;/GrayImageSizeConfig&gt;
+        &lt;GrayImageSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightBitmapImageMaxResConfig&gt;
             &lt;InnerImageResolution&gt;800.0&lt;/InnerImageResolution&gt;
             &lt;InnerPreflightAction&gt;Ignore&lt;/InnerPreflightAction&gt;
@@ -352,10 +397,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             &lt;OuterImageResolution&gt;600.0&lt;/OuterImageResolution&gt;
             &lt;OuterPreflightAction&gt;Warn&lt;/OuterPreflightAction&gt;
         &lt;/PreflightBitmapImageMinResConfig&gt;
-        &lt;BitmapImageSizeConfig&gt;
-            &lt;ns2:SecondSideLength&gt;4.22&lt;/ns2:SecondSideLength&gt;
-            &lt;ns2:FirstSideLength&gt;4.22&lt;/ns2:FirstSideLength&gt;
-        &lt;/BitmapImageSizeConfig&gt;
+        &lt;BitmapImageSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightGraphicStrokeSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightImageCountConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightFontStrokeSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
@@ -363,17 +405,14 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;PreflightBlackKnockoutFontSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightWhiteFontSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightEqualPageSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-        &lt;PreflightFontSizeConfig&gt;
-            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
-            &lt;FontSize&gt;4.0&lt;/FontSize&gt;
-        &lt;/PreflightFontSizeConfig&gt;
+        &lt;PreflightFontSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightTrimBoxConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightPageOrientationConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightPlateCountConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightSpotCountConfig&gt;
-            &lt;PreflightAction&gt;Error&lt;/PreflightAction&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
             &lt;CompareMode&gt;Larger&lt;/CompareMode&gt;
-            &lt;Count&gt;1&lt;/Count&gt;
+            &lt;Count&gt;0&lt;/Count&gt;
         &lt;/PreflightSpotCountConfig&gt;
         &lt;PreflightColorConflictConfig&gt;
             &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
@@ -391,7 +430,16 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             &lt;AllowedDeviation&gt;-1.0&lt;/AllowedDeviation&gt;
         &lt;/CalRGBImagePreflightConfig&gt;
         &lt;CalWhiteImagePreflightConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-        &lt;CalCMYKColorPreflightConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;CalCMYKColorPreflightConfig&gt;
+            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
+            &lt;PreflightElementMask&gt;
+                &lt;ns2:Graphic&gt;true&lt;/ns2:Graphic&gt;
+                &lt;ns2:Image&gt;true&lt;/ns2:Image&gt;
+                &lt;ns2:Text&gt;true&lt;/ns2:Text&gt;
+            &lt;/PreflightElementMask&gt;
+            &lt;AllowedDeviation&gt;-1.0&lt;/AllowedDeviation&gt;
+            &lt;NameListConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+        &lt;/CalCMYKColorPreflightConfig&gt;
         &lt;CalRGBColorPreflightConfig&gt;
             &lt;PreflightAction&gt;Error&lt;/PreflightAction&gt;
             &lt;PreflightElementMask&gt;
@@ -443,15 +491,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;DeviceWhiteImagePreflightAction&gt;Ignore&lt;/DeviceWhiteImagePreflightAction&gt;
         &lt;PreflightPageTACConfig&gt;
             &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
-            &lt;MaxTACValue&gt;2.4&lt;/MaxTACValue&gt;
+            &lt;MaxTACValue&gt;2.6&lt;/MaxTACValue&gt;
             &lt;PixelSize&gt;4.26&lt;/PixelSize&gt;
             &lt;ConsiderTrimBox&gt;false&lt;/ConsiderTrimBox&gt;
         &lt;/PreflightPageTACConfig&gt;
-        &lt;PreflightObjectTACConfig&gt;
-            &lt;PreflightAction&gt;Warn&lt;/PreflightAction&gt;
-            &lt;MaxTACValue&gt;2.4&lt;/MaxTACValue&gt;
-            &lt;Ignore400TACValue&gt;false&lt;/Ignore400TACValue&gt;
-        &lt;/PreflightObjectTACConfig&gt;
+        &lt;PreflightObjectTACConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightElementsNeedBleedConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightBleedBoxSizeConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
         &lt;PreflightImageMaskConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
@@ -461,7 +505,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;TrimBoxExceedsBleedBoxPreflightAction&gt;Ignore&lt;/TrimBoxExceedsBleedBoxPreflightAction&gt;
         &lt;EqualCMYKEquivalentsPreflightAction&gt;Ignore&lt;/EqualCMYKEquivalentsPreflightAction&gt;
         &lt;GrayOverprintElementPreflightAction&gt;Ignore&lt;/GrayOverprintElementPreflightAction&gt;
-        &lt;TruncatedImagePreflightAction&gt;Error&lt;/TruncatedImagePreflightAction&gt;
+        &lt;TruncatedImagePreflightAction&gt;Ignore&lt;/TruncatedImagePreflightAction&gt;
         &lt;UncompressedImagePreflightAction&gt;Ignore&lt;/UncompressedImagePreflightAction&gt;
         &lt;NotdefGlyphPreflightAction&gt;Ignore&lt;/NotdefGlyphPreflightAction&gt;
         &lt;OutsideMediaBoxElementsPreflightAction&gt;Ignore&lt;/OutsideMediaBoxElementsPreflightAction&gt;
@@ -493,7 +537,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;AnnotationsPreflightAction&gt;Warn&lt;/AnnotationsPreflightAction&gt;
         &lt;PrintableAnnotationsPreflightAction&gt;Error&lt;/PrintableAnnotationsPreflightAction&gt;
         &lt;TransparencyPreflightAction&gt;Ignore&lt;/TransparencyPreflightAction&gt;
-        &lt;RotatedImagePreflightAction&gt;Ignore&lt;/RotatedImagePreflightAction&gt;
+        &lt;RotatedImagePreflightAction&gt;Warn&lt;/RotatedImagePreflightAction&gt;
         &lt;PDFX3Or4PreflightAction&gt;Ignore&lt;/PDFX3Or4PreflightAction&gt;
         &lt;NotPDFX1aPreflightAction&gt;Ignore&lt;/NotPDFX1aPreflightAction&gt;
         &lt;EmptyPagesPreflightAction&gt;Warn&lt;/EmptyPagesPreflightAction&gt;
@@ -537,29 +581,62 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>42</SettingsVersion>
             <Input RunListID="RL28">
                 <UISettings>
-                    <settings>{"18743320_Output":{"measure_y":"relative","x":0.46197087900252787,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801310_Output":{"measure_y":"relative","x":0.46167941940328666,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="Ok" Type="PRODUCTIVE" RunListID="RL35"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1189"/>
-            <Output Name="Error-PDF" Type="PRODUCTIVE_ERROR" RunListID="RL34"/>
-            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1271"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1206"/>
+            <Output Name="Error-PDF" Type="PRODUCTIVE_ERROR" RunListID="RL32"/>
+            <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL1207"/>
             <UISettings>
-                <settings>{"x":222.625,"y":503.5987903225807,"originalDbId":18743322}</settings>
+                <settings>{"x":222.625,"y":503.5987903225807,"originalDbId":1801312}</settings>
             </UISettings>
-            <PresetName>Preflight Newsprint</PresetName>
         </Node>
-        <Node DeviceName="PDFExport" Name="Normalize Newsprint">
+        <Node DeviceName="PDFExport" Name="Normalize">
             <Description></Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;PDFExportConfig SchemaIdentifier="TvMosq+bZH14rz8Gd9Z3mw==" SchemaMinorVersion="47" SchemaMajorVersion="1" CreatorName="PDFExportController" CreatorDate="2021-03-16T13:11:59.154+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+&lt;PDFExportConfig SchemaIdentifier="TvMosq+bZH14rz8Gd9Z3mw==" SchemaMinorVersion="47" SchemaMajorVersion="1" CreatorName="PDFExportController" CreatorDate="2021-01-22T11:41:27.772+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
     &lt;DeviceLinkICCProfiles/&gt;
-    &lt;CMYKICCProfiles/&gt;
-    &lt;RGBICCProfiles/&gt;
-    &lt;GrayICCProfiles/&gt;
+    &lt;CMYKICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/CMYKICCProfiles&gt;
+    &lt;RGBICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/RGBICCProfiles&gt;
+    &lt;GrayICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4_gr&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4_gr.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4_gr&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4_gr.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/GrayICCProfiles&gt;
     &lt;PreserveBlack&gt;false&lt;/PreserveBlack&gt;
     &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
     &lt;UseOutputIntent&gt;true&lt;/UseOutputIntent&gt;
+    &lt;CMYKProfileName&gt;ISOnewspaper26v4&lt;/CMYKProfileName&gt;
+    &lt;RGBProfileName&gt;sRGB IEC61966-2.1&lt;/RGBProfileName&gt;
+    &lt;GrayProfileName&gt;ISOnewspaper26v4_gr&lt;/GrayProfileName&gt;
     &lt;BlackPointCompensation&gt;false&lt;/BlackPointCompensation&gt;
     &lt;CurrentDistanceUnitName&gt;pt&lt;/CurrentDistanceUnitName&gt;
     &lt;PageExportConfig&gt;
@@ -572,7 +649,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;ReversePageOrdering&gt;false&lt;/ReversePageOrdering&gt;
         &lt;PageSelection&gt;All&lt;/PageSelection&gt;
         &lt;PageRange xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-        &lt;NumCopies&gt;1&lt;/NumCopies&gt;
+        &lt;NumCopies&gt;0&lt;/NumCopies&gt;
         &lt;ForcedPaperSize&gt;
             &lt;ns2:Width&gt;0.0&lt;/ns2:Width&gt;
             &lt;ns2:Height&gt;0.0&lt;/ns2:Height&gt;
@@ -584,11 +661,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;ResolveType3Fonts&gt;false&lt;/ResolveType3Fonts&gt;
         &lt;FontEmbeddingMode&gt;All&lt;/FontEmbeddingMode&gt;
         &lt;ExportConfig&gt;
-            &lt;DiscardPageOutputIntent&gt;false&lt;/DiscardPageOutputIntent&gt;
+            &lt;DiscardPageOutputIntent&gt;true&lt;/DiscardPageOutputIntent&gt;
             &lt;DiscardOutputIntent&gt;false&lt;/DiscardOutputIntent&gt;
             &lt;DiscardPageBlendColorSpaceRGB&gt;false&lt;/DiscardPageBlendColorSpaceRGB&gt;
-            &lt;DiscardPageBlendColorSpaceGray&gt;false&lt;/DiscardPageBlendColorSpaceGray&gt;
-            &lt;DiscardPageKnockout&gt;false&lt;/DiscardPageKnockout&gt;
+            &lt;DiscardPageBlendColorSpaceGray&gt;true&lt;/DiscardPageBlendColorSpaceGray&gt;
+            &lt;DiscardPageKnockout&gt;true&lt;/DiscardPageKnockout&gt;
             &lt;ResolveOverprintAll&gt;true&lt;/ResolveOverprintAll&gt;
             &lt;RemoveOverprintMode&gt;Off&lt;/RemoveOverprintMode&gt;
             &lt;KeepPDX3AndPDFX4ICCProfiles&gt;false&lt;/KeepPDX3AndPDFX4ICCProfiles&gt;
@@ -626,25 +703,25 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
                 &lt;CmykColorSpaceReplaceConfig&gt;
                     &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
                     &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
-                    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultRenderIntent&gt;Perceptual&lt;/DefaultRenderIntent&gt;
                     &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
-                    &lt;DefaultColorSpaceName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-                    &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;true&lt;/RemoveICCProfile&gt;
                 &lt;/CmykColorSpaceReplaceConfig&gt;
                 &lt;RgbColorSpaceReplaceConfig&gt;
                     &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
                     &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
-                    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
                     &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
-                    &lt;DefaultColorSpaceName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultColorSpaceName&gt;sRGB IEC61966-2.1&lt;/DefaultColorSpaceName&gt;
                     &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
                 &lt;/RgbColorSpaceReplaceConfig&gt;
                 &lt;GrayColorSpaceReplaceConfig&gt;
                     &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
                     &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
-                    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
                     &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
-                    &lt;DefaultColorSpaceName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4_gr&lt;/DefaultColorSpaceName&gt;
                     &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
                 &lt;/GrayColorSpaceReplaceConfig&gt;
             &lt;/ImageElementColorSpaceReplaceConfig&gt;
@@ -652,25 +729,25 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
                 &lt;CmykColorSpaceReplaceConfig&gt;
                     &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
                     &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
-                    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultRenderIntent&gt;Perceptual&lt;/DefaultRenderIntent&gt;
                     &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
-                    &lt;DefaultColorSpaceName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-                    &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;true&lt;/RemoveICCProfile&gt;
                 &lt;/CmykColorSpaceReplaceConfig&gt;
                 &lt;RgbColorSpaceReplaceConfig&gt;
                     &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
                     &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
-                    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
                     &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
-                    &lt;DefaultColorSpaceName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultColorSpaceName&gt;sRGB IEC61966-2.1&lt;/DefaultColorSpaceName&gt;
                     &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
                 &lt;/RgbColorSpaceReplaceConfig&gt;
                 &lt;GrayColorSpaceReplaceConfig&gt;
                     &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
                     &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
-                    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
                     &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
-                    &lt;DefaultColorSpaceName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4_gr&lt;/DefaultColorSpaceName&gt;
                     &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
                 &lt;/GrayColorSpaceReplaceConfig&gt;
             &lt;/GraphicElementColorSpaceReplaceConfig&gt;
@@ -678,25 +755,25 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
                 &lt;CmykColorSpaceReplaceConfig&gt;
                     &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
                     &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
-                    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultRenderIntent&gt;Perceptual&lt;/DefaultRenderIntent&gt;
                     &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
-                    &lt;DefaultColorSpaceName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-                    &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4&lt;/DefaultColorSpaceName&gt;
+                    &lt;RemoveICCProfile&gt;true&lt;/RemoveICCProfile&gt;
                 &lt;/CmykColorSpaceReplaceConfig&gt;
                 &lt;RgbColorSpaceReplaceConfig&gt;
                     &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
                     &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
-                    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
                     &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
-                    &lt;DefaultColorSpaceName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultColorSpaceName&gt;sRGB IEC61966-2.1&lt;/DefaultColorSpaceName&gt;
                     &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
                 &lt;/RgbColorSpaceReplaceConfig&gt;
                 &lt;GrayColorSpaceReplaceConfig&gt;
                     &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
                     &lt;RemoveBlackPointCompensation&gt;false&lt;/RemoveBlackPointCompensation&gt;
-                    &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
                     &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
-                    &lt;DefaultColorSpaceName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;DefaultColorSpaceName&gt;ISOnewspaper26v4_gr&lt;/DefaultColorSpaceName&gt;
                     &lt;RemoveICCProfile&gt;false&lt;/RemoveICCProfile&gt;
                 &lt;/GrayColorSpaceReplaceConfig&gt;
             &lt;/TextElementColorSpaceReplaceConfig&gt;
@@ -706,19 +783,19 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             &lt;DotGainValueConfigs xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
             &lt;ColorConversionConfig&gt;
                 &lt;CMYKColorConversion&gt;
-                    &lt;PlateToProcessMode&gt;NoConversion&lt;/PlateToProcessMode&gt;
-                    &lt;ICCProfileName xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+                    &lt;PlateToProcessMode&gt;PlateToProcess&lt;/PlateToProcessMode&gt;
+                    &lt;ICCProfileName&gt;ISOnewspaper26v4&lt;/ICCProfileName&gt;
                     &lt;DeviceLinkProfileConfig/&gt;
                     &lt;KeepBlack&gt;false&lt;/KeepBlack&gt;
                 &lt;/CMYKColorConversion&gt;
             &lt;/ColorConversionConfig&gt;
             &lt;InkReductionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
             &lt;RemoveElementHalftones&gt;true&lt;/RemoveElementHalftones&gt;
-            &lt;ResolveInteractiveElements&gt;true&lt;/ResolveInteractiveElements&gt;
+            &lt;ResolveInteractiveElements&gt;false&lt;/ResolveInteractiveElements&gt;
             &lt;ResolveOptionalContent&gt;true&lt;/ResolveOptionalContent&gt;
             &lt;UnsharpMaskConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-            &lt;ColorImageCompression&gt;LZW&lt;/ColorImageCompression&gt;
-            &lt;GrayscaleImageCompression&gt;LZW&lt;/GrayscaleImageCompression&gt;
+            &lt;ColorImageCompression&gt;JPEG HighQuality&lt;/ColorImageCompression&gt;
+            &lt;GrayscaleImageCompression&gt;JPEG HighQuality&lt;/GrayscaleImageCompression&gt;
             &lt;MonochromeImageCompression&gt;CCITT G4&lt;/MonochromeImageCompression&gt;
             &lt;MinimalTextLineWidthConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
             &lt;MinimalGraphicLineWidthConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
@@ -729,10 +806,10 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             &lt;Force8bit&gt;false&lt;/Force8bit&gt;
             &lt;ResolveSeparationAll&gt;false&lt;/ResolveSeparationAll&gt;
             &lt;SuppressEmptyPlates&gt;false&lt;/SuppressEmptyPlates&gt;
-            &lt;NormalizeGrayMode&gt;Disabled&lt;/NormalizeGrayMode&gt;
+            &lt;NormalizeGrayMode&gt;PrintGrayTextColorOnBlackPlate&lt;/NormalizeGrayMode&gt;
             &lt;NormalizeDeviceNAlternatives&gt;false&lt;/NormalizeDeviceNAlternatives&gt;
             &lt;CropImage&gt;true&lt;/CropImage&gt;
-            &lt;PreserveCompressions&gt;true&lt;/PreserveCompressions&gt;
+            &lt;PreserveCompressions&gt;false&lt;/PreserveCompressions&gt;
             &lt;ResolveDeviceN&gt;false&lt;/ResolveDeviceN&gt;
             &lt;ShadingResolution&gt;0.0&lt;/ShadingResolution&gt;
             &lt;CreateOverprintConfig&gt;
@@ -740,7 +817,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
                     &lt;ns2:Width&gt;-1.0&lt;/ns2:Width&gt;
                     &lt;ns2:Height&gt;-1.0&lt;/ns2:Height&gt;
                 &lt;/ns2:FillSize&gt;
-                &lt;ns2:StrokeSize&gt;-1.0&lt;/ns2:StrokeSize&gt;
+                &lt;ns2:StrokeSize&gt;2.0&lt;/ns2:StrokeSize&gt;
                 &lt;ns2:TextSize&gt;24.0&lt;/ns2:TextSize&gt;
                 &lt;ns2:BlackValue&gt;0.95&lt;/ns2:BlackValue&gt;
             &lt;/CreateOverprintConfig&gt;
@@ -760,9 +837,15 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             &lt;MonochromeImageMinResolutionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
             &lt;MonochromeImageMaxResolutionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
             &lt;GrayImageMinResolutionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-            &lt;GrayImageMaxResolutionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;GrayImageMaxResolutionConfig&gt;
+                &lt;IgnoreResolution&gt;300.0&lt;/IgnoreResolution&gt;
+                &lt;Resolution&gt;300.0&lt;/Resolution&gt;
+            &lt;/GrayImageMaxResolutionConfig&gt;
             &lt;ColorImageMinResolutionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
-            &lt;ColorImageMaxResolutionConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+            &lt;ColorImageMaxResolutionConfig&gt;
+                &lt;IgnoreResolution&gt;300.0&lt;/IgnoreResolution&gt;
+                &lt;Resolution&gt;300.0&lt;/Resolution&gt;
+            &lt;/ColorImageMaxResolutionConfig&gt;
         &lt;/ExportConfig&gt;
         &lt;MergeFormXObject&gt;false&lt;/MergeFormXObject&gt;
         &lt;ProhibitInlineImage&gt;false&lt;/ProhibitInlineImage&gt;
@@ -778,8 +861,8 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;WriteType1CFF&gt;true&lt;/WriteType1CFF&gt;
         &lt;RoundType2Numbers&gt;false&lt;/RoundType2Numbers&gt;
         &lt;SuppressBlankGlyphs&gt;true&lt;/SuppressBlankGlyphs&gt;
-        &lt;UseShfill&gt;true&lt;/UseShfill&gt;
-        &lt;SubsetFonts&gt;true&lt;/SubsetFonts&gt;
+        &lt;UseShfill&gt;false&lt;/UseShfill&gt;
+        &lt;SubsetFonts&gt;false&lt;/SubsetFonts&gt;
         &lt;BaseFontToCIDFontMask&gt;
             &lt;ns2:TrueType&gt;true&lt;/ns2:TrueType&gt;
             &lt;ns2:Type1&gt;true&lt;/ns2:Type1&gt;
@@ -801,27 +884,39 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>47</SettingsVersion>
             <Input RunListID="RL30">
                 <UISettings>
-                    <settings>{"18743329_Output":{"measure_y":"relative","x":0.43279009704086085,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801319_Output":{"measure_y":"relative","x":0.43755761235107177,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
-            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL36;RL22"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1273"/>
+            <Output Name="Output" Type="PRODUCTIVE" RunListID="RL22;RL36"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1205"/>
             <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
             <UISettings>
-                <settings>{"x":40.625,"y":898.9321298371367,"originalDbId":18743323}</settings>
+                <settings>{"x":63.625,"y":898.9321298371367,"originalDbId":1801313}</settings>
             </UISettings>
-            <PresetName>Normalize Newsprint</PresetName>
+        </Node>
+        <Node DeviceName="DeleteInput" Name="Delete Source Files">
+            <Settings></Settings>
+            <SettingsVersion>0</SettingsVersion>
+            <Input RunListID="RL32">
+                <UISettings>
+                    <settings>{"1801312_Error-PDF":{"measure_y":"relative","x":0.4525569530916266,"y":0.6053299492385786,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                </UISettings>
+            </Input>
+            <Output Name="log" Type="LOG" RunListID="RL34"/>
+            <UISettings>
+                <settings>{"x":288.7287546418029,"y":639.5084288767976,"originalDbId":1801314}</settings>
+            </UISettings>
         </Node>
         <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
             <Settings></Settings>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL33">
                 <UISettings>
-                    <settings>{"22685009_log":{},"18743326_log":{"measure_y":"relative","x":0.43579393867192523,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801316_log":{"measure_y":"relative","x":0.43579393867192523,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":303.1369577668029,"y":1004.5084288767976,"originalDbId":18743325}</settings>
+                <settings>{"x":303.1369577668029,"y":1004.5084288767976,"originalDbId":1801315}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="SendMail" Name="Send Error Emails">
@@ -857,18 +952,18 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL34">
                 <UISettings>
-                    <settings>{"18743323_Error":{"measure_y":"relative","x":0.4608730120457627,"y":0.4482796256858804,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"},"18743322_Error-PDF":{"measure_y":"relative","x":0.45910530710802033,"y":0.3520040799365346,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"18743327_Error":{"measure_y":"relative","x":0.47591729979147784,"y":0.2758442557278175,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"18743329_Error":{"measure_y":"relative","x":0.47564125986157724,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801319_Error":{"measure_y":"relative","x":0.47850064338725706,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"1801314_log":{"measure_y":"relative","x":0.42523446369965284,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"1801317_Error":{"measure_y":"relative","x":0.4798400058835078,"y":0.2758442557278175,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"},"1801313_Error":{"measure_y":"relative","x":0.46087301204576264,"y":0.4482796256858804,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL33"/>
             <UISettings>
-                <settings>{"x":308.9721628449279,"y":900.7584288767976,"originalDbId":18743326}</settings>
+                <settings>{"x":308.9721628449279,"y":900.7584288767976,"originalDbId":1801316}</settings>
             </UISettings>
         </Node>
-        <Node DeviceName="CMSExpert" Name="Colour Management Newsprint">
+        <Node DeviceName="CMSExpert" Name="Color Management">
             <Description></Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;CMSExpertConfig SchemaIdentifier="yFqkWi1fcBl8xA4uWXVeHQ==" SchemaMinorVersion="13" SchemaMajorVersion="1" CreatorName="CMSExpertController" CreatorDate="2021-03-16T13:11:10.750+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+&lt;CMSExpertConfig SchemaIdentifier="yFqkWi1fcBl8xA4uWXVeHQ==" SchemaMinorVersion="13" SchemaMajorVersion="1" CreatorName="CMSExpertController" CreatorDate="2021-01-22T11:41:27.776+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
     &lt;CMYKICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
             &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
@@ -881,8 +976,8 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
     &lt;/CMYKICCProfiles&gt;
     &lt;RGBICCProfiles&gt;
         &lt;ns2:DictionaryElement&gt;
-            &lt;ns2:DictionaryKey&gt;eciRGB v2&lt;/ns2:DictionaryKey&gt;
-            &lt;ns2:DictionaryValue&gt;ICCProfiles/eciRGB_v2.icc&lt;/ns2:DictionaryValue&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
         &lt;/ns2:DictionaryElement&gt;
     &lt;/RGBICCProfiles&gt;
     &lt;GrayICCProfiles&gt;
@@ -891,20 +986,27 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4_gr.icc&lt;/ns2:DictionaryValue&gt;
         &lt;/ns2:DictionaryElement&gt;
     &lt;/GrayICCProfiles&gt;
-    &lt;SupposeOutputIntentConfig xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
+    &lt;SupposeOutputIntentConfig&gt;
+        &lt;ProfileList/&gt;
+    &lt;/SupposeOutputIntentConfig&gt;
     &lt;AllowedOutputIntentDeviation&gt;-1.0&lt;/AllowedOutputIntentDeviation&gt;
-    &lt;NormalizeDeviceNAlternatives&gt;true&lt;/NormalizeDeviceNAlternatives&gt;
+    &lt;NormalizeDeviceNAlternatives&gt;false&lt;/NormalizeDeviceNAlternatives&gt;
     &lt;ResolveSeparationAll&gt;false&lt;/ResolveSeparationAll&gt;
-    &lt;NormalizeGrayMode&gt;Disabled&lt;/NormalizeGrayMode&gt;
+    &lt;NormalizeGrayMode&gt;PrintGrayTextColorOnBlackPlate&lt;/NormalizeGrayMode&gt;
     &lt;DefaultOutputIntentName&gt;ISOnewspaper26v4&lt;/DefaultOutputIntentName&gt;
-    &lt;DiscardPageOutputIntent&gt;true&lt;/DiscardPageOutputIntent&gt;
-    &lt;DiscardOutputIntent&gt;true&lt;/DiscardOutputIntent&gt;
+    &lt;DiscardPageOutputIntent&gt;false&lt;/DiscardPageOutputIntent&gt;
+    &lt;DiscardOutputIntent&gt;false&lt;/DiscardOutputIntent&gt;
     &lt;DiscardPageBlendColorSpaceRGB&gt;false&lt;/DiscardPageBlendColorSpaceRGB&gt;
     &lt;DiscardPageBlendColorSpaceGray&gt;true&lt;/DiscardPageBlendColorSpaceGray&gt;
     &lt;DiscardPageKnockout&gt;true&lt;/DiscardPageKnockout&gt;
     &lt;ResolveOverprintAll&gt;true&lt;/ResolveOverprintAll&gt;
-    &lt;RemoveOverprintMode&gt;DiscardNonBlacks&lt;/RemoveOverprintMode&gt;
+    &lt;RemoveOverprintMode&gt;Off&lt;/RemoveOverprintMode&gt;
     &lt;KeepPDX3AndPDFX4ICCProfiles&gt;false&lt;/KeepPDX3AndPDFX4ICCProfiles&gt;
+    &lt;ElementColorSpaceReplaceIgnoreMask&gt;
+        &lt;Graphic&gt;true&lt;/Graphic&gt;
+        &lt;Image&gt;false&lt;/Image&gt;
+        &lt;Text&gt;true&lt;/Text&gt;
+    &lt;/ElementColorSpaceReplaceIgnoreMask&gt;
     &lt;ElementColorSpaceReplaceConfig&gt;
         &lt;CmykColorSpaceReplaceConfig&gt;
             &lt;DefaultBlackPointCompensation&gt;Default&lt;/DefaultBlackPointCompensation&gt;
@@ -919,7 +1021,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             &lt;RemoveBlackPointCompensation&gt;true&lt;/RemoveBlackPointCompensation&gt;
             &lt;DefaultRenderIntent&gt;Relative&lt;/DefaultRenderIntent&gt;
             &lt;RemoveRenderIntent&gt;false&lt;/RemoveRenderIntent&gt;
-            &lt;DefaultColorSpaceName&gt;eciRGB v2&lt;/DefaultColorSpaceName&gt;
+            &lt;DefaultColorSpaceName&gt;sRGB IEC61966-2.1&lt;/DefaultColorSpaceName&gt;
             &lt;RemoveICCProfile&gt;true&lt;/RemoveICCProfile&gt;
         &lt;/RgbColorSpaceReplaceConfig&gt;
         &lt;GrayColorSpaceReplaceConfig&gt;
@@ -936,23 +1038,22 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>13</SettingsVersion>
             <Input RunListID="RL35">
                 <UISettings>
-                    <settings>{"18743322_Ok":{"measure_y":"relative","x":0.4633299716156433,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801312_Ok":{"measure_y":"relative","x":0.4679830660435246,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="Output" Type="PRODUCTIVE" RunListID="RL37"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1283"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1210"/>
             <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
             <UISettings>
-                <settings>{"x":50.625,"y":632.4321298371367,"originalDbId":18743327}</settings>
+                <settings>{"x":58.625,"y":632.4321298371367,"originalDbId":1801317}</settings>
             </UISettings>
-            <PresetName>Colour Management Newsprint</PresetName>
         </Node>
-        <Node DeviceName="FileExport" Name="READY">
-            <Description>Methode Import Servlet destination on production environment.</Description>
+        <Node DeviceName="FileExport" Name="PASS">
+            <Description>Methode Import Servlet destination on staging environment.</Description>
             <Settings>&lt;FileExportSettings&gt;
-    &lt;Path&gt;/Display/Ready/&lt;/Path&gt;
+    &lt;Path&gt;/Display/Pass/&lt;/Path&gt;
     &lt;netResource&gt;
-        &lt;host&gt;152.111.25.116&lt;/host&gt;
+        &lt;host&gt;152.111.90.116&lt;/host&gt;
         &lt;port&gt;21&lt;/port&gt;
         &lt;path&gt;/methode/methprod/mnt/tomcat/methode_share/SAP/&lt;/path&gt;
         &lt;username&gt;methprod&lt;/username&gt;
@@ -961,7 +1062,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;type&gt;FTP&lt;/type&gt;
         &lt;PollingForced&gt;true&lt;/PollingForced&gt;
         &lt;PollingInterval&gt;120000&lt;/PollingInterval&gt;
-        &lt;description&gt;SAP Uploads CapeTown&lt;/description&gt;
+        &lt;description&gt;SAP Uploads Johannesburg&lt;/description&gt;
         &lt;PassiveModeForced&gt;true&lt;/PassiveModeForced&gt;
         &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
         &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
@@ -985,23 +1086,44 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>4</SettingsVersion>
             <Input RunListID="RL36">
                 <UISettings>
-                    <settings>{"18743323_Output":{"measure_y":"relative","x":0.4502923881983256,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801313_Output":{"measure_y":"relative","x":0.44202778212862964,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL25"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1279"/>
+            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1211"/>
             <UISettings>
-                <settings>{"x":67.625,"y":1119.5987903225807,"originalDbId":18743328}</settings>
+                <settings>{"x":67.625,"y":1119.5987903225807,"originalDbId":1801318}</settings>
             </UISettings>
         </Node>
-        <Node DeviceName="TransparencyFlattening" Name="Flatten Transparencies Newsprint">
+        <Node DeviceName="TransparencyFlattening" Name="Flatten Transparencies">
             <Description></Description>
             <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;TransparencyFlatteningConfig SchemaIdentifier="XsH5FgHsiXmEJnWfZUX1mw==" SchemaMinorVersion="13" SchemaMajorVersion="1" CreatorName="TransparencyFlatteningController" CreatorDate="2021-04-06T14:58:14.038+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
+&lt;TransparencyFlatteningConfig SchemaIdentifier="XsH5FgHsiXmEJnWfZUX1mw==" SchemaMinorVersion="13" SchemaMajorVersion="1" CreatorName="TransparencyFlatteningController" CreatorDate="2021-01-22T11:41:27.778+02:00" xmlns:ns2="http://www.onevision.de/ws_ui/plugin/common_normalizer/config"&gt;
     &lt;DeviceLinkICCProfiles/&gt;
+    &lt;CMYKICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;ISOnewspaper26v4&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ISOnewspaper26v4.icc&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/CMYKICCProfiles&gt;
+    &lt;RGBICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;sRGB IEC61966-2.1&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovsrgb.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/RGBICCProfiles&gt;
+    &lt;GrayICCProfiles&gt;
+        &lt;ns2:DictionaryElement&gt;
+            &lt;ns2:DictionaryKey&gt;OV-White&lt;/ns2:DictionaryKey&gt;
+            &lt;ns2:DictionaryValue&gt;ICCProfiles/ovg.ICM&lt;/ns2:DictionaryValue&gt;
+        &lt;/ns2:DictionaryElement&gt;
+    &lt;/GrayICCProfiles&gt;
     &lt;PreserveBlack&gt;false&lt;/PreserveBlack&gt;
     &lt;DefaultRenderIntent xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
     &lt;UseOutputIntent&gt;true&lt;/UseOutputIntent&gt;
+    &lt;CMYKProfileName&gt;ISOnewspaper26v4&lt;/CMYKProfileName&gt;
+    &lt;RGBProfileName&gt;sRGB IEC61966-2.1&lt;/RGBProfileName&gt;
+    &lt;GrayProfileName&gt;OV-White&lt;/GrayProfileName&gt;
     &lt;BlackPointCompensation&gt;false&lt;/BlackPointCompensation&gt;
     &lt;ForPrint&gt;true&lt;/ForPrint&gt;
     &lt;FlattenOverprintPreserveColorants xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/&gt;
@@ -1021,29 +1143,28 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>13</SettingsVersion>
             <Input RunListID="RL37">
                 <UISettings>
-                    <settings>{"18743327_Output":{"measure_y":"relative","x":0.4544434335592625,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801317_Output":{"measure_y":"relative","x":0.4543184119700036,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="Output" Type="PRODUCTIVE" RunListID="RL30"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1281"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1214"/>
             <Output Name="Error" Type="DEFAULT_ERROR" RunListID="RL34"/>
             <UISettings>
-                <settings>{"x":42.625,"y":759.9321298371367,"originalDbId":18743329}</settings>
+                <settings>{"x":58.625,"y":759.9321298371367,"originalDbId":1801319}</settings>
             </UISettings>
-            <PresetName>Flatten Transparencies Newsprint</PresetName>
         </Node>
         <Node DeviceName="MoveToStorage" Name="Move Source Files">
             <Settings></Settings>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL39">
                 <UISettings>
-                    <settings>{"18742504_":{}}</settings>
+                    <settings>{"3516206_":{},"1801203_":{"measure_y":"relative","x":0.434112953817942,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="out" Type="PRODUCTIVE" RunListID="RL781"/>
-            <Output Name="log" Type="LOG" RunListID="RL1282"/>
+            <Output Name="log" Type="LOG" RunListID="RL1203"/>
             <UISettings>
-                <settings>{"x":216.0,"y":76.0,"originalDbId":18743330}</settings>
+                <settings>{"x":216.0,"y":97.0,"originalDbId":1801320}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="FilenameRouter" Name="Advertisement Filter">
@@ -1067,15 +1188,15 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>1</SettingsVersion>
             <Input RunListID="RL781">
                 <UISettings>
-                    <settings>{"18743330_out":{}}</settings>
+                    <settings>{"1801320_out":{"measure_y":"relative","x":0.44404211049770553,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="PDF" Type="PRODUCTIVE" RunListID="RL23"/>
             <Output Name="EPS" Type="PRODUCTIVE" RunListID="RL23"/>
             <Output Name="DEFAULT" Type="PRODUCTIVE" RunListID="RL782"/>
-            <Output Name="log" Type="LOG" RunListID="RL1277"/>
+            <Output Name="log" Type="LOG" RunListID="RL1204"/>
             <UISettings>
-                <settings>{"x":212.52197265625,"y":188.5625,"originalDbId":18743331}</settings>
+                <settings>{"x":212.52197265625,"y":201.5625,"originalDbId":1801321}</settings>
             </UISettings>
             <PresetName>Advertisement Filter</PresetName>
         </Node>
@@ -1085,12 +1206,12 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL782">
                 <UISettings>
-                    <settings>{"18743331_DEFAULT":{"measure_y":"relative","x":0.4835309935764442,"y":0.5271002710027101,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801321_DEFAULT":{"measure_y":"relative","x":0.4835309935764442,"y":0.5271002710027101,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL783"/>
             <UISettings>
-                <settings>{"x":469.482177734375,"y":371.5625,"originalDbId":18743332}</settings>
+                <settings>{"x":469.482177734375,"y":371.5625,"originalDbId":1801322}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="SendMail" Name="Send Error Emails">
@@ -1104,7 +1225,7 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
     &lt;recipients&gt;DTP.Electronic@dieburger.com&lt;/recipients&gt;
     &lt;recipients&gt;Eidos.Content@Media24.com&lt;/recipients&gt;
     &lt;addRunlistFilesAsAttachments&gt;true&lt;/addRunlistFilesAsAttachments&gt;
-    &lt;MessageText&gt;Check the following Advert &amp;lt;JOB_NAME&amp;gt; - It has failed on the &amp;lt;ASSEMBLY_LINE_NAME&amp;gt;. Please check the naming convention and format of the material and re-upload the file&amp;#13;
+    &lt;MessageText&gt;Check the following Advert &amp;lt;JOB_NAME&amp;gt; - It has failed on the &amp;lt;ASSEMBLY_LINE_NAME&amp;gt;. Please check the naming convention of the material and re-upload the file.&amp;#13;
 &amp;#13;
 &amp;lt;JOB_NO&amp;gt;&lt;/MessageText&gt;
     &lt;SmtpNetResource&gt;
@@ -1126,12 +1247,12 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL783">
                 <UISettings>
-                    <settings>{"18743332_log":{"measure_y":"relative","x":0.4008179612473304,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801322_log":{"measure_y":"relative","x":0.4008179612473304,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL784"/>
             <UISettings>
-                <settings>{"x":472.4375,"y":500.0,"originalDbId":18743333}</settings>
+                <settings>{"x":472.4375,"y":500.0,"originalDbId":1801323}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
@@ -1139,15 +1260,15 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL784">
                 <UISettings>
-                    <settings>{"18743333_log":{"measure_y":"relative","x":0.4004989627211202,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801323_log":{"measure_y":"relative","x":0.4004989627211202,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":466.477294921875,"y":639.6875,"originalDbId":18743334}</settings>
+                <settings>{"x":466.477294921875,"y":639.6875,"originalDbId":1801324}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="FileExport" Name="Export Files to MaterialCutouts">
-            <Description>JPG files will be hosted in the folder for importing purposes by SAP.</Description>
+            <Description>JPG files will be hosted in the folder for importing purposes by SAP. The folder will be cleaned up after 30 days automatically.</Description>
             <Settings>&lt;FileExportSettings&gt;
     &lt;Path&gt;&lt;/Path&gt;
     &lt;netResource&gt;
@@ -1163,8 +1284,8 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
         &lt;description&gt;SAP Invoice Material&lt;/description&gt;
         &lt;PassiveModeForced&gt;true&lt;/PassiveModeForced&gt;
         &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
-        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
-        &lt;UseDirectoryListingForReload&gt;true&lt;/UseDirectoryListingForReload&gt;
+        &lt;UTF8EncodingForced&gt;false&lt;/UTF8EncodingForced&gt;
+        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
         &lt;UseProxy&gt;false&lt;/UseProxy&gt;
         &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
     &lt;/netResource&gt;
@@ -1183,13 +1304,13 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>4</SettingsVersion>
             <Input RunListID="RL993">
                 <UISettings>
-                    <settings>{"26282547_OK":{"measure_y":"relative","x":0.44964598934075095,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"3913896_OK":{"measure_y":"relative","x":0.4480772789925099,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL994"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1276"/>
+            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1202"/>
             <UISettings>
-                <settings>{"x":244.4638671875,"y":1471.0,"originalDbId":18743335}</settings>
+                <settings>{"x":248.4638671875,"y":1455.0,"originalDbId":1801325}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
@@ -1198,11 +1319,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL994">
                 <UISettings>
-                    <settings>{"18743335_log":{"measure_y":"relative","x":0.44954670871107605,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801325_log":{"measure_y":"relative","x":0.4451161992968013,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":273.577880859375,"y":1601.0,"originalDbId":18743336}</settings>
+                <settings>{"x":268.577880859375,"y":1570.0,"originalDbId":1801326}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="DeleteFromStorage" Name="Clean Up Work Data">
@@ -1210,11 +1331,11 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL995">
                 <UISettings>
-                    <settings>{"18743338_log":{"measure_y":"relative","x":0.4002508340842121,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801328_log":{"measure_y":"relative","x":0.4002508340842121,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <UISettings>
-                <settings>{"x":491.0,"y":1471.75,"originalDbId":18743337}</settings>
+                <settings>{"x":489.0,"y":1457.75,"originalDbId":1801327}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="SendMail" Name="Send Error Emails">
@@ -1247,78 +1368,12 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
             <SettingsVersion>0</SettingsVersion>
             <Input RunListID="RL996">
                 <UISettings>
-                    <settings>{"26282547_Error":{"measure_y":"relative","x":0.5,"y":0.44871794871794873,"type":"UPSTAIRS_CONNECTOR","measure_x":"relative"},"18743319_Error":{"measure_y":"relative","x":0.4792874188610897,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
+                    <settings>{"1801309_Error":{"measure_y":"relative","x":0.47911438082839847,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
                 </UISettings>
             </Input>
             <Output Name="log" Type="LOG" RunListID="RL995"/>
             <UISettings>
-                <settings>{"x":496.835205078125,"y":1338.0,"originalDbId":18743338}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="LogTransformer" Name="Transform XML">
-            <Description></Description>
-            <Settings>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
-&lt;LogTransformerSettings&gt;
-    &lt;LogFormat&gt;HTML&lt;/LogFormat&gt;
-    &lt;UseUserDefinedFileExtension&gt;false&lt;/UseUserDefinedFileExtension&gt;
-    &lt;UserDefinedFileExtension&gt;&lt;/UserDefinedFileExtension&gt;
-    &lt;LogLanguage&gt;en&lt;/LogLanguage&gt;
-    &lt;LengthUnit&gt;mm&lt;/LengthUnit&gt;
-    &lt;LengthFontLineUnit&gt;postscript_pt&lt;/LengthFontLineUnit&gt;
-    &lt;ResolutionUnit&gt;dpi&lt;/ResolutionUnit&gt;
-&lt;/LogTransformerSettings&gt;
-</Settings>
-            <SettingsVersion>1</SettingsVersion>
-            <Input RunListID="RL1189">
-                <UISettings>
-                    <settings>{"18743322_Log":{"measure_y":"relative","x":0.48564217107479357,"y":0.8019993759085479,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="out" Type="PRODUCTIVE" RunListID="RL1190"/>
-            <Output Name="log" Type="LOG" RunListID="RL1272"/>
-            <UISettings>
-                <settings>{"x":507.0,"y":767.0,"originalDbId":22685008}</settings>
-            </UISettings>
-        </Node>
-        <Node DeviceName="FileExport" Name="ErrorLogs">
-            <Description>Log files will be deleted after 5 days.</Description>
-            <Settings>&lt;FileExportSettings&gt;
-    &lt;Path&gt;/ErrorLogs/Displays/&lt;/Path&gt;
-    &lt;netResource&gt;
-        &lt;path&gt;/D:/Workspace_data/&lt;/path&gt;
-        &lt;secure&gt;false&lt;/secure&gt;
-        &lt;type&gt;FILE&lt;/type&gt;
-        &lt;PollingForced&gt;false&lt;/PollingForced&gt;
-        &lt;description&gt;Workspace_data&lt;/description&gt;
-        &lt;PassiveModeForced&gt;false&lt;/PassiveModeForced&gt;
-        &lt;SkipTemporaryRenaming&gt;true&lt;/SkipTemporaryRenaming&gt;
-        &lt;UTF8EncodingForced&gt;true&lt;/UTF8EncodingForced&gt;
-        &lt;UseDirectoryListingForReload&gt;false&lt;/UseDirectoryListingForReload&gt;
-        &lt;UseProxy&gt;false&lt;/UseProxy&gt;
-        &lt;SkipOperatingSystemDetection&gt;false&lt;/SkipOperatingSystemDetection&gt;
-    &lt;/netResource&gt;
-    &lt;ReplicateFolderStructure&gt;false&lt;/ReplicateFolderStructure&gt;
-    &lt;PreventOverwritingFiles&gt;false&lt;/PreventOverwritingFiles&gt;
-    &lt;DestinationFilePattern&gt;&lt;/DestinationFilePattern&gt;
-    &lt;MaxRetry&gt;2&lt;/MaxRetry&gt;
-    &lt;RetryDelay&gt;120000&lt;/RetryDelay&gt;
-    &lt;ExportSubPath&gt;&lt;/ExportSubPath&gt;
-    &lt;DeleteExportedFiles&gt;true&lt;/DeleteExportedFiles&gt;
-    &lt;DeletionTime&gt;
-        &lt;RelativeDelay&gt;432000000&lt;/RelativeDelay&gt;
-        &lt;Relative&gt;true&lt;/Relative&gt;
-    &lt;/DeletionTime&gt;
-&lt;/FileExportSettings&gt;</Settings>
-            <SettingsVersion>4</SettingsVersion>
-            <Input RunListID="RL1190">
-                <UISettings>
-                    <settings>{"22685008_out":{"measure_y":"relative","x":0.4360680276143666,"y":0.5,"type":"DOWNSTAIRS_CONNECTOR","measure_x":"relative"}}</settings>
-                </UISettings>
-            </Input>
-            <Output Name="log" Type="LOG" RunListID="RL33"/>
-            <Output Name="error" Type="DEFAULT_ERROR" RunListID="RL1270"/>
-            <UISettings>
-                <settings>{"x":520.655517578125,"y":889.0,"originalDbId":22685009}</settings>
+                <settings>{"x":494.835205078125,"y":1335.0,"originalDbId":1801328}</settings>
             </UISettings>
         </Node>
         <Node DeviceName="AmendoScale" Name="Material Resize">
@@ -1369,14 +1424,14 @@ XImport 19.1 (SR 1) (x38.052.S)</Description>
 &lt;/Configuration&gt;
 </Settings>
             <SettingsVersion>26</SettingsVersion>
-            <Input RunListID="RL1269">
+            <Input RunListID="RL1201">
                 <UISettings/>
             </Input>
             <Output Name="OK" Type="PRODUCTIVE" RunListID="RL993"/>
-            <Output Name="Log" Type="LOG" RunListID="RL1280"/>
+            <Output Name="Log" Type="LOG" RunListID="RL1213"/>
             <Output Name="Error" Type="PRODUCTIVE_ERROR" RunListID="RL996"/>
             <UISettings>
-                <settings>{"x":276.728515625,"y":1337.0,"originalDbId":26282547}</settings>
+                <settings>{"x":283.728515625,"y":1333.0,"originalDbId":3913896}</settings>
             </UISettings>
             <PresetName>Material Resize</PresetName>
         </Node>
